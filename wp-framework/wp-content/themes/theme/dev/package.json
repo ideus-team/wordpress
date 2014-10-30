@@ -1,0 +1,29 @@
+{
+  "name": "html-framework",
+  "version": "1.3.1",
+  "description": "Our HTML5 template",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-autoprefixer": "~0.6.0",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-imagemin": "~0.7.1",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-csscomb": "~2.0.1",
+    "grunt-dalek": "~0.2.0",
+    "grunt-datauri": "~0.4.0",
+    "grunt-fixmyjs": "jonschlinkert/grunt-fixmyjs",
+    "grunt-pagespeed": "^0.3.0"
+  },
+  "scripts": {},
+  "author": {
+    "name": "iDeus",
+    "url": "http://ideus.biz/"
+  }
+}

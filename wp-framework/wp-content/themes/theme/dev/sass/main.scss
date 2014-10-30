@@ -1,0 +1,183 @@
+background: #fff;@charset "utf-8";
+
+@import 'normalize';
+@import 'h5b';
+@import 'compass/css3/images';
+@import 'mixins';
+@import 'base64';
+
+
+/**
+* @section Variables
+*/
+$fontArial: Arial, Helvetica, sans-serif;
+$fontOpenSans: 'Open Sans', sans-serif;
+
+$siteWidth: 980px;
+
+
+/**
+* @section Gradients 
+*
+* %gradient1 {…}
+* %gradient2 {…}
+*/
+
+.g-tel {color: inherit; text-decoration: none; cursor: default;}
+
+/* ==|== primary styles =====================================================
+   Authors: %Author Name%
+   ========================================================================== */
+
+/**
+* @section Fonts
+*
+* @include font-face($name, $file, $weight: normal, $style: normal);
+* @include font-face('PTSans', 'PTSansRegular-webfont');
+* @include font-face('PTSans', 'PTSansItalic-webfont', normal, italic);
+* @include font-face('PTSans', 'PTSansBold-webfont', bold);
+*/
+
+a {
+  &:hover {text-decoration: none;}
+}
+html {}
+body {background: #fff;}
+
+/**
+* @section wrapper
+*/
+.l-wrapper {position: relative; margin: 0 auto; padding: 0; width: $siteWidth;}
+
+/**
+* @section Main Site Header
+*/
+.l-siteHeader {position: relative; height: 200px;}
+
+/**
+* @subsection Main Site Logo
+*/
+.l-siteLogo {position: absolute; top: 10px; left: 10px; overflow: hidden; width: 200px; height: 150px;}
+.b-siteLogo {margin: 0; padding: 0; width: 100%; height: 100%;}
+.b-siteLogo__link {display: block; width: 100%; height: 100%;}
+.b-siteLogo__icon {display: block; width: 100%; height: 100%;}
+
+
+/**
+* @subsection Main Site Search
+*/
+.l-siteSearch {position: absolute; top: 10px; right: 20px; width: 200px;}
+.b-siteSearch {}
+.b-siteSearch__input {box-sizing: border-box !important; margin: 0; width: 100%;}
+.b-siteSearch__button {vertical-align: middle;}
+
+
+/**
+* @subsection Main Site Nav
+*/
+.l-siteNavigation {position: absolute; top: 100px; width: 100%; height: 50px;}
+.b-mainNavigation {display: block; margin: 0; padding: 0; height: 100%; list-style: none;}
+.b-mainNavigation__item {position: relative; float: left; margin: 0; padding: 0; height: 100%; color: #000;
+  &.-state_current {}
+}
+.b-mainNavigation__link {display: block; color: inherit; text-decoration: none;
+  &:hover {text-decoration: underline;}
+}
+
+
+/**
+* @section content
+*/
+.l-content {position: relative;}
+
+
+/**
+* @section main
+*/
+.l-contentText {position: relative; display: block;}
+
+
+/**
+* @section Main Site Footer
+*/
+.l-siteFooter {}
+
+
+/**
+* @section Site Navigation Bottom
+*/
+.l-siteNavigationBottom {}
+.b-bottomNavigation {margin: 0; padding: 0; list-style: none;}
+.b-bottomNavigation__item {color: #464646;
+  &.-state_current {}
+}
+.b-bottomNavigation__link {color: inherit; text-decoration: none;
+  &:hover {text-decoration: underline;}
+}
+
+
+/**
+* @section Site Copyright
+*/
+.l-siteCopyright {color: #464646; font: 11px $fontArial;}
+.b-siteCopyright {margin: 0 0 15px; text-transform: uppercase;}
+.b-siteCopyright__link {color: inherit; text-decoration: none;
+  &:hover {text-decoration: underline;}
+}
+
+/**
+* @subsection Developer Copyright
+*/
+.b-developerCopyright {}
+.b-developerCopyright__link {color: inherit; text-decoration: none;
+  &:hover {text-decoration: underline;}
+}
+
+
+/* ==========================================================================
+   Queries for Desktop Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+.-device_desktop {
+  .g-tel {pointer-events: none;}
+}
+
+
+/* ==========================================================================
+   Queries for Tablet Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+.-device_tablet {}
+
+
+/* ==========================================================================
+   Queries for Mobile Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+.-device_mobile {}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+     (-o-min-device-pixel-ratio: 5/4),
+     (-webkit-min-device-pixel-ratio: 1.25),
+     (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+@import 'print';
