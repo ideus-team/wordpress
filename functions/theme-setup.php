@@ -19,8 +19,8 @@ function nc_setup() {
 
   // Navigation
   register_nav_menus(array(
-    'header'          => 'Navigation Top Menu',
-    'footer'          => 'Navigation Bottom Menu'
+    'header'  => 'Navigation Top Menu',
+    'footer'  => 'Navigation Bottom Menu'
   ));
 
   /*
