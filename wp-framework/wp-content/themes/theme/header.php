@@ -52,7 +52,7 @@ switch (nc_device()) {
           </h1>
         <?php else: ?>
           <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-            <a class="b-siteLogo__link" href="index.html" itemprop="url">
+            <a class="b-siteLogo__link" href="<?php echo site_url('/'); ?>" itemprop="url">
               <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
             </a>
           </div>
