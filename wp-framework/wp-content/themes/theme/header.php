@@ -44,7 +44,7 @@ switch (nc_device()) {
           $siteLogo__iconURL = get_template_directory_uri().'/img/siteLogo__icon.png';
           //$siteLogo__iconURL = (nc_device()=='mobile') ? get_template_directory_uri().'/img/siteLogo__icon-mobile.png' : get_template_directory_uri().'/img/siteLogo__icon.png';
         ?>
-        <?php if($isHomepage): ?>
+        <?php if(is_front_page()): ?>
           <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
             <a class="b-siteLogo__link" itemprop="url">
               <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php echo $siteName; ?>" title="<?php echo $siteName; ?>" itemprop="logo" />
