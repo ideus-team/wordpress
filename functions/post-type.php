@@ -1,7 +1,7 @@
 <?php
 //Регистрируем новый тип записи для раздела «Вопросы и ответы»
-add_action('init', 'ideus_post_faq');
-function ideus_post_faq() {
+add_action('init', 'nc_post_faq');
+function nc_post_faq() {
   $labels = array(
     'name'               => 'Вопросы и ответы',
     'singular_name'      => 'Вопрос',
@@ -34,6 +34,6 @@ function ideus_post_faq() {
     'rewrite'             => true,
     'query_var'           => true
   );
-  register_post_type('faq',$args);
+  register_post_type('faq', $args);
 }
 ?>

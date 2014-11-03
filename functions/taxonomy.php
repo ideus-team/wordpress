@@ -1,7 +1,7 @@
 <?php
 //Регистрируем новую таксономию для раздела «Вопросы и ответы»
-add_action('init', 'ideus_taxonomy_faq', 0);
-function ideus_taxonomy_faq() {
+add_action('init', 'nc_taxonomy_faq', 0);
+function nc_taxonomy_faq() {
   $labels = array(
     'name'              => 'Категории',
     'singular_name'     => 'Категория',

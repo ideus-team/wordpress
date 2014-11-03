@@ -1,7 +1,7 @@
 <?php
 //seo заголовки начало
-add_filter('wp_title', 'ideus_title');
-function ideus_title() {
+add_filter('wp_title', 'nc_title');
+function nc_title() {
   global $page, $paged;
   $sep = " | "; # разделитель
   $newtitle = get_bloginfo('name'); # заголовок по умолчанию
