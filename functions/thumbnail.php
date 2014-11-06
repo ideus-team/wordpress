@@ -49,4 +49,10 @@ function nc_thumbnail($args = array()) {
     return $result;
   }
 }
+
+add_filter('post_thumbnail_html', 'nc_remove_width_and_height', 10);
+add_filter('image_send_to_editor', 'nc_remove_width_and_height', 10);
+function nc_remove_width_and_height($html) {
+  return preg_replace('/(height|width)="\d*"\s/', '', $html);
+}
 ?>
