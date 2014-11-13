@@ -44,7 +44,7 @@ function nc_pagenavi($args = array()) {
 
   if ($max > 1) {
     $pages .= '<div class="'.$class.'">'."\r";
-    $pages .= '<span class="'.$class.'__total">Найдено '.$query->found_posts.'</span>'."\r";
+    //$pages .= '<span class="'.$class.'__total">Найдено '.$query->found_posts.'</span>'."\r";
 
     if ($total == 1) $pages .= '<span class="'.$class.'__pages">Page '.$current.' of '.$max.'</span>'."\r";
 
