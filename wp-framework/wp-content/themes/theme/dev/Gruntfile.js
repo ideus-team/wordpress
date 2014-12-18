@@ -8,6 +8,7 @@ module.exports = function(grunt) {
 
     sassDir: 'sass',
     sassFiles: '<%= sassDir %>' + '/main.scss',
+    sassBase64: '<%= sassDir %>' + '/_base64.scss',
     cssDir: '../css',
     cssFiles: '<%= cssDir %>' + '/main.css',
 
@@ -31,9 +32,9 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks');
 
   // Задача по умолчанию
-  grunt.registerTask('default', ['datauri', 'datauriMobile', 'compass', 'csslint', 'autoprefixer', 'cssmin', 'fixmyjs', 'jshint', 'concat', 'uglify']);
-  grunt.registerTask('dev',     ['datauri', 'datauriMobile', 'compass', 'csslint', 'autoprefixer', 'fixmyjs', 'jshint', 'concat']);
-  grunt.registerTask('comb',    ['compass', 'csslint', 'autoprefixer', 'cssmin', 'csscomb']);
+  grunt.registerTask('default', ['datauri', 'datauriMobile', 'compass', 'csslint', 'autoprefixer', 'cssmin', 'jshint', 'concat', 'uglify']);
+  grunt.registerTask('dev',     ['datauri', 'datauriMobile', 'compass', 'csslint', 'autoprefixer', 'jshint', 'concat']);
+  grunt.registerTask('comb',    ['compass', 'csslint', 'autoprefixer', 'cssmin', 'csscomb']); // не работает
   grunt.registerTask('test',    ['dalek']);
   grunt.registerTask('speed',   ['pagespeed']);
 };
