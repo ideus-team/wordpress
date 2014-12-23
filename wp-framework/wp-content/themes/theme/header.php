@@ -20,7 +20,15 @@ switch (nc_device()) {
 <head>
   <meta charset="utf-8" />
   <title><?php wp_title('::', true, 'right'); ?><?php bloginfo('name'); ?></title>
-  <meta name="viewport" content="width=<?=$viewport?>" />
+
+  <meta name="viewport" content="width=<?php echo $viewport; ?>" />
+  <?php if(nc_device()=='mobile' && nc_ie()): ?>
+    <style>
+      @-ms-viewport {
+        width: <?php echo $viewport; ?>px;
+      }
+    </style>
+  <?php endif; ?>
 
   <link rel="shortcut icon" href="<?php echo site_url('/favicon.ico'); ?>" />
   <link rel="apple-touch-icon" href="<?php echo site_url('/apple-touch-icon.png'); ?>" />
