@@ -22,7 +22,7 @@ switch (nc_device()) {
   <title><?php wp_title('::', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
   <meta name="viewport" content="width=<?php echo $viewport; ?>" />
-  <?php if(nc_device()=='mobile' && nc_ie()): ?>
+  <?php if((nc_device() == 'mobile') && nc_ie()): ?>
     <style>
       @-ms-viewport {
         width: <?php echo $viewport; ?>px;
