@@ -41,7 +41,7 @@ switch (nc_device()) {
   <?php wp_head(); ?>
   <?php get_template_part('scripts', 'header'); ?>
 </head>
-<body <?php body_class('-page_lang_ru'); ?> id="%SiteURI%">
+<body <?php body_class('-page_lang_en'); ?> id="%SiteURI%">
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
