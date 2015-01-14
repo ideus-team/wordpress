@@ -1,6 +1,6 @@
 # Заготовки и лайфхаки для Wordpress
 
-## Фспомогательная информация
+## Вспомогательная информация
 
 * Готовый функционал
 * [Необходимые плагины](https://github.com/ideus-team/wordpress/blob/master/info/plugins.md)
