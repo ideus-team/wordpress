@@ -15,4 +15,5 @@
 
 ## Редактирование контента
 
+* [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) - шаблоны для TinyMCE
 * [Shortcodes Ultimate](https://wordpress.org/plugins/shortcodes-ultimate/) - Большой набор всевозможных шорткодов
