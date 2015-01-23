@@ -12,3 +12,7 @@
 ## Импорт/экспорт данных
 
 * [Import Users from CSV](https://wordpress.org/plugins/import-users-from-csv/) - импорт пользователей из CSV в Wordpress.
+
+## Редактирование контента
+
+* [Большой набор всевозможных шорткодов](https://wordpress.org/plugins/shortcodes-ultimate/)
