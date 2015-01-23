@@ -15,4 +15,4 @@
 
 ## Редактирование контента
 
-* [Большой набор всевозможных шорткодов](https://wordpress.org/plugins/shortcodes-ultimate/)
+* [Shortcodes Ultimate](https://wordpress.org/plugins/shortcodes-ultimate/) - Большой набор всевозможных шорткодов
