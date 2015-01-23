@@ -17,6 +17,9 @@ function nc_setup() {
    */
   add_theme_support('html5', array('search-form', 'comment-form', 'comment-list'));
 
+  // Styles for editor
+  add_editor_style('css/editor-style.css');
+
   // Navigation
   register_nav_menus(array(
     'header'  => 'Navigation Top Menu',
