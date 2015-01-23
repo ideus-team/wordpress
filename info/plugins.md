@@ -12,3 +12,8 @@
 ## Импорт/экспорт данных
 
 * [Import Users from CSV](https://wordpress.org/plugins/import-users-from-csv/) - импорт пользователей из CSV в Wordpress.
+
+## Редактирование контента
+
+* [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) - шаблоны для TinyMCE
+* [Shortcodes Ultimate](https://wordpress.org/plugins/shortcodes-ultimate/) - Большой набор всевозможных шорткодов
