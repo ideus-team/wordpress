@@ -1,51 +1,32 @@
 <?php
-function nc_thumbnail($args = array()) {
-  $atts['ID']        = isset($args['ID'])        ? $args['ID']                       : get_the_ID();
+// Update core
+add_filter( 'auto_update_core', '__return_true' );
 
-  $atts['src']       = isset($args['src'])       ? trim($args['src'])                : '';
-  $atts['alt']       = isset($args['alt'])       ? $args['alt']                      : '';
-  $atts['class']     = isset($args['class'])     ? ' class="'.$args['class'].'"'     : '';
-  $atts['width']     = isset($args['width'])     ? '&amp;w='.$args['width']          : '';
-  $atts['height']    = isset($args['height'])    ? '&amp;h='.$args['height']         : '';
-  $atts['alignment'] = isset($args['alignment']) ? '&amp;a='.$args['alignment']      : '';
+// Update for Nightly Build
+add_filter( 'allow_dev_auto_core_updates', '__return_false' );
 
-  $atts['link']      = isset($args['link'])      ? trim($args['link'])               : '';
-  $atts['linkClass'] = isset($args['linkClass']) ? ' class="'.$args['linkClass'].'"' : '';
+// Update core minor
+add_filter( 'allow_minor_auto_core_updates', '__return_true' );
 
-  $atts['title']     = isset($args['title'])     ? $args['title']                    : '';
+// Update core major
+add_filter( 'allow_major_auto_core_updates', '__return_true' );
 
-  $atts['echo']      = isset($args['echo'])      ? $args['echo']                     : true;
+// Update theme
+add_filter( 'auto_update_theme', '__return_false' );
 
-  if (empty($atts['src'])) {
-    if (has_post_thumbnail($atts['ID'])) {
-      $attachment_id = get_post_thumbnail_id($atts['ID']);
-      $image_array = wp_get_attachment_image_src($attachment_id, 'full');
-      $atts['src'] = $image_array[0];
-      if (empty($atts['alt'])) {
-        $attachment_alt = trim(strip_tags(get_post_meta($attachment_id, '_wp_attachment_image_alt', true)));
-        $post_title = esc_attr(strip_tags(get_the_title($atts['ID'])));
-        $atts['alt'] = ($attachment_alt) ? $attachment_alt : $post_title;
-      }
-    } else {
-      return false;
-    }
-  }
+// Update plugins
+add_filter( 'auto_update_plugin', '__return_true' );
 
-  $thumb_url = get_template_directory_uri().'/functions/thumb.php?src='.$atts['src'].$atts['width'].$atts['height'].$atts['alignment'];
-  $result = '<img'.$atts['class'].' src="'.$thumb_url.'" alt="'.$atts['alt'].'" />';
+// Update translation
+add_filter( 'auto_update_translation', '__return_true' );
 
-  $atts['link'] = (!$atts['link'] && $atts['linkClass']) ? $atts['src'] : $atts['link'];
+// Send email for update notification
+add_filter( 'auto_core_update_send_email', '__return_true' );
 
-  $title = $atts['title'] ? ' title="'.$atts['title'].'"' : '';
-
-  if ($atts['link']) {
-    $result = '<a'.$atts['linkClass'].' href="'.$atts['link'].'"'.$title.'>'.$result.'</a>';
-  }
-
-  if ($atts['echo']) {
-    echo $result;
-  } else {
-    return $result;
-  }
+// Change email for update notification
+add_filter( 'auto_core_update_email', 'nc_filter_auto_update_email', 1 );
+function nc_filter_auto_update_email($email) {
+  $email['to'] = 'wordpress@net-craft.com';
+  return $email;
 }
 ?>
