@@ -1,7 +1,7 @@
 <?php
 switch (nc_device()) {
   case 'mobile':
-    $viewport = '640';
+    $viewport = '1024';
     break;
   case 'tablet':
     $viewport = '1024';
@@ -12,13 +12,12 @@ switch (nc_device()) {
     break;
 }
 ?>
-<!DOCTYPE html>
-<!--[if IE 7]>         <html class="-device_<?php echo nc_device(); ?> no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="-device_<?php echo nc_device(); ?> no-js lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="-device_<?php echo nc_device(); ?> no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="-device_<?php echo nc_device(); ?> no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="-device_<?php echo $device; ?> no-js" lang="">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
   <title><?php wp_title('::', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
   <meta name="viewport" content="width=<?php echo $viewport; ?>" />
@@ -49,8 +48,8 @@ switch (nc_device()) {
     <header class="l-siteHeader" role="banner">
       <div class="l-siteLogo">
         <?php
-          $siteLogo__iconURL = get_template_directory_uri().'/img/siteLogo__icon.png';
-          //$siteLogo__iconURL = (nc_device()=='mobile') ? get_template_directory_uri().'/img/siteLogo__icon-mobile.png' : get_template_directory_uri().'/img/siteLogo__icon.png';
+          $siteLogo__iconURL = get_template_directory_uri().'/img/blocks/l-siteLogo/l-siteLogo-logo.png';
+          //$siteLogo__iconURL = (nc_device()=='mobile') ? get_template_directory_uri().'/img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : get_template_directory_uri().'/img/blocks/l-siteLogo/l-siteLogo-logo.png';
         ?>
         <?php if(is_front_page()): ?>
           <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">

@@ -5,14 +5,13 @@
 @import 'compass/css3/images';
 @import 'mixins';
 @import 'base64';
+@import 'blocks/g-blocks';
+@import 'fonts';
 
 
 /**
-* @section Variables
+* @section Settings
 */
-$fontArial: Arial, Helvetica, sans-serif;
-$fontOpenSans: 'Open Sans', sans-serif;
-
 $siteWidth: 980px;
 
 
@@ -23,21 +22,14 @@ $siteWidth: 980px;
 * %gradient2 {…}
 */
 
-@import 'blocks/g-blocks';
+
 
 
 /* ==|== primary styles =====================================================
    Authors: %Author Name%
    ========================================================================== */
 
-/**
-* @section Fonts
-*
-* @include font-face($name, $file, $weight: normal, $style: normal);
-* @include font-face('PTSans', 'PTSansRegular-webfont');
-* @include font-face('PTSans', 'PTSansItalic-webfont', normal, italic);
-* @include font-face('PTSans', 'PTSansBold-webfont', bold);
-*/
+
 
 a {
   &:hover {
