@@ -1,0 +1,21 @@
+/**
+* @section pagination
+*/
+.b-pagination {
+  &__total {}
+  &__pages {}
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+  }
+  &__link {
+    &-type_prev {}
+    &-type_next {}
+    &-type_dots {}
+    &-state_current {}
+  }
+}

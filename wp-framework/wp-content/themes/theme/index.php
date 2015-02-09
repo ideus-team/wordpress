@@ -6,6 +6,8 @@
       <?php the_content(); ?>
     </section>
   <?php endwhile; ?>
+
+  <?php nc_pagenavi(); ?>
 </main>
 
 <?php get_footer(); ?>
