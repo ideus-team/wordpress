@@ -13,9 +13,9 @@
     display: inline-block;
   }
   &__link {
-    &-type_prev {}
-    &-type_next {}
-    &-type_dots {}
-    &-state_current {}
+    &.-type_prev {}
+    &.-type_next {}
+    &.-type_dots {}
+    &.-state_current {}
   }
 }
