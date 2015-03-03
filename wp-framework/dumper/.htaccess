@@ -1,0 +1,5 @@
+Order deny,allow
+deny from all
+Allow from 127.0.0.1 82.117.248.44 178.165.115.58 193.105.7.55
+AddDefaultCharset windows-1251
+DirectoryIndex dumper.php
