@@ -13,7 +13,7 @@ switch (nc_device()) {
 }
 ?>
 <!doctype html>
-<html class="-device_<?php echo $device; ?> no-js" lang="">
+<html class="-device_<?php echo nc_device(); ?> no-js" lang="">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
