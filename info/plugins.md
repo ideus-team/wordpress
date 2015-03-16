@@ -9,6 +9,10 @@
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) — многофункциональный плагин для создания и управления формами обратной связи
 * [User Frontend](https://wordpress.org/plugins/user-frontend/) — вынос во фронтенд регистрации, авторизации, восстановления пароля и смены регистрационных данных
 
+## Шаринг в соцсети
+
+* [WP Open Graph](https://wordpress.org/plugins/wp-open-graph/) — автогенерация тегов Open Graph
+
 ## Импорт/экспорт данных
 
 * [Import Users from CSV](https://wordpress.org/plugins/import-users-from-csv/) — импорт пользователей из CSV в Wordpress
