@@ -11,6 +11,7 @@
 
 ## Шаринг в соцсети
 
+* [Share Buttons by AddToAny](https://wordpress.org/plugins/add-to-any/) — кнопки шаринга
 * [WP Open Graph](https://wordpress.org/plugins/wp-open-graph/) — автогенерация тегов Open Graph
 
 ## Импорт/экспорт данных
