@@ -1,7 +1,7 @@
 <?php
 // Mobile Detect
 if (!class_exists('Mobile_Detect')) {
-  require_once WPMU_PLUGIN_DIR.'/lib/Mobile_Detect.php';
+  require_once WPMU_PLUGIN_DIR.'/nc-lib/Mobile_Detect.php';
 }
 $detect = new Mobile_Detect();
 
