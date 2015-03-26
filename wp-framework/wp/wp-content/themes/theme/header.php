@@ -38,7 +38,7 @@ switch (nc_device()) {
   <script>window.Modernizr || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.8.3.min.js"><\/script>')</script>
 
   <?php wp_head(); ?>
-  <?php get_template_part('scripts', 'header'); ?>
+  <?php get_template_part('tpl/scripts', 'header'); ?>
 </head>
 <body <?php body_class('-page_lang_en'); ?> id="%SiteURI%">
   <!--[if lt IE 7]>
