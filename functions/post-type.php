@@ -1,20 +1,20 @@
 <?php
-//Регистрируем новый тип записи для раздела «Вопросы и ответы»
-add_action('init', 'nc_post_faq');
-function nc_post_faq() {
+// New post type for Blog
+add_action('init', 'nc_post_blog');
+function nc_post_blog() {
   $labels = array(
-    'name'               => 'Вопросы и ответы',
-    'singular_name'      => 'Вопрос',
-    'add_new'            => 'Добавить новый',
-    'add_new_item'       => 'Добавить новый вопрос',
-    'edit_item'          => 'Редактировать вопрос',
-    'new_item'           => 'Новый вопрос',
-    'all_items'          => 'Все вопросы',
-    'view_item'          => 'Посмотреть вопрос',
-    'search_items'       => 'Найти вопрос',
-    'not_found'          => 'Вопросов не найдено',
-    'not_found_in_trash' => 'В корзине вопросов не найдено',
-    'menu_name'          => 'FAQ'
+    'name'               => 'Our Blog',
+    'singular_name'      => 'Article',
+    'add_new'            => 'Add New',
+    'add_new_item'       => 'Add New Article',
+    'edit_item'          => 'Edit Article',
+    'new_item'           => 'New Article',
+    'all_items'          => 'All Articles',
+    'view_item'          => 'View Article',
+    'search_items'       => 'Search Articles',
+    'not_found'          => 'No articles found',
+    'not_found_in_trash' => 'No articles found in Trash',
+    'menu_name'          => 'Our Blog'
   );
   $args = array(
     'labels'              => $labels,
@@ -22,18 +22,18 @@ function nc_post_faq() {
     'exclude_from_search' => false,
     'publicly_queryable'  => true,
     'show_ui'             => true,
-    'show_in_nav_menus'   => false,
+    'show_in_nav_menus'   => true,
     'show_in_menu'        => true,
     'show_in_admin_bar'   => true,
     'menu_position'       => null,
     'menu_icon'           => null,
     'hierarchical'        => false,
-    'supports'            => array('title', 'editor', 'thumbnail', 'page-attributes'),
+    'supports'            => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes'),
     'taxonomies'          => array(),
     'has_archive'         => true,
     'rewrite'             => true,
     'query_var'           => true
   );
-  register_post_type('faq', $args);
+  register_post_type('blog', $args);
 }
 ?>
