@@ -1,4 +1,13 @@
 <?php
+/*
+Plugin Name: WP-framework
+Plugin URI: 
+Description: Functions for WP-framework
+Author: iDeus
+Version: 
+Author URI: http://ideus.biz
+*/
+
 // Admin cookie
 require WPMU_PLUGIN_DIR.'/nc-functions/admin-cookie.php';
 
