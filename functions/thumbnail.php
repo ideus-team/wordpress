@@ -12,6 +12,7 @@ function nc_thumbnail($args = array()) {
 
   $atts['link']      = isset($args['link'])      ? trim($args['link'])               : '';
   $atts['linkClass'] = isset($args['linkClass']) ? ' class="'.$args['linkClass'].'"' : '';
+  $atts['linkRel']   = isset($args['linkRel'])   ? ' rel="'.$args['linkRel'].'"'   : '';
 
   $atts['title']     = isset($args['title'])     ? $args['title']                    : '';
 
@@ -40,7 +41,7 @@ function nc_thumbnail($args = array()) {
   $title = $atts['title'] ? ' title="'.$atts['title'].'"' : '';
 
   if ($atts['link']) {
-    $result = '<a'.$atts['linkClass'].' href="'.$atts['link'].'"'.$title.'>'.$result.'</a>';
+    $result = '<a'.$atts['linkClass'].$atts['linkRel'].' href="'.$atts['link'].'"'.$title.'>'.$result.'</a>';
   }
 
   if ($atts['echo']) {
