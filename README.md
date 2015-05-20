@@ -11,6 +11,7 @@
  - отредактировать соответствующие строки в wp-content\themes\theme\style.css
  - заменить wp-content\themes\theme\screenshot.png на скриншот проекта 880х660
  - переименовать папку wp-content\themes\theme по имени проекта
+6. Во время установки указываем email `wordpress@ideus.biz` (или клиента, но не личный!)
 
 ## Вспомогательная информация
 
