@@ -14,7 +14,7 @@
 6. Во время установки указываем email `wordpress@ideus.biz` (или клиента, но не личный!)
 7. Активируем нашу тему
 8. Под каждую страницу создается шаблон вида `page-PAGE_SLUG.php` (эти страницы также нужно создать в Pages). Главная страница = `front-page.php`
-9. Permalink Settings → Common Settings → Post name (если WP попросит внести изменения в .htaccess — нужно это сделать)
+9. Permalink Settings → Common Settings → Post name (если WP попросит внести изменения в `.htaccess` — нужно это сделать)
 10. Settings → General - выставляем таймозону, форматы даты-времени и т.д.
 
 ## Вспомогательная информация
