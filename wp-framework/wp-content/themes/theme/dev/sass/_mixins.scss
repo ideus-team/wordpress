@@ -30,6 +30,12 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
+@mixin aligncenterX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @mixin resetList {
   list-style-type: none;
   margin: 0;
