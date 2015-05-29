@@ -62,6 +62,27 @@ a {
 
   }
   /* ... */
+
+
+  img {
+    max-width: 100%;
+  }
+
+  .aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .alignright {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .alignleft {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
 html {
