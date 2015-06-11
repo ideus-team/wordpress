@@ -28,4 +28,10 @@ require WPMU_PLUGIN_DIR.'/nc-functions/pagination.php';
 
 // Thumbnail
 require WPMU_PLUGIN_DIR.'/nc-functions/thumbnail.php';
+
+// Post Type
+require WPMU_PLUGIN_DIR.'/nc-functions/post-type.php';
+
+// Taxonomy
+require WPMU_PLUGIN_DIR.'/nc-functions/taxonomy.php';
 ?>
