@@ -13,13 +13,13 @@ if (file_exists(WPMU_PLUGIN_DIR.'/nc-lib/cmb2/init.php')) {
  * More examples in nc-lib/CMB2/example-functions.php
  */
 /*
-add_action('cmb2_init', 'nc_register_about_page_metabox');
-function nc_register_about_page_metabox() {
+add_action('cmb2_init', 'nc_register_metabox');
+function nc_register_metabox() {
 
   // Start with an underscore to hide fields from custom fields list
   $prefix = '_nc_';
 
-  $cmb_about_page = new_cmb2_box( array(
+  $cmb_demo = new_cmb2_box( array(
     'id'            => $prefix . 'metabox',
     'title'         => __( 'Test Metabox', 'cmb2' ),
     'object_types'  => array( 'page', ), // Post type
@@ -31,7 +31,7 @@ function nc_register_about_page_metabox() {
     // 'closed'     => true, // true to keep the metabox closed by default
   ) );
 
-  $cmb_about_page->add_field( array(
+  $cmb_demo->add_field( array(
     'name' => __( 'Test Text', 'cmb2' ),
     'desc' => __( 'field description (optional)', 'cmb2' ),
     'id'   => $prefix . 'text',
