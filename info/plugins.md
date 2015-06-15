@@ -21,10 +21,10 @@
 ## Редактирование контента
 
 * [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) — шаблоны для TinyMCE
-* [Shortcodes Ultimate](https://wordpress.org/plugins/shortcodes-ultimate/) — Большой набор всевозможных шорткодов
+* [Shortcodes Ultimate](https://wordpress.org/plugins/shortcodes-ultimate/) — большой набор всевозможных шорткодов
 
 ## Разработка
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
 
 ## Разное
-* [AdRotate](https://wordpress.org/plugins/adrotate/) — Баннерная система
+* [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
