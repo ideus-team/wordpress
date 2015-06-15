@@ -25,3 +25,6 @@
 
 ## Разработка
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
+
+## Разное
+* [AdRotate](https://wordpress.org/plugins/adrotate/) - Баннерная система
