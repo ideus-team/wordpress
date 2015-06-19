@@ -4,7 +4,7 @@
  *
  * @link     https://github.com/WebDevStudios/CMB2
  */
-if (file_exists(WPMU_PLUGIN_DIR.'/nc-lib/cmb2/init.php')) {
+if (file_exists(WPMU_PLUGIN_DIR.'/nc-lib/CMB2/init.php')) {
   require_once WPMU_PLUGIN_DIR.'/nc-lib/CMB2/init.php';
 }
 
