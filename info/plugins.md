@@ -28,3 +28,4 @@
 
 ## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
+* [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
