@@ -58,7 +58,7 @@ switch (nc_device()) {
             $siteLogo__iconURL = get_template_directory_uri().'/img/blocks/l-siteLogo/l-siteLogo-logo.png';
             //$siteLogo__iconURL = (nc_device()=='mobile') ? get_template_directory_uri().'/img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : get_template_directory_uri().'/img/blocks/l-siteLogo/l-siteLogo-logo.png';
           ?>
-          <?php if(is_front_page()): ?>
+          <?php if(is_front_page() && !is_paged()): ?>
             <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
               <a class="b-siteLogo__link" itemprop="url">
                 <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" itemprop="logo" />
