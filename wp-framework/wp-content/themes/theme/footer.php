@@ -24,9 +24,6 @@
     </footer>
   </div><!--wrapper-->
 
-  <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js?<?php echo filemtime(get_template_directory().'/js/scripts.js'); ?>"></script>
-  <!--<script src="<?php echo get_template_directory_uri(); ?>/js/scripts-extra.js?<?php echo filemtime(get_template_directory().'/js/scripts-extra.js'); ?>"></script>-->
-
   <?php wp_footer(); ?>
   <?php get_template_part('tpl/scripts', 'footer'); ?>
 </body>
