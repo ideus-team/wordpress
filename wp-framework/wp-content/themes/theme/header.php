@@ -38,8 +38,6 @@ switch (nc_device()) {
   <link rel="shortcut icon" href="<?php echo site_url('/favicon.ico'); ?>" />
   <link rel="apple-touch-icon" href="<?php echo site_url('/apple-touch-icon.png'); ?>" />
 
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css?<?php echo filemtime(get_template_directory().'/css/main.css'); ?>" />
-
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script>window.Modernizr || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.8.3.min.js"><\/script>')</script>
 

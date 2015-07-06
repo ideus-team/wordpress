@@ -33,14 +33,15 @@ function nc_setup() {
   add_theme_support('post-thumbnails');
 }
 
-//Need check this
-//add_action('wp_enqueue_scripts', 'nc_styles');
+// Styles
+add_action('wp_enqueue_scripts', 'nc_styles');
 function nc_styles() {
   $protocol = is_ssl() ? 'https' : 'http';
-	wp_enqueue_style('googlefonts', $protocol.'://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900|Open+Sans:400,300,600,700,800|');
+	//wp_enqueue_style('googlefonts', $protocol.'://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900|Open+Sans:400,300,600,700,800|');
+  wp_enqueue_style('css-main', get_template_directory_uri().'/css/main.css', false, filemtime(get_template_directory().'/css/main.css'));
 }
 
-// Use our own jQuery
+// Scripts
 add_action('wp_enqueue_scripts', 'nc_scripts');
 function nc_scripts() {
   wp_deregister_script('jquery');
