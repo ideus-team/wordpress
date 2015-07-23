@@ -81,4 +81,14 @@ add_filter('excerpt_length', 'nc_excerpt_length');
 function nc_excerpt_length($length) {
 	return 20;
 }
+
+function nc_tel($phone = '') {
+  $patterns[0] = '/\ /';
+  $patterns[1] = '/\./';
+  $patterns[2] = '/\(/';
+  $patterns[3] = '/\)/';
+  $patterns[4] = '/\-/';
+  
+  return preg_replace($patterns, '', $phone);
+}
 ?>
