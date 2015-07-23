@@ -32,9 +32,16 @@ function nc_register_metabox() {
   ) );
 
   $cmb_demo->add_field( array(
-    'name' => __( 'Test Text', 'cmb2' ),
-    'desc' => __( 'field description (optional)', 'cmb2' ),
-    'id'   => $prefix . 'text',
+    'name' => 'Text 1',
+    'desc' => 'field description (optional)',
+    'id'   => $prefix . 'text1',
+    'type' => 'text',
+  ) );
+
+  $cmb_demo->add_field( array(
+    'name' => 'Text 2',
+    'desc' => 'field description (optional)',
+    'id'   => $prefix . 'text2',
     'type' => 'text',
   ) );
 
