@@ -24,7 +24,7 @@ function nc_taxonomy_blog() {
     'show_ui'           => true,
     'show_tagcloud'     => false,
     'hierarchical'      => true,
-    'rewrite'           => array('slug' => 'category'),
+    'rewrite'           => array('slug' => 'blog-cat'),
     'query_var'         => true
   );
   register_taxonomy('blog-cat', 'blog', $args);

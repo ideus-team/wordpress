@@ -29,10 +29,10 @@ require WPMU_PLUGIN_DIR.'/nc-functions/pagination.php';
 // Thumbnail
 require WPMU_PLUGIN_DIR.'/nc-functions/thumbnail.php';
 
-// Post Type
+// Custom Post Types
 require WPMU_PLUGIN_DIR.'/nc-functions/post-type.php';
 
-// Taxonomy
+// Custom Taxonomies
 require WPMU_PLUGIN_DIR.'/nc-functions/taxonomy.php';
 
 // Metabox
