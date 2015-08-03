@@ -25,6 +25,7 @@
 
 ## Разработка
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
+* [Adminer](https://wordpress.org/plugins/adminer/) — просмотр и редактирование MySQL, аналог phpMyAdmin
 
 ## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
