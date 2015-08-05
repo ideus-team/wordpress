@@ -37,7 +37,7 @@ function nc_setup() {
 add_action('wp_enqueue_scripts', 'nc_styles');
 function nc_styles() {
   $protocol = is_ssl() ? 'https' : 'http';
-	//wp_enqueue_style('googlefonts', $protocol.'://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900|Open+Sans:400,300,600,700,800|');
+  //wp_enqueue_style('googlefonts', $protocol.'://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900|Open+Sans:400,300,600,700,800|');
   wp_enqueue_style('css-main', get_template_directory_uri().'/css/main.css', false, filemtime(get_template_directory().'/css/main.css'));
 }
 
@@ -79,7 +79,7 @@ function nc_excerpt_more($more) {
 
 add_filter('excerpt_length', 'nc_excerpt_length');
 function nc_excerpt_length($length) {
-	return 20;
+  return 20;
 }
 
 function nc_tel($phone = '') {
@@ -88,7 +88,7 @@ function nc_tel($phone = '') {
   $patterns[2] = '/\(/';
   $patterns[3] = '/\)/';
   $patterns[4] = '/\-/';
-  
+
   return preg_replace($patterns, '', $phone);
 }
 ?>
