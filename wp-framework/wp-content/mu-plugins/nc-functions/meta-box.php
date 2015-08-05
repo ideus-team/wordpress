@@ -47,3 +47,4 @@ function nc_register_metabox() {
 
 }
 */
+?>
