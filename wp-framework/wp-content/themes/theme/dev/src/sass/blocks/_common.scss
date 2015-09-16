@@ -1,0 +1,41 @@
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+html {
+
+}
+body {
+  background: #fff;
+}
+
+
+/**
+* @section wrapper
+*/
+.l-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: $siteWidth;
+}
+
+
+/**
+* @section content
+*/
+.l-content {
+  position: relative;
+}
+
+
+/**
+* @section main
+*/
+.l-contentText {
+  position: relative;
+  display: block;
+}
