@@ -11,7 +11,8 @@
     */
     ?>
     <section class="b-contentText b-text">
-      <?php the_content(); ?>
+      <h2 class="b-contentText__title"><?php the_title(); ?></h2>
+      <div class="b-contentText__content"><?php the_content(); ?></div>
     </section>
   <?php endwhile; ?>
 
