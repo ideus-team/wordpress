@@ -12,7 +12,7 @@
     ?>
     <section class="b-contentText b-text">
       <h2 class="b-contentText__title"><?php the_title(); ?></h2>
-      <div class="b-contentText__content"><?php the_content(); ?></div>
+      <div class="b-contentText__content b-text"><?php the_content(); ?></div>
     </section>
   <?php endwhile; ?>
 
