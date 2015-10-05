@@ -72,6 +72,11 @@ function nc_iever($compare=false, $to=NULL){
 
 
 // Modify except
+function nc_excerpt($num_words = 25, $more = '… →') {
+  $excerpt = wp_trim_words(get_the_excerpt(), $num_words, $more);
+  echo apply_filters('the_excerpt', $excerpt);
+}
+
 add_filter('excerpt_more', 'nc_excerpt_more');
 function nc_excerpt_more($more) {
   return '…';
