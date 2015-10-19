@@ -27,6 +27,9 @@
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
 * [Adminer](https://wordpress.org/plugins/adminer/) — просмотр и редактирование MySQL, аналог phpMyAdmin
 
+## WooCommerce
+* [WooCommerce Poor Guys Swiss Knife](https://wordpress.org/plugins/woocommerce-poor-guys-swiss-knife/) — настройка checkout-форм
+
 ## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
