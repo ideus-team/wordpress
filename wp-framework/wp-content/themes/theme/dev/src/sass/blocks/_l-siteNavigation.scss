@@ -22,7 +22,8 @@
     height: 100%;
     color: #000;
 
-    &.-state_current {
+    &.current-menu-item,
+    &.current-page-ancestor {
 
     }
   }
