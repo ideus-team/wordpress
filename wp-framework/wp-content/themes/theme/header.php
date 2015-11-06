@@ -19,7 +19,7 @@ switch (nc_device()) {
 <html class="-device_<?php echo nc_device(); ?> no-js" <?php language_attributes(); ?>>
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title><?php wp_title('::', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
