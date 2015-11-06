@@ -55,20 +55,14 @@ switch (nc_device()) {
           <?php
             $siteLogo__iconURL = get_template_directory_uri().'/assets/img/blocks/l-siteLogo/l-siteLogo-logo.png';
             //$siteLogo__iconURL = (nc_device()=='mobile') ? get_template_directory_uri().'/assets/img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : get_template_directory_uri().'/img/blocks/l-siteLogo/l-siteLogo-logo.png';
+            $siteLogo__tag  = (is_front_page() && !is_paged()) ? 'h1' : 'div';
+            $siteLogo__link = (is_front_page() && !is_paged()) ? '' : ' href="'.site_url('/').'"';
           ?>
-          <?php if(is_front_page() && !is_paged()): ?>
-            <h1 class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-              <a class="b-siteLogo__link" itemprop="url">
-                <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" itemprop="logo" />
-              </a>
-            </h1>
-          <?php else: ?>
-            <div class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
-              <a class="b-siteLogo__link" href="<?php echo site_url('/'); ?>" itemprop="url">
-                <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" itemprop="logo" />
-              </a>
-            </div>
-          <?php endif; ?>
+          <<?php echo $siteLogo__tag; ?> class="b-siteLogo" itemscope itemtype="http://schema.org/Organization">
+            <a class="b-siteLogo__link"<?php echo $siteLogo__link; ?> itemprop="url">
+              <img class="b-siteLogo__icon" src="<?php echo $siteLogo__iconURL; ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>" itemprop="logo" />
+            </a>
+          </<?php echo $siteLogo__tag; ?>>
         </div>
 
         <?php get_search_form(); ?>
