@@ -90,12 +90,15 @@ class CMB2_Sanitize {
 				break;
 			case 'taxonomy_select':
 			case 'taxonomy_radio':
+			case 'taxonomy_radio_inline':
 			case 'taxonomy_multicheck':
+			case 'taxonomy_multicheck_inline':
 				if ( $this->field->args( 'taxonomy' ) ) {
 					wp_set_object_terms( $this->field->object_id, $this->value, $this->field->args( 'taxonomy' ) );
 					break;
 				}
 			case 'multicheck':
+			case 'multicheck_inline':
 			case 'file_list':
 			case 'oembed':
 			case 'group':
