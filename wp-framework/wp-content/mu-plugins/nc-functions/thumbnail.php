@@ -24,7 +24,7 @@ function nc_thumbnail($args = array()) {
       $image_array = wp_get_attachment_image_src($attachment_id, 'full');
       $atts['src'] = $image_array[0];
       if (empty($atts['alt'])) {
-        $attachment_alt = trim(strip_tags(get_post_meta($attachment_id, '_wp_attachment_image_alt', true)));
+        $attachment_alt = esc_attr(strip_tags(get_post_meta($attachment_id, '_wp_attachment_image_alt', true)));
         $post_title = esc_attr(strip_tags(get_the_title($atts['ID'])));
         $atts['alt'] = ($attachment_alt) ? $attachment_alt : $post_title;
       }
