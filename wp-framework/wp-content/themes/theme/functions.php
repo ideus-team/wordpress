@@ -1,4 +1,9 @@
 <?php
+// Content Width (http://codex.wordpress.org/Content_Width)
+if (!isset($content_width)) {
+	$content_width = 500;
+}
+
 add_action('after_setup_theme', 'nc_setup');
 function nc_setup() {
   remove_action('wp_head', 'wp_generator');
