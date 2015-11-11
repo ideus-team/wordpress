@@ -20,8 +20,8 @@ require WPMU_PLUGIN_DIR.'/nc-functions/domainfix.php';
 // Mobile Detect
 require WPMU_PLUGIN_DIR.'/nc-functions/mobile_detect.php';
 
-// Navigation
-require WPMU_PLUGIN_DIR.'/nc-functions/navigation.php';
+// Alternative Walkers
+require WPMU_PLUGIN_DIR.'/nc-functions/walkers.php';
 
 // Pagination
 require WPMU_PLUGIN_DIR.'/nc-functions/pagination.php';
