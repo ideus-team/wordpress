@@ -62,9 +62,8 @@ class nc_Walker_Nav_Menu extends Walker {
 // Walker for wp_list_pages
 class nc_Walker_List_Pages extends Walker_Page {
   function start_lvl( &$output, $depth = 0, $args = array() ) {
-    extract($args, EXTR_SKIP);
     $indent = str_repeat("\t", $depth);
-    $output .= "\n$indent<ul class=\"".$nc_block_name."__submenu children\">\n";
+    $output .= "\n$indent<ul class=\"".$args['nc_block_name']."__submenu children\">\n";
   }
 
 	function start_el( &$output, $page, $depth = 0, $args = array(), $current_page = 0 ) {
@@ -74,7 +73,7 @@ class nc_Walker_List_Pages extends Walker_Page {
 			$indent = '';
 		}
 
-		$css_class = array( $nc_block_name.'__item', 'page_item', 'page-item-' . $page->ID );
+		$css_class = array( $args['nc_block_name'].'__item', 'page_item', 'page-item-' . $page->ID );
 
 		if ( isset( $args['pages_with_children'][ $page->ID ] ) ) {
 			$css_class[] = 'page_item_has_children';
@@ -106,7 +105,7 @@ class nc_Walker_List_Pages extends Walker_Page {
 
 		/** This filter is documented in wp-includes/post-template.php */
 		$output .= $indent . sprintf(
-			'<li class="%s"><a class="'.$nc_block_name.'__link" href="%s">%s%s%s</a>',
+			'<li class="%s"><a class="'.$args['nc_block_name'].'__link" href="%s">%s%s%s</a>',
 			$css_classes,
 			get_permalink( $page->ID ),
 			$args['link_before'],
