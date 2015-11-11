@@ -60,7 +60,7 @@ class nc_Walker_Nav_Menu extends Walker {
 }
 
 // Walker for wp_list_pages
-class nc_Walker_List_Pages extends Walker_Page {
+class nc_Walker_Page extends Walker_Page {
   function start_lvl( &$output, $depth = 0, $args = array() ) {
     $indent = str_repeat("\t", $depth);
     $output .= "\n$indent<ul class=\"".$args['nc_block_name']."__submenu children\">\n";
