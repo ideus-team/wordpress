@@ -14,9 +14,6 @@ require WPMU_PLUGIN_DIR.'/nc-functions/admin-cookie.php';
 // body-class
 require WPMU_PLUGIN_DIR.'/nc-functions/body-class.php';
 
-// domainfix
-require WPMU_PLUGIN_DIR.'/nc-functions/domainfix.php';
-
 // Mobile Detect
 require WPMU_PLUGIN_DIR.'/nc-functions/mobile_detect.php';
 
