@@ -16,7 +16,7 @@ function nc_taxonomy_blog() {
     'add_new_item'      => 'Add New Category',
     'new_item_name'     => 'New Category Name',
     'menu_name'         => 'Categories'
-  ); 
+  );
   $args = array(
     'labels'            => $labels,
     'public'            => true,

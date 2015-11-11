@@ -11,7 +11,7 @@ function nc_body_class($classes) {
   if ($slug) {
     $classes[] = '-page_'.$slug;
   }
-  
-	return $classes;
+
+  return $classes;
 }
 ?>
