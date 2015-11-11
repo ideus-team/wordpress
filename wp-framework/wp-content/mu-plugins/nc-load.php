@@ -8,10 +8,10 @@ Version:
 Author URI: http://ideus.biz
 */
 
-// Admin cookie
-require WPMU_PLUGIN_DIR.'/nc-functions/admin-cookie.php';
+// Cookie Change
+require WPMU_PLUGIN_DIR.'/nc-functions/cookie.php';
 
-// body-class
+// Modify body-class
 require WPMU_PLUGIN_DIR.'/nc-functions/body-class.php';
 
 // Mobile Detect
