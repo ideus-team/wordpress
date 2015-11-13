@@ -45,7 +45,7 @@ function nc_register_metabox() {
     'type' => 'text',
   ));
 
-  $demo_group = $demo->add_field( array(
+  $demo_group = $demo->add_field(array(
     'name'        => 'Links',
     'id'          => $prefix . 'group',
     'type'        => 'group',
