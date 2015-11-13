@@ -16,7 +16,7 @@ switch (nc_device()) {
 }
 ?>
 <!doctype html>
-<html class="-device_<?php echo nc_device(); ?> no-js" <?php language_attributes(); ?>>
+<html class="l-html -device_<?php echo nc_device(); ?> no-js" <?php language_attributes(); ?>>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -44,7 +44,7 @@ switch (nc_device()) {
   <?php wp_head(); ?>
   <?php get_template_part('tpl/scripts', 'header'); ?>
 </head>
-<body <?php body_class('-page_lang_en'); ?>>
+<body <?php body_class('l-body'); ?>>
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
