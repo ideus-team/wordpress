@@ -8,6 +8,10 @@ if (file_exists(WPMU_PLUGIN_DIR.'/nc-lib/CMB2/init.php')) {
   require_once WPMU_PLUGIN_DIR.'/nc-lib/CMB2/init.php';
 }
 
+function nc_get_prefix() {
+  $prefix = '_nc_';
+  return $prefix;
+}
 
 /**
  * More examples in nc-lib/CMB2/example-functions.php
@@ -15,9 +19,7 @@ if (file_exists(WPMU_PLUGIN_DIR.'/nc-lib/CMB2/init.php')) {
 /*
 add_action('cmb2_init', 'nc_register_metabox');
 function nc_register_metabox() {
-
-  // Start with an underscore to hide fields from custom fields list
-  $prefix = '_nc_';
+  $prefix = nc_get_prefix();
 
   $demo = new_cmb2_box(array(
     'id'            => $prefix . 'metabox',
