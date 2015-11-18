@@ -17,8 +17,8 @@ function nc_get_prefix() {
  * More examples in nc-lib/CMB2/example-functions.php
  */
 /*
-add_action('cmb2_init', 'nc_register_metabox');
-function nc_register_metabox() {
+add_action('cmb2_init', 'nc_metabox_demo');
+function nc_metabox_demo() {
   $prefix = nc_get_prefix();
 
   $demo = new_cmb2_box(array(
