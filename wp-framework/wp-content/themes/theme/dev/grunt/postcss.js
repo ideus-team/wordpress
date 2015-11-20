@@ -28,6 +28,7 @@ module.exports = {
   dist: {
     files: {
       '<%= destMinCSS %>' : '<%= destCSS %>',
+      '<%= destEditorMinCSS %>' : '<%= destEditorCSS %>',
     },
   },
 };
