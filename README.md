@@ -1,6 +1,6 @@
 # Заготовки и лайфхаки для Wordpress
 
-##Установка
+## Установка
 1. Скачиваем с офсайта архив голого Wordpress и заливаем его в новый пустой проект
 2. Удаляем:
  - `wp-content/plugins/hello.php`
@@ -19,7 +19,6 @@
 
 ## Вспомогательная информация
 
-* Готовый функционал
 * [Необходимые плагины](https://github.com/ideus-team/wordpress/blob/master/info/plugins.md)
 * [Смена домена на сайте](https://github.com/veloper/WordPress-Domain-Changer)
 * [Полезная информация](https://github.com/ideus-team/wordpress/blob/master/info/info.md)
