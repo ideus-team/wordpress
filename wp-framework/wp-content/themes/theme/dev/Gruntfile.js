@@ -31,8 +31,9 @@ module.exports = function(grunt) {
       // Compile:
         // Source:
           // CSS
-          sourceCSSDir   : 'src/sass',
-          sourceCSSFiles : '<%= sourceCSSDir %>' + '/**/*.scss',
+          sourceCSSDir    : 'src/sass',
+          sourceCSSFiles  : '<%= sourceCSSDir %>' + '/**/*.scss',
+          sourceCSSBase64 : '<%= sourceCSSDir %>' + '/_base64.scss',
 
           // JS
           sourceJSPlugins : [
@@ -49,8 +50,9 @@ module.exports = function(grunt) {
           ],
 
           // IMG
-          sourceIMGDir        : 'src/img',
-          sourceIMGFiles      : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif}',
+          sourceIMGDir      : 'src/img',
+          sourceIMGFiles    : '<%= sourceIMGDir %>' + '/**/*.{png,jpg,gif}',
+          sourceBase64Files : '<%= sourceIMGDir %>' + '/base64/*.{png,jpg,gif}',
 
         // Destination:
           // CSS
@@ -59,9 +61,6 @@ module.exports = function(grunt) {
           destMinCSSExt : '.min.css',
           destCSS       : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
           destMinCSS    : '<%= destCSSDir %>' + '/main' + '<%= destMinCSSExt %>',
-
-          destEditorCSS    : '<%= destCSSDir %>' + '/editor-style' + '<%= destCSSExt %>',
-          destEditorMinCSS : '<%= destCSSDir %>' + '/editor-style' + '<%= destMinCSSExt %>',
 
           // JS
           destJSDir  : '../assets/js',
