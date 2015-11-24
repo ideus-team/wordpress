@@ -63,6 +63,9 @@ module.exports = function(grunt) {
           destCSS       : '<%= destCSSDir %>' + '/main' + '<%= destCSSExt %>',
           destMinCSS    : '<%= destCSSDir %>' + '/main' + '<%= destMinCSSExt %>',
 
+          destEditorCSS    : '<%= destCSSDir %>' + '/editor-style' + '<%= destCSSExt %>',
+          destEditorMinCSS : '<%= destCSSDir %>' + '/editor-style' + '<%= destMinCSSExt %>',
+
           // JS
           destJSDir  : '../assets/js',
           destJS     : '<%= destJSDir %>'  + '/scripts.js',
