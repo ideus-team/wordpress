@@ -16,11 +16,17 @@ function nc_setup() {
   //remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
   //remove_action('wp_head', 'rel_canonical');
 
-  /*
-   * Switches default core markup for search form, comment form,
-   * and comments to output valid HTML5.
-   */
-  add_theme_support('html5', array('search-form', 'comment-form', 'comment-list'));
+  // This feature enables plugins and themes to manage the document title tag. This should be used in place of wp_title() function.
+  add_theme_support('title-tag');
+
+  // This feature allows the use of HTML5 markup for the search forms, comment forms, comment lists, gallery, and caption.
+  add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
+
+  // This feature enables Post Thumbnails support for a Theme.
+  add_theme_support('post-thumbnails', array('post', 'page'));
+
+  // This feature enables Post Formats support for a Theme.
+  //add_theme_support('post-formats', array('aside', 'gallery'));
 
   // Styles for editor
   add_editor_style('assets/css/editor-style.min.css');
@@ -30,12 +36,6 @@ function nc_setup() {
     'header'  => 'Navigation Top Menu',
     'footer'  => 'Navigation Bottom Menu'
   ));
-
-  /*
-   * This theme uses a custom image size for featured images, displayed on
-   * "standard" posts and pages.
-   */
-  add_theme_support('post-thumbnails');
 }
 
 // Styles

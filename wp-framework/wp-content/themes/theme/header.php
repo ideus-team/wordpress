@@ -21,8 +21,6 @@ switch (nc_device()) {
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title><?php wp_title('::', true, 'right'); ?><?php bloginfo('name'); ?></title>
-
   <!-- <meta property="og:image" content="<?php echo $BASE_URL; ?>/img/userfiles/og-image.png" /> -->
 
   <meta name="viewport" content="width=<?php echo $viewportMeta; ?>" />
