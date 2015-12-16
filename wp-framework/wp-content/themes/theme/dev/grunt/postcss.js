@@ -20,7 +20,8 @@ module.exports = {
       }),
 
       require('cssnano')({
-        convertValues: false
+        convertValues: false,
+        zindex: false,
       }), // minify the result
     ],
   },
@@ -28,7 +29,6 @@ module.exports = {
   main: {
     files: {
       '<%= destMinCSS %>' : '<%= destCSS %>',
-      '<%= destEditorMinCSS %>' : '<%= destEditorCSS %>',
     },
   },
 };
