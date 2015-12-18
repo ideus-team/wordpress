@@ -29,6 +29,7 @@ module.exports = {
   main: {
     files: {
       '<%= destMinCSS %>' : '<%= destCSS %>',
+      '<%= destEditorMinCSS %>' : '<%= destEditorCSS %>',
     },
   },
 };
