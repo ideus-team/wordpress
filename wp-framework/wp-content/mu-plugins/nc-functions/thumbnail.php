@@ -9,6 +9,7 @@ function nc_thumbnail($args = array()) {
   $atts['height']    = isset($args['height'])    ? '&amp;h='.$args['height']         : '';
   $atts['alignment'] = isset($args['alignment']) ? '&amp;a='.$args['alignment']      : '';
   $atts['crop']      = isset($args['crop'])      ? '&amp;zc='.$args['crop']          : '';
+  $atts['filters']   = isset($args['filters'])   ? '&amp;f='.$args['filters']        : '';
 
   $atts['link']      = isset($args['link'])      ? trim($args['link'])               : '';
   $atts['linkClass'] = isset($args['linkClass']) ? $args['linkClass']                : '';
@@ -33,7 +34,7 @@ function nc_thumbnail($args = array()) {
     }
   }
 
-  $thumb_url = get_site_url(null, '/thumb/?src='.$atts['src'].$atts['width'].$atts['height'].$atts['alignment'].$atts['crop']);
+  $thumb_url = get_site_url(null, '/thumb/?src='.$atts['src'].$atts['width'].$atts['height'].$atts['alignment'].$atts['crop'].$atts['filters']);
   $result = '<img'.$atts['class'].' src="'.$thumb_url.'" alt="'.$atts['alt'].'" />';
 
   $atts['link'] = (!$atts['link'] && $atts['linkClass']) ? $atts['src'] : $atts['link'];
