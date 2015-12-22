@@ -19,12 +19,13 @@ function nc_pagenavi($args = array()) {
   $a['total'] = $max;
   $a['current'] = $current;
 
-  $total = 0; //1 - выводить текст "Страница N из N", 0 - не выводить
-  $a['mid_size'] = 1; //сколько ссылок показывать слева и справа от текущей
-  $a['end_size'] = 3; //сколько ссылок показывать в начале и в конце
-  $a['prev_text'] = '←'; //текст ссылки "Предыдущая страница"
-  $a['next_text'] = '→'; //текст ссылки "Следующая страница"
-  $a['type'] = 'array'; //Формат возвращаемых данных
+  $found = true; // Show "Found N"
+  $total = true; // Show "Page N of N"
+  $a['mid_size'] = 1;
+  $a['end_size'] = 3;
+  $a['prev_text'] = '←';
+  $a['next_text'] = '→';
+  $a['type'] = 'array';
   $class = 'b-pagination';
 
   $search = array(
@@ -32,21 +33,23 @@ function nc_pagenavi($args = array()) {
     'prev',
     'next',
     'dots',
-    'current'
+    'current',
+    '/page/1/'
   );
   $replace = array(
     $class.'__link',
     '-type_prev',
     '-type_next',
     '-type_dots',
-    '-state_current'
+    '-state_current',
+    ''
   );
 
   if ($max > 1) {
     $pages .= '<div class="'.$class.'">'."\r";
-    //$pages .= '<span class="'.$class.'__total">Found '.$query->found_posts.'</span>'."\r";
 
-    if ($total == 1) $pages .= '<span class="'.$class.'__pages">Page '.$current.' of '.$max.'</span>'."\r";
+    if ($found) $pages .= '<span class="'.$class.'__total">Found '.$query->found_posts.'</span>'."\r";
+    if ($total) $pages .= '<span class="'.$class.'__pages">Page '.$current.' of '.$max.'</span>'."\r";
 
     $pages .= '<ul class="'.$class.'__list">'."\r";
     $paginationList = str_replace($search, $replace, paginate_links($a));
