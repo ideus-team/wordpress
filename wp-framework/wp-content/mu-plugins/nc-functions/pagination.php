@@ -1,5 +1,5 @@
 <?php
-// Pagination (http://dimox.name/wordpress-pagination-without-a-plugin/)
+// Pagination
 function nc_pagenavi($args = array()) {
   global $wp_query, $wp_rewrite;
 
@@ -56,6 +56,49 @@ function nc_pagenavi($args = array()) {
     foreach ($paginationList as $value) {
       $pages .= '<li class="'.$class.'__item">'.$value.'</li>'."\r";
     }
+    $pages .= '</ul>'."\r";
+
+    $pages .= '</div>';
+  }
+
+  if ($args['echo']) {
+    echo $pages;
+  } else {
+    return $pages;
+  }
+}
+
+// Page Navigation
+function nc_pageNav($args = array()) {
+  global $wp_query, $wp_rewrite;
+
+  $args = wp_parse_args(
+    $args, array(
+      'query' => $wp_query,
+      'echo'  => true,
+    )
+  );
+
+  $query = $args['query'];
+
+  $pages = '';
+  $max = $query->max_num_pages;
+
+  $class = 'b-pageNav';
+  $next = 'Older Entries';
+  $prev = 'Newer Entrie';
+
+  if ($max > 1) {
+    $pages .= '<div class="'.$class.'">'."\r";
+
+    $pages .= '<ul class="'.$class.'__list">'."\r";
+
+    $nextLink = get_next_posts_link($next, $max);
+    $prevLink = get_previous_posts_link($prev);
+
+    if ($nextLink) $pages .= '<li class="'.$class.'__item -type_old">'.$nextLink.'</li>'."\r";
+    if ($prevLink) $pages .= '<li class="'.$class.'__item -type_new">'.$prevLink.'</li>'."\r";
+
     $pages .= '</ul>'."\r";
 
     $pages .= '</div>';

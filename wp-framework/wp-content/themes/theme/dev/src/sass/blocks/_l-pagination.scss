@@ -1,8 +1,6 @@
 /**
 * @section pagination
 */
-.l-pagination {
-}
 .b-pagination {
 
   &__total {}
@@ -24,5 +22,35 @@
     &.-type_next {}
     &.-type_dots {}
     &.-state_current {}
+  }
+}
+
+
+/**
+* @section pageNav
+*/
+.b-pageNav {
+  @include clearfix;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: block;
+
+    &.-type_old {
+      float: left;
+    }
+
+    &.-type_new {
+      float: right;
+    }
+
+    a {
+    
+    }
   }
 }
