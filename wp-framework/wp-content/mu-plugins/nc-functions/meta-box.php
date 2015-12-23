@@ -21,7 +21,7 @@ add_action('cmb2_init', 'nc_metabox_demo');
 function nc_metabox_demo() {
   $prefix = nc_get_prefix();
 
-  $demo = new_cmb2_box(array(
+  $cmb = new_cmb2_box(array(
     'id'            => $prefix . 'metabox',
     'title'         => __( 'Test Metabox', 'cmb2' ),
     'object_types'  => array( 'page', ), // Post type
@@ -33,21 +33,21 @@ function nc_metabox_demo() {
     // 'closed'     => true, // true to keep the metabox closed by default
   ));
 
-  $demo->add_field(array(
+  $cmb->add_field(array(
     'name' => 'Text 1',
     'desc' => 'field description (optional)',
     'id'   => $prefix . 'text1',
     'type' => 'text',
   ));
 
-  $demo->add_field(array(
+  $cmb->add_field(array(
     'name' => 'Text 2',
     'desc' => 'field description (optional)',
     'id'   => $prefix . 'text2',
     'type' => 'text',
   ));
 
-  $demo_group = $demo->add_field(array(
+  $cmb_group = $cmb->add_field(array(
     'name'        => 'Links',
     'id'          => $prefix . 'group',
     'type'        => 'group',
@@ -60,7 +60,7 @@ function nc_metabox_demo() {
     ),
   ));
 
-  $demo->add_group_field($demo_group, array(
+  $cmb->add_group_field($cmb_group, array(
     'name' => 'Text',
     'desc' => '',
     'id'   => 'text',
