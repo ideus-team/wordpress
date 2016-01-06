@@ -51,8 +51,8 @@ switch (nc_device()) {
       <div class="b-siteHeader">
         <div class="l-siteLogo">
           <?php
-            $siteLogo__iconURL = get_template_directory_uri().'/assets/img/blocks/l-siteLogo/l-siteLogo-logo.png';
-            //$siteLogo__iconURL = (nc_device()=='mobile') ? get_template_directory_uri().'/assets/img/blocks/l-siteLogo/l-siteLogo-logo-mobile.png' : get_template_directory_uri().'/img/blocks/l-siteLogo/l-siteLogo-logo.png';
+            $siteLogo__iconURL = get_template_directory_uri().'/assets/img/blocks/siteLogo/siteLogo-logo.png';
+            //$siteLogo__iconURL = (nc_device()=='mobile') ? get_template_directory_uri().'/assets/img/blocks/siteLogo/siteLogo-logo-mobile.png' : get_template_directory_uri().'/img/blocks/siteLogo/siteLogo-logo.png';
             $siteLogo__tag  = (is_front_page() && !is_paged()) ? 'h1' : 'div';
             $siteLogo__link = (is_front_page() && !is_paged()) ? '' : ' href="'.site_url('/').'"';
           ?>
