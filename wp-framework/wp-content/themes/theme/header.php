@@ -43,9 +43,10 @@ switch (nc_device()) {
   <?php get_template_part('tpl/scripts', 'header'); ?>
 </head>
 <body <?php body_class('l-body'); ?>>
-  <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+
   <div class="l-wrapper">
     <header class="l-siteHeader" role="banner">
       <div class="b-siteHeader">
