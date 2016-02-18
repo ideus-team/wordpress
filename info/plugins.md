@@ -39,3 +39,4 @@
 ## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
+* [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
