@@ -1,7 +1,6 @@
 language: php
 
 php:
-    - 5.2
     - 5.3
     - 5.4
     - 5.5
@@ -18,10 +17,6 @@ env:
 matrix:
   fast_finish: true
   allow_failures:
-    - env: WP_VERSION=latest WP_MULTISITE=0
-      php: nightly
-    - env: WP_VERSION=latest WP_MULTISITE=1
-      php: nightly
     - env: WP_VERSION=3.8 WP_MULTISITE=0
       php: nightly
     - env: WP_VERSION=3.8 WP_MULTISITE=1

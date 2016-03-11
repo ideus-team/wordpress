@@ -91,13 +91,13 @@ class Test_CMB2_Field extends Test_CMB2 {
 	public function test_cmb2_row_classes_field_callback_with_array() {
 		// Add row classes dynamically with a callback that returns an array
 		$classes = $this->field->row_classes();
-		$this->assertEquals( 'cmb-type-text cmb2-id-test-test table-layout type name desc before after options_cb options attributes protocols default select_all_button multiple repeatable inline on_front show_names date_format time_format description preview_size render_row_cb label_cb id before_field after_field row_classes _id _name', $classes );
+		$this->assertEquals( 'cmb-type-text cmb2-id-test-test table-layout type name desc before after options_cb options attributes protocols default select_all_button multiple repeatable inline on_front show_names date_format time_format description preview_size render_row_cb label_cb id before_field after_field row_classes _id _name has_supporting_data', $classes );
 	}
 
 	public function test_cmb2_default_field_callback_with_array() {
 		// Add row classes dynamically with a callback that returns an array
 		$default = $this->field->args( 'default' );
-		$this->assertEquals( 'type, name, desc, before, after, options_cb, options, attributes, protocols, default, select_all_button, multiple, repeatable, inline, on_front, show_names, date_format, time_format, description, preview_size, render_row_cb, label_cb, id, before_field, after_field, row_classes, _id, _name', $default );
+		$this->assertEquals( 'type, name, desc, before, after, options_cb, options, attributes, protocols, default, select_all_button, multiple, repeatable, inline, on_front, show_names, date_format, time_format, description, preview_size, render_row_cb, label_cb, id, before_field, after_field, row_classes, _id, _name, has_supporting_data', $default );
 	}
 
 	public function test_cmb2_row_classes_field_callback_with_string() {
@@ -160,6 +160,55 @@ class Test_CMB2_Field extends Test_CMB2 {
 		$field->args['show_on_cb'] = '__return_true';
 
 		$this->assertTrue( $field->should_show() );
+	}
+
+	public function test_filtering_field_type_sanitization_filtering() {
+		$field = new CMB2_Field( array(
+			'object_id' => $this->object_id,
+			'object_type' => $this->object_type,
+			'field_args' => $this->field_args,
+		) );
+
+		add_filter( 'cmb2_sanitize_text', array( $this, '_return_different_value' ) );
+		$modified = $field->save_field( 'some value to be modified' );
+		$this->assertTrue( !! $modified );
+		remove_filter( 'cmb2_sanitize_text', array( $this, '_return_different_value' ) );
+
+		// $val = $field->get_data();
+		$val = get_post_meta( $this->object_id, 'test_test', 1 );
+		$this->assertEquals( 'modified string', $val );
+		$this->assertEquals( $val, $field->get_data() );
+	}
+	public function _return_different_value( $null ) {
+		return 'modified string';
+	}
+
+	/**
+	 * @expectedException WPDieException
+	 */
+	public function test_cmb2_save_field_action() {
+		$field = new CMB2_Field( array(
+			'object_id' => $this->object_id,
+			'object_type' => $this->object_type,
+			'field_args' => $this->field_args,
+		) );
+
+		$this->hook_to_wp_die( 'cmb2_save_field' );
+		$modified = $field->save_field( 'some value to be modified' );
+	}
+
+	/**
+	 * @expectedException WPDieException
+	 */
+	public function test_cmb2_save_field_field_id_action() {
+		$field = new CMB2_Field( array(
+			'object_id' => $this->object_id,
+			'object_type' => $this->object_type,
+			'field_args' => $this->field_args,
+		) );
+
+		$this->hook_to_wp_die( 'cmb2_save_field_test_test' );
+		$modified = $field->save_field( 'some value to be modified' );
 	}
 
 	public function test_empty_field_with_empty_object_id() {

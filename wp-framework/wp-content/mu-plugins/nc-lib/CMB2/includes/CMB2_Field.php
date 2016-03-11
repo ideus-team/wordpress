@@ -80,6 +80,13 @@ class CMB2_Field {
 	protected $callback_results = array();
 
 	/**
+	 * Array of key => value data for saving. Likely $_POST data.
+	 * @var   array
+	 * @since 2.0.0
+	 */
+	public $data_to_save = array();
+
+	/**
 	 * Constructs our field object
 	 * @since 1.1.0
 	 * @param array $args Field arguments
@@ -416,9 +423,31 @@ class CMB2_Field {
 			return call_user_func( $cb, $meta_value, $this->args(), $this );
 		}
 
-		$clean = new CMB2_Sanitize( $this, $meta_value );
-		// Validation via 'CMB2_Sanitize' (with fallback filter)
-		return $clean->{$this->type()}();
+		$sanitizer = new CMB2_Sanitize( $this, $meta_value );
+
+		/**
+		 * Filter the value before it is saved.
+		 *
+		 * The dynamic portion of the hook name, $this->type(), refers to the field type.
+		 *
+		 * Passing a non-null value to the filter will short-circuit saving
+		 * the field value, saving the passed value instead.
+		 *
+		 * @param bool|mixed $override_value Sanitization/Validation override value to return.
+		 *                                   Default false to skip it.
+		 * @param mixed      $value      The value to be saved to this field.
+		 * @param int        $object_id  The ID of the object where the value will be saved
+		 * @param array      $field_args The current field's arguments
+		 * @param object     $sanitizer  This `CMB2_Sanitize` object
+		 */
+		$override_value = apply_filters( "cmb2_sanitize_{$this->type()}", null, $sanitizer->value, $this->object_id, $this->args(), $sanitizer );
+
+		if ( null !== $override_value ) {
+			return $override_value;
+		}
+
+		// Sanitization via 'CMB2_Sanitize'
+		return $sanitizer->{$this->type()}();
 	}
 
 	/**
@@ -427,10 +456,11 @@ class CMB2_Field {
 	 * @param  array $data_to_save $_POST data to check
 	 * @return bool                Result of save
 	 */
-	public function save_field_from_data( $data_to_save ) {
+	public function save_field_from_data( array $data_to_save ) {
+		$this->data_to_save = $data_to_save;
 
-		$meta_value = isset( $data_to_save[ $this->id( true ) ] )
-			? $data_to_save[ $this->id( true ) ]
+		$meta_value = isset( $this->data_to_save[ $this->id( true ) ] )
+			? $this->data_to_save[ $this->id( true ) ]
 			: null;
 
 		return $this->save_field( $meta_value );
@@ -447,6 +477,7 @@ class CMB2_Field {
 		$new_value = $this->sanitization_cb( $meta_value );
 		$old       = $this->get_data();
 		$updated   = false;
+		$action    = '';
 
 		if ( $this->args( 'multiple' ) && ! $this->args( 'repeatable' ) && ! $this->group ) {
 
@@ -462,12 +493,47 @@ class CMB2_Field {
 			}
 
 			$updated = $count ? $count : false;
+			$action  = 'repeatable';
 
 		} elseif ( ! cmb2_utils()->isempty( $new_value ) && $new_value !== $old ) {
 			$updated = $this->update_data( $new_value );
+			$action  = 'updated';
 		} elseif ( cmb2_utils()->isempty( $new_value ) ) {
 			$updated = $this->remove_data();
+			$action  = 'removed';
 		}
+
+		if ( $updated ) {
+			$this->value = $this->get_data();
+		}
+
+		$field_id = $this->id( true );
+
+		/**
+		 * Hooks after save field action.
+		 *
+		 * @since 2.2.0
+		 *
+		 * @param string            $field_id the current field id paramater.
+		 * @param bool              $updated  Whether the metadata update action occurred.
+		 * @param string            $action   Action performed. Could be "repeatable", "updated", or "removed".
+		 * @param CMB2_Field object $field    This field object
+		 */
+		do_action( 'cmb2_save_field', $field_id, $updated, $action, $this );
+
+		/**
+		 * Hooks after save field action.
+		 *
+		 * The dynamic portion of the hook, $field_id, refers to the
+		 * current field id paramater.
+		 *
+		 * @since 2.2.0
+		 *
+		 * @param bool              $updated Whether the metadata update action occurred.
+		 * @param string            $action  Action performed. Could be "repeatable", "updated", or "removed".
+		 * @param CMB2_Field object $field   This field object
+		 */
+		do_action( "cmb2_save_field_{$field_id}", $updated, $action, $this );
 
 		return $updated;
 	}
@@ -664,6 +730,16 @@ class CMB2_Field {
 		return is_array( $meta_value )
 			? array_map( array( $this, 'format_timestamp' ), $meta_value, $format )
 			: $this->format_timestamp( $meta_value, $format );
+	}
+
+	/**
+	 * Get timestamp from text date
+	 * @since  2.2.0
+	 * @param  string $value Date value
+	 * @return mixed         Unix timestamp representing the date.
+	 */
+	public function get_timestamp_from_value( $value ) {
+		return cmb2_utils()->get_timestamp_from_value( $value, $this->args( 'date_format' ) );
 	}
 
 	/**
@@ -941,7 +1017,6 @@ class CMB2_Field {
 
 		// Allow a filter override of the default value
 		$args['default']    = apply_filters( 'cmb2_default_filter', $args['default'], $this );
-		// $args['multiple']   = isset( $args['multiple'] ) ? $args['multiple'] : ( 'multicheck' == $args['type'] ? true : false );
 		$args['repeatable'] = $args['repeatable'] && ! $this->repeatable_exception( $args['type'] );
 		$args['inline']     = $args['inline'] || false !== stripos( $args['type'], '_inline' );
 
@@ -974,15 +1049,26 @@ class CMB2_Field {
 
 		if ( in_array( $args['type'], $option_types, true ) ) {
 
-			$args['show_option_none'] = isset( $args['show_option_none'] ) ? $args['show_option_none'] : false;
+			$args['show_option_none'] = isset( $args['show_option_none'] ) ? $args['show_option_none'] : null;
 			$args['show_option_none'] = true === $args['show_option_none'] ? __( 'None', 'cmb2' ) : $args['show_option_none'];
 
-			if ( ! $args['show_option_none'] ) {
+			if ( null === $args['show_option_none'] ) {
 				$off_by_default = in_array( $args['type'], array( 'select', 'radio', 'radio_inline' ), true );
 				$args['show_option_none'] = $off_by_default ? false : __( 'None', 'cmb2' );
 			}
 
 		}
+
+		$args['has_supporting_data'] = in_array(
+			$args['type'],
+			array(
+				// CMB2_Sanitize::_save_file_id_value()/CMB2_Sanitize::_get_group_file_value_array()
+				'file',
+				// See CMB2_Sanitize::_save_utc_value()
+				'text_datetime_timestamp_timezone',
+			),
+			true
+		);
 
 		return $args;
 	}
