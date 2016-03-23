@@ -14,3 +14,11 @@ define( 'FTP_PASS', 'password' );
 define( 'FTP_HOST', 'ftp.example.org' );
 define( 'FTP_SSL', false );
 ```
+
+## Смена префикса у таблиц
+
+Если после изменения префикса у таблиц не удаётся залогиниться в админку поможет следующее решение:
+```sql
+UPDATE `{%TABLE_PREFIX%}usermeta` SET `meta_key` = replace(`meta_key`, '{%OLD_TABLE_PREFIX%}', '{%NEW_TABLE_PREFIX%}');
+UPDATE `{%TABLE_PREFIX%}options` SET `option_name` = replace(`option_name`, '{%OLD_TABLE_PREFIX%}', '{%NEW_TABLE_PREFIX%}');
+```
