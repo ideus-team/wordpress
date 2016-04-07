@@ -22,8 +22,8 @@ function nc_thumbnail($args = array()) {
   if (empty($atts['src'])) {
     if (has_post_thumbnail($atts['ID'])) {
       $attachment_id = get_post_thumbnail_id($atts['ID']);
-      $image_array = wp_get_attachment_image_src($attachment_id, 'full');
-      $atts['src'] = $image_array[0];
+      $atts['src'] = wp_get_attachment_image_url($attachment_id, 'full');
+
       if (empty($atts['alt'])) {
         $attachment_alt = esc_attr(strip_tags(get_post_meta($attachment_id, '_wp_attachment_image_alt', true)));
         $post_title = esc_attr(strip_tags(get_the_title($atts['ID'])));
@@ -34,7 +34,11 @@ function nc_thumbnail($args = array()) {
     }
   }
 
-  $thumb_url = get_site_url(null, '/thumb/?src='.$atts['src'].$atts['width'].$atts['height'].$atts['alignment'].$atts['crop'].$atts['filters']);
+  if ($atts['width'] || $atts['height']) {
+    $thumb_url = get_site_url(null, '/thumb/?src='.$atts['src'].$atts['width'].$atts['height'].$atts['alignment'].$atts['crop'].$atts['filters']);
+  } else {
+    $thumb_url = $atts['src'];
+  }
   $result = '<img'.$atts['class'].' src="'.$thumb_url.'" alt="'.$atts['alt'].'" />';
 
   $atts['link'] = (!$atts['link'] && $atts['linkClass']) ? $atts['src'] : $atts['link'];
