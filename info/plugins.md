@@ -26,6 +26,7 @@
 
 ## Мультиязычность
 
+* [Polylang] (https://wordpress.org/plugins/polylang/) - бесплатный аналог WPML
 * [MultilingualPress] (https://wordpress.org/plugins/multilingual-press/) - плагин для мультиязычности, основанный на мультисайтовости
 
 ## Разработка
