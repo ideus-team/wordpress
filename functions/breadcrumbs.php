@@ -1,5 +1,5 @@
 <?php
-function dimox_breadcrumbs() {
+function nc_breadcrumbs() {
   /* === ОПЦИИ === */
   $text['home'] = 'Home'; // текст ссылки "Главная"
   $text['category'] = ' "%s" Category Archive'; // текст для страницы рубрики
@@ -25,6 +25,14 @@ function dimox_breadcrumbs() {
   $link = $link_before . '<a class="b-breadcrumbs__link"' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
   $parent_id = $parent_id_2 = $post->post_parent;
   $frontpage_id = get_option('page_on_front');
+
+  if ( get_query_var('paged') ) {
+    $pageNum = __('Page') . ' ' . get_query_var('paged');
+    if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) {
+      $pageNum = '(' . $pageNum . ')';
+    }
+    $after = ' ' . $pageNum . $after;
+  }
 
   if (is_home() || is_front_page()) {
 
@@ -148,13 +156,7 @@ function dimox_breadcrumbs() {
       echo $before . $text['404'] . $after;
     }
 
-    if ( get_query_var('paged') ) {
-      if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-      echo __('Page') . ' ' . get_query_var('paged');
-      if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
-    }
-
     echo '</ul><!-- .breadcrumbs -->';
 
   }
-} // end dimox_breadcrumbs()
+}
