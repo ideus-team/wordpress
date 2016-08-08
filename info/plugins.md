@@ -34,6 +34,7 @@
 * [Adminer](https://wordpress.org/plugins/adminer/) — просмотр и редактирование MySQL, аналог phpMyAdmin
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
+* [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
 
 ## WooCommerce
 * [WooCommerce Poor Guys Swiss Knife](https://wordpress.org/plugins/woocommerce-poor-guys-swiss-knife/) — настройка checkout-форм
