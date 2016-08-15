@@ -1,5 +1,5 @@
 <?php
-// Get page by slug with Polylang support
+// Get page URL by slug with Polylang support
 function nc_page_link($slug) {
   $find_page = get_page_by_path($slug);
 
