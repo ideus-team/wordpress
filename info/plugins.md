@@ -2,7 +2,7 @@
 
 ## Обязательно к установке
 
-* ~~[Cyr to Lat enhanced](https://wordpress.org/plugins/cyr3lat/) — конвертация кирилицы, европейских и грузинских символов в латиницу при загрузке файлов и создании slug'ов.~~ При использовании wp-framework устанавливать не нужно.
+* [Cyr to Lat enhanced](https://wordpress.org/plugins/cyr3lat/) — конвертация кирилицы, европейских и грузинских символов в латиницу при загрузке файлов и создании slug'ов. **При использовании wp-framework устанавливать не нужно.**
 
 ## Разработка
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
