@@ -12,7 +12,9 @@ while (have_posts()) {
     'number'       => 1,
   ) );
 
-  $first = $pages[0];
-  wp_redirect(get_permalink($first->ID));
+  if ($pages) {
+    $first = $pages[0];
+    wp_redirect(get_permalink($first->ID));
+  }
 }
 ?>
