@@ -14,6 +14,7 @@
 ## Формы
 
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) — многофункциональный плагин для создания и управления формами обратной связи
+  * [contact form 7 pdf extension](https://wordpress.org/plugins/contact-form-pdf-extension/) — расширение для Contact Form 7, позволяет отправлять данные формы в виде аттача в формате PDF
 * [User Frontend](https://wordpress.org/plugins/user-frontend/) — вынос во фронтенд регистрации, авторизации, восстановления пароля и смены регистрационных данных
 
 ## Cоцсети
@@ -35,7 +36,7 @@
 
 * [Polylang] (https://wordpress.org/plugins/polylang/) - бесплатный аналог WPML
 * [MultilingualPress] (https://wordpress.org/plugins/multilingual-press/) - плагин для мультиязычности, основанный на мультисайтовости
-  * [Polylang Theme Strings] (https://wordpress.org/plugins/polylang-theme-strings/) - Расширение для Polylang для перевода строк в файлах темы
+  * [Polylang Theme Strings] (https://wordpress.org/plugins/polylang-theme-strings/) - расширение для Polylang для перевода строк в файлах темы
 
 ## WooCommerce
 * [WooCommerce Poor Guys Swiss Knife](https://wordpress.org/plugins/woocommerce-poor-guys-swiss-knife/) — настройка checkout-форм
