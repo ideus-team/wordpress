@@ -14,7 +14,6 @@
 
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) — многофункциональный плагин для создания и управления формами обратной связи
   * [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — расширение для Contact Form 7, позволяет отправлять данные формы в виде аттача в формате PDF
-* [User Frontend](https://wordpress.org/plugins/user-frontend/) — вынос во фронтенд регистрации, авторизации, восстановления пароля и смены регистрационных данных
 
 ## Cоцсети
 
