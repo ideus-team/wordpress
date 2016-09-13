@@ -6,7 +6,6 @@
 
 ## Разработка
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
-* [Adminer](https://wordpress.org/plugins/adminer/) — просмотр и редактирование MySQL, аналог phpMyAdmin
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
