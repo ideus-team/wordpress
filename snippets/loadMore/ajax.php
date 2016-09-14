@@ -10,7 +10,6 @@ function loadMore_callback() {
 
   $result = array(
     'offset'  => $args['offset'],
-    'count'   => $args['count'],
     'content' => '',
   );
 
