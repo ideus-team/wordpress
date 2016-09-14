@@ -6,7 +6,6 @@
 
 ## Разработка
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
-* [Adminer](https://wordpress.org/plugins/adminer/) — просмотр и редактирование MySQL, аналог phpMyAdmin
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
@@ -14,7 +13,7 @@
 ## Формы
 
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) — многофункциональный плагин для создания и управления формами обратной связи
-* [User Frontend](https://wordpress.org/plugins/user-frontend/) — вынос во фронтенд регистрации, авторизации, восстановления пароля и смены регистрационных данных
+  * [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — расширение для Contact Form 7, позволяет отправлять данные формы в виде аттача в формате PDF
 
 ## Cоцсети
 
@@ -35,7 +34,7 @@
 
 * [Polylang] (https://wordpress.org/plugins/polylang/) - бесплатный аналог WPML
 * [MultilingualPress] (https://wordpress.org/plugins/multilingual-press/) - плагин для мультиязычности, основанный на мультисайтовости
-  * [Polylang Theme Strings] (https://wordpress.org/plugins/polylang-theme-strings/) - Расширение для Polylang для перевода строк в файлах темы
+  * [Polylang Theme Strings] (https://wordpress.org/plugins/polylang-theme-strings/) - расширение для Polylang для перевода строк в файлах темы
 
 ## WooCommerce
 * [WooCommerce Poor Guys Swiss Knife](https://wordpress.org/plugins/woocommerce-poor-guys-swiss-knife/) — настройка checkout-форм
