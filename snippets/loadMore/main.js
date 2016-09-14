@@ -21,7 +21,7 @@ function loadMore(){
       success: function(result){
         content.append(result.content);
 
-        if (result.offset < result.found) {
+        if (result.offset < result.total) {
           button.data('offset', result.offset);
         } else {
           button.remove();

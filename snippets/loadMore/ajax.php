@@ -21,7 +21,7 @@ function loadMore_callback() {
     'offset'         => $args['offset'],
   ));
 
-  $result['found'] = $query->found_posts;
+  $result['total'] = $query->found_posts;
 
   while ($query->have_posts()) {
     $query->the_post();
