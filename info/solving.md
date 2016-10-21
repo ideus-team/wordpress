@@ -25,7 +25,7 @@ UPDATE `{%TABLE_PREFIX%}options` SET `option_name` = replace(`option_name`, '{%O
 
 ## Смена домена на сайте
 
-* Добавить в `functions.php` следующие строки:
+* Добавить в `wp-config.php` следующие строки:
 ```php
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
 define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
