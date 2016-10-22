@@ -25,6 +25,7 @@ UPDATE `{%TABLE_PREFIX%}options` SET `option_name` = replace(`option_name`, '{%O
 
 ## Смена домена на сайте
 
+* Если происходит перенос файлов на другой сервер, то **сперва перенести файлы**
 * Добавить в `wp-config.php` следующие строки:
 ```php
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
