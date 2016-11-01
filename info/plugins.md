@@ -28,7 +28,6 @@
 ## Редактирование контента
 
 * [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) — шаблоны для TinyMCE
-* [Shortcodes Ultimate](https://wordpress.org/plugins/shortcodes-ultimate/) — большой набор всевозможных шорткодов
 
 ## Мультиязычность
 
@@ -41,6 +40,9 @@
 
 ## Внешний вид
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
+
+## Внешний вид админки
+* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
 
 ## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
