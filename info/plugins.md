@@ -32,8 +32,8 @@
 ## Мультиязычность
 
 * [Polylang] (https://wordpress.org/plugins/polylang/) - бесплатный аналог WPML
-* [MultilingualPress] (https://wordpress.org/plugins/multilingual-press/) - плагин для мультиязычности, основанный на мультисайтовости
   * [Polylang Theme Strings] (https://wordpress.org/plugins/polylang-theme-strings/) - расширение для Polylang для перевода строк в файлах темы
+* [MultilingualPress] (https://wordpress.org/plugins/multilingual-press/) - плагин для мультиязычности, основанный на мультисайтовости
 
 ## WooCommerce
 * [WooCommerce Poor Guys Swiss Knife](https://wordpress.org/plugins/woocommerce-poor-guys-swiss-knife/) — настройка checkout-форм
