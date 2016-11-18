@@ -13,6 +13,8 @@
 ## Формы
 
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) — многофункциональный плагин для создания и управления формами обратной связи
+  * [Contact Form 7 Modules](https://wordpress.org/plugins/contact-form-7-modules/) — Add useful modules such as hidden fields and "send all fields" to the Contact Form 7
+  * [Form to Post](https://wordpress.org/plugins/form-to-post/) — создание постов/страниц при отправке формы
   * [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — расширение для Contact Form 7, позволяет отправлять данные формы в виде аттача в формате PDF
 
 ## Cоцсети
