@@ -19,7 +19,7 @@
 
 ## Cоцсети
 
-* [Share Buttons by AddToAny](https://wordpress.org/plugins/add-to-any/) — кнопки шаринга
+* [AddToAny Share Buttons](https://wordpress.org/plugins/add-to-any/) — кнопки шаринга
 * [WP Open Graph](https://wordpress.org/plugins/wp-open-graph/) — автогенерация тегов Open Graph
 * [Instagram Slider Widget](https://wordpress.org/plugins/instagram-slider-widget/) — Instagram виджет
 
