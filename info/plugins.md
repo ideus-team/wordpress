@@ -24,6 +24,10 @@
 * [WP Open Graph](https://wordpress.org/plugins/wp-open-graph/) — автогенерация тегов Open Graph
 * [Instagram Slider Widget](https://wordpress.org/plugins/instagram-slider-widget/) — Instagram виджет
 
+## SEO
+
+* [	All In One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/) — Заголовки/meta-теги и прочее
+
 ## Импорт/экспорт данных
 
 * [Import Users from CSV](https://wordpress.org/plugins/import-users-from-csv/) — импорт пользователей из CSV в Wordpress
