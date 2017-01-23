@@ -2,9 +2,10 @@
 
 ## Изображения
 Разовая ручная оптимизация всех изображений в uploads и теме при помощи [Image Catalyst](https://github.com/lorents17/iCatalyst) со следующими настройками:
-PNG — Xtreme
-JPG — Progressive
-GIF — Default
+
+* **PNG** — Xtreme
+* **JPG** — Progressive
+* **GIF** — Default
 
 После этого требуется установка [WP Smush](https://wordpress.org/plugins/wp-smushit/), он оптимизирует изображения прямо при загрузке, но делает это не так хорошо как вышеуказынный пакет утилит.
 
@@ -34,4 +35,5 @@ GIF — Default
 
 ## Серверное кеширование
 При помощи плагина [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/)
-Обязательно включить опцию *Clear all cache files when a post or page is published or updated.* на вкладке *Advanced*
+
+Обязательно включить опцию **Clear all cache files when a post or page is published or updated** на вкладке **Advanced**
