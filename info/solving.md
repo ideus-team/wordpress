@@ -34,3 +34,6 @@ define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
 * Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД
 
 * Удалить строки, добавленные в пункте #1
+
+## Конвертация БД utf8mb4/utf8mb4_unicode_ci → utf8/utf8_general_ci
+Для быстрой смены кодировки БД в случае переноса на сервер, не поддерживающий utf8mb4, следует воспользоваться готовым скриптом, предварительно положив его в корень сайта, открыв в браузере и указав доступы к нужной БД: https://github.com/ideus-team/wordpress/blob/master/other/db-convert.php
