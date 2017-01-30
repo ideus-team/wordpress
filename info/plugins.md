@@ -56,6 +56,7 @@
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
 
 ## Разное
+* [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) — для переключения сайта на SSL нужен только сертификат и этот плагин
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функция wp_mail() будет использоватть SMTP вместо mail()
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
