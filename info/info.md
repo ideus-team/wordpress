@@ -17,3 +17,14 @@ YEAR_IN_SECONDS   = 365 * DAY_IN_SECONDS
 ```sql
 DELETE p,m,r FROM st_posts p LEFT JOIN st_postmeta m ON (p.ID = m.post_id) LEFT JOIN st_term_relationships r ON (p.ID = r.object_id) WHERE p.post_type = 'revision';
 ```
+
+## Contact Form 7
+
+Необходимо добавить эту константу в `wp-config.php`
+```php
+/**
+ * Когда значение константы false (по умолчанию true), Contact Form 7 не будет пропускать контент формы через фильтр autop.
+ * Данный фильтр заменяет двойной перенос строки на HTML конструкцию <p>...</p>, а одинарный на <br>.
+ */
+define ('WPCF7_AUTOP', false);
+```
