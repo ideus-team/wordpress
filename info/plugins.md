@@ -55,13 +55,13 @@
 ## Внешний вид
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
 
-## Внешний вид админки
-* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
-
-## Разное
+## Модификации админки и WP
 * [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) — для переключения сайта на SSL нужен только сертификат и этот плагин
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функция wp_mail() будет использоватть SMTP вместо mail()
+* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
+* [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
+
+## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
 * [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
-* [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
