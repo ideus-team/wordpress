@@ -16,7 +16,7 @@
 * [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
 
 ## Безопасность
-* [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Secure your website with the most comprehensive WordPress security plugin. Firewall, malware scan, blocking, live traffic, login security & more.
+* [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Anti-virus, Firewall and Malware Scan
 
 ## Формы
 
