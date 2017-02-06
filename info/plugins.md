@@ -15,6 +15,9 @@
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
 * [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
 
+## Безопасность
+* [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Secure your website with the most comprehensive WordPress security plugin. Firewall, malware scan, blocking, live traffic, login security & more.
+
 ## Формы
 
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) — многофункциональный плагин для создания и управления формами обратной связи
