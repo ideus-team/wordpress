@@ -1,4 +1,4 @@
-# Заготовки и лайфхаки для Wordpress
+# Информация по работе с Wordpress
 
 ## WP-framework
 * https://github.com/ideus-team/wp-framework
