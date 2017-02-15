@@ -8,7 +8,15 @@
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
+* [Debug Bar](https://ru.wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
+  * [Debug Bar Constants](https://ru.wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
+  * [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) — Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
+  * [… и другие дополнения к Debug Bar](https://wordpress.org/plugins/search.php?q=Debug+Bar)
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
+* [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
+
+## Безопасность
+* [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Anti-virus, Firewall and Malware Scan
 
 ## Формы
 
@@ -22,6 +30,10 @@
 * [AddToAny Share Buttons](https://wordpress.org/plugins/add-to-any/) — кнопки шаринга
 * [WP Open Graph](https://wordpress.org/plugins/wp-open-graph/) — автогенерация тегов Open Graph
 * [Instagram Slider Widget](https://wordpress.org/plugins/instagram-slider-widget/) — Instagram виджет
+
+## SEO
+
+* [	All In One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/) — Заголовки/meta-теги и прочее
 
 ## Импорт/экспорт данных
 
@@ -43,12 +55,13 @@
 ## Внешний вид
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
 
-## Внешний вид админки
+## Модификации админки и WP
+* [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) — для переключения сайта на SSL нужен только сертификат и этот плагин
+* [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функция wp_mail() будет использоватть SMTP вместо mail()
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
+* [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
 
 ## Разное
-* [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функция wp_mail() будет использоватть SMTP вместо mail()
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
 * [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
-* [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
