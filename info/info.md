@@ -20,7 +20,7 @@ DELETE p,m,r FROM wp_posts p LEFT JOIN wp_postmeta m ON (p.ID = m.post_id) LEFT 
 
 ## Contact Form 7
 
-Необходимо добавить эту константу в `wp-config.php`
+При установке этого плагина желательно добавить эту константу в `wp-config.php`
 ```php
 /**
  * Когда значение константы false (по умолчанию true), Contact Form 7 не будет пропускать контент формы через фильтр autop.
