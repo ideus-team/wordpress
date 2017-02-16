@@ -61,6 +61,12 @@
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
 * [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
 
+## Производительность
+* [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/) — минификация и склейка CSS, JS, минификация HTML
+* [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
+* [Smush Image Compression and Optimization](https://wordpress.org/plugins/wp-smushit/) — оптимизация изображений
+* [WP-Sweep](https://wordpress.org/plugins/wp-sweep/) — чистка БД от мусора
+
 ## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
