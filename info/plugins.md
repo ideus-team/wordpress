@@ -14,6 +14,10 @@
   * [… и другие дополнения к Debug Bar](https://wordpress.org/plugins/search.php?q=Debug+Bar)
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
 * [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
+* [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) — просмотр и управление крон задачами WordPress
+
+## Безопасность
+* [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Anti-virus, Firewall and Malware Scan
 
 ## Формы
 
@@ -52,13 +56,19 @@
 ## Внешний вид
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
 
-## Внешний вид админки
-* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
-
-## Разное
+## Модификации админки и WP
 * [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) — для переключения сайта на SSL нужен только сертификат и этот плагин
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функция wp_mail() будет использоватть SMTP вместо mail()
+* [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
+* [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
+
+## Производительность
+* [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/) — минификация и склейка CSS, JS, минификация HTML
+* [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
+* [Smush Image Compression and Optimization](https://wordpress.org/plugins/wp-smushit/) — оптимизация изображений
+* [WP-Sweep](https://wordpress.org/plugins/wp-sweep/) — чистка БД от мусора
+
+## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
 * [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
-* [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости

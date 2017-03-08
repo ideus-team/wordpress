@@ -14,6 +14,7 @@ define( 'FTP_PASS', 'password' );
 define( 'FTP_HOST', 'ftp.example.org' );
 define( 'FTP_SSL', false );
 ```
+Если доступ к файлам сайта происходит по SFTP-протоколу, то следует также установить плагин [SSH SFTP Updater Support](https://wordpress.org/plugins/ssh-sftp-updater-support/)
 
 ## Смена префикса у таблиц
 
@@ -25,7 +26,7 @@ UPDATE `{%TABLE_PREFIX%}options` SET `option_name` = replace(`option_name`, '{%O
 
 ## Смена домена на сайте
 
-* Если происходит перенос файлов на другой сервер, то **сперва перенести файлы**
+* В случае переноса сайта на другой сервер следует **сперва перенести файлы**
 * Добавить в `wp-config.php` следующие строки:
 ```php
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
