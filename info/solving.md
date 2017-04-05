@@ -1,5 +1,22 @@
 # Решение проблем
 
+* [Смена домена на сайте](#Смена-домена-на-сайте)
+* [Обновление WP и плагинов из админки](#Обновление-wp-и-плагинов-из-админки)
+* [Смена префикса у таблиц](#Смена-префикса-у-таблиц)
+* [Решение проблемы с utf8mb4](#Решение-проблемы-с-utf8mb4)
+
+## Смена домена на сайте
+
+* В случае переноса сайта на другой сервер следует **сперва перенести файлы**
+* Добавить в `wp-config.php` следующие строки:
+```php
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
+```
+* Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД
+
+* Удалить строки, добавленные в пункте #1
+
 ## Обновление WP и плагинов из админки
 
 Проблему с обновлением WP и плагинов в случае, если он требует указывать вручную FTP-доступы, можно решить, прописав их в `wp-config.php` в следующем виде:
@@ -24,17 +41,5 @@ UPDATE `{%TABLE_PREFIX%}usermeta` SET `meta_key` = replace(`meta_key`, '{%OLD_TA
 UPDATE `{%TABLE_PREFIX%}options` SET `option_name` = replace(`option_name`, '{%OLD_TABLE_PREFIX%}', '{%NEW_TABLE_PREFIX%}');
 ```
 
-## Смена домена на сайте
-
-* В случае переноса сайта на другой сервер следует **сперва перенести файлы**
-* Добавить в `wp-config.php` следующие строки:
-```php
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
-```
-* Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД
-
-* Удалить строки, добавленные в пункте #1
-
-## Конвертация БД utf8mb4/utf8mb4_unicode_ci → utf8/utf8_general_ci
+## Решение проблемы с utf8mb4
 Для быстрой смены кодировки БД в случае переноса на сервер, не поддерживающий utf8mb4, следует воспользоваться готовым скриптом, предварительно положив его в корень сайта, открыв в браузере и указав доступы к нужной БД: https://github.com/ideus-team/wordpress/blob/master/other/db-convert.php
