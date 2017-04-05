@@ -1,5 +1,19 @@
 # Используемые плагины
 
+* [Обязательно к установке](#Обязательно-к-установке)
+* [Разработка](#Разработка)
+* [Безопасность](#Безопасность)
+* [Формы](#Формы)
+* [Соцсети](#Соцсети)
+* [SEO](#seo)
+* [Импорт данных](#Импорт-данных)
+* [Мультиязычность](#Мультиязычность)
+* [WooCommerce](#woocommerce)
+* [Внешний вид](#Внешний-вид)
+* [Модификации админки и WP](#Модификации-админки-и-wp)
+* [Производительность](#Производительность)
+* [Разное](#Разное)
+
 ## Обязательно к установке
 
 * [Cyr to Lat enhanced](https://wordpress.org/plugins/cyr3lat/) — конвертация кирилицы, европейских и грузинских символов в латиницу при загрузке файлов и создании slug'ов. **При использовании wp-framework устанавливать не нужно.**
@@ -28,7 +42,7 @@
   * [Form to Post](https://wordpress.org/plugins/form-to-post/) — создание постов/страниц при отправке формы
   * [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — расширение для Contact Form 7, позволяет отправлять данные формы в виде аттача в формате PDF
 
-## Cоцсети
+## Соцсети
 
 * [AddToAny Share Buttons](https://wordpress.org/plugins/add-to-any/) — кнопки шаринга
 * [WP Open Graph](https://wordpress.org/plugins/wp-open-graph/) — автогенерация тегов Open Graph
@@ -38,13 +52,9 @@
 
 * [	All In One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/) — Заголовки/meta-теги и прочее
 
-## Импорт/экспорт данных
+## Импорт данных
 
 * [Import Users from CSV](https://wordpress.org/plugins/import-users-from-csv/) — импорт пользователей из CSV в Wordpress
-
-## Редактирование контента
-
-* [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) — шаблоны для TinyMCE
 
 ## Мультиязычность
 
@@ -63,6 +73,7 @@
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функция wp_mail() будет использоватть SMTP вместо mail()
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
 * [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
+* [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) — шаблоны для TinyMCE
 
 ## Производительность
 * [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/) — минификация и склейка CSS, JS, минификация HTML
