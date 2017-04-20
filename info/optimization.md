@@ -38,19 +38,21 @@
 
 ## Включение браузерного кеширования
 ```
+## Add Expires headers ##
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType image/jpg "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/pdf "access plus 1 month"
-  ExpiresByType text/x-javascript "access plus 1 month"
-  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+  ExpiresDefault "access plus 1 month"
   ExpiresByType image/x-icon "access plus 1 year"
-  ExpiresDefault "access plus 2 days"
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpg "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
 </IfModule>
+## Add Expires headers ##
 ```
 
 ## Минификация и склейка CSS, JS, минификация HTML
