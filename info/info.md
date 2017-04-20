@@ -26,5 +26,5 @@ DELETE p,m,r FROM wp_posts p LEFT JOIN wp_postmeta m ON (p.ID = m.post_id) LEFT 
  * Когда значение константы false (по умолчанию true), Contact Form 7 не будет пропускать контент формы через фильтр autop.
  * Данный фильтр заменяет двойной перенос строки на HTML конструкцию <p>...</p>, а одинарный на <br>.
  */
-define ('WPCF7_AUTOP', false);
+define('WPCF7_AUTOP', false);
 ```
