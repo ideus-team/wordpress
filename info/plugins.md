@@ -38,6 +38,7 @@
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) — многофункциональный плагин для создания и управления формами обратной связи
   * [Contact Form 7 Modules](https://wordpress.org/plugins/contact-form-7-modules/) — Add useful modules such as hidden fields and "send all fields" to the Contact Form 7
   * [Flamingo](https://wordpress.org/plugins/flamingo/) — сохранение всех сообщений, отправленных через Contact Form 7, в удобном виде в админке
+  * [Contact Form 7 Polylang Module] (https://wordpress.org/plugins/cf7-polylang/) — переводим формы Contact Form 7 при помощи Polylang
   * [Contact form 7 Custom validation](https://wordpress.org/plugins/cf7-field-validation/) — кастомные ошибки валидации для обязательных полей
   * [Form to Post](https://wordpress.org/plugins/form-to-post/) — создание постов/страниц при отправке формы
   * [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — расширение для Contact Form 7, позволяет отправлять данные формы в виде аттача в формате PDF
@@ -59,8 +60,9 @@
 ## Мультиязычность
 
 * [Polylang] (https://wordpress.org/plugins/polylang/) - бесплатный аналог WPML
-  * [Polylang Theme Strings] (https://wordpress.org/plugins/polylang-theme-strings/) - расширение для Polylang для перевода строк в файлах темы
-* [MultilingualPress] (https://wordpress.org/plugins/multilingual-press/) - плагин для мультиязычности, основанный на мультисайтовости
+  * [Polylang Theme Strings] (https://wordpress.org/plugins/polylang-theme-strings/) — расширение для Polylang для перевода строк в файлах темы
+  * [Contact Form 7 Polylang Module] (https://wordpress.org/plugins/cf7-polylang/) — переводим формы Contact Form 7 при помощи Polylang
+* [MultilingualPress] (https://wordpress.org/plugins/multilingual-press/) — плагин для мультиязычности, основанный на мультисайтовости
 
 ## WooCommerce
 * [WooCommerce Poor Guys Swiss Knife](https://wordpress.org/plugins/woocommerce-poor-guys-swiss-knife/) — настройка checkout-форм
