@@ -81,7 +81,7 @@
 * [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/) — минификация и склейка CSS, JS, минификация HTML
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
 * [Smush Image Compression and Optimization](https://wordpress.org/plugins/wp-smushit/) — оптимизация изображений
-* [WP-Sweep](https://wordpress.org/plugins/wp-sweep/) — чистка БД от мусора
+* [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) — чистка БД от мусора
 
 ## Разное
 * [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
