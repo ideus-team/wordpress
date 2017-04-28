@@ -28,3 +28,17 @@ DELETE p,m,r FROM wp_posts p LEFT JOIN wp_postmeta m ON (p.ID = m.post_id) LEFT 
  */
 define('WPCF7_AUTOP', false);
 ```
+## Включение SSL
+
+После покупки SSL-сертификата следует сделать следующее:
+
+1. Установить плагин [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) и активировать в его настройках SSL
+2. Добавить следующий код в `.htaccess`:
+
+```
+# HTTP Strict Transport Security (HSTS)
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+</IfModule>
+# HTTP Strict Transport Security (HSTS)
+```
