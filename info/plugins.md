@@ -80,6 +80,7 @@
 ## Производительность
 * [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/) — минификация и склейка CSS, JS, минификация HTML
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
+  * [WP Super Cache — Clear all cache](https://ru.wordpress.org/plugins/wp-super-cache-clear-cache-menu/) — выводит ссылку на очистку кеша в верхнюю панель
 * [Smush Image Compression and Optimization](https://wordpress.org/plugins/wp-smushit/) — оптимизация изображений
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) — чистка БД от мусора
 
