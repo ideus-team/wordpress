@@ -7,7 +7,7 @@ add_filter( 'wpcf7_validate_tel', 'nc_conditional_required', 10, 2 );
 add_filter( 'wpcf7_validate_tel*', 'nc_conditional_required', 10, 2 );
 add_filter( 'wpcf7_validate_email', 'nc_conditional_required', 10, 2 );
 add_filter( 'wpcf7_validate_email*', 'nc_conditional_required', 10, 2 );
-function nc_conditional_required($result, $tag) {
+function nc_conditional_required( $result, $tag ) {
   $tag = new WPCF7_Shortcode( $tag );
 
   $name = $tag->name;
