@@ -60,10 +60,10 @@
 
 ## Мультиязычность
 
-* [Polylang] (https://wordpress.org/plugins/polylang/) - бесплатный аналог WPML
-  * [Polylang Theme Strings] (https://wordpress.org/plugins/polylang-theme-strings/) — расширение для Polylang для перевода строк в файлах темы
-  * [Contact Form 7 Polylang Module] (https://wordpress.org/plugins/cf7-polylang/) — переводим формы Contact Form 7 при помощи Polylang
-* [MultilingualPress] (https://wordpress.org/plugins/multilingual-press/) — плагин для мультиязычности, основанный на мультисайтовости
+* [Polylang](https://wordpress.org/plugins/polylang/) - бесплатный аналог WPML
+  * [Polylang Theme Strings](https://wordpress.org/plugins/polylang-theme-strings/) — расширение для Polylang для перевода строк в файлах темы
+  * [Contact Form 7 Polylang Module](https://wordpress.org/plugins/cf7-polylang/) — переводим формы Contact Form 7 при помощи Polylang
+* [MultilingualPress](https://wordpress.org/plugins/multilingual-press/) — плагин для мультиязычности, основанный на мультисайтовости
 
 ## WooCommerce
 * [WooCommerce Poor Guys Swiss Knife](https://wordpress.org/plugins/woocommerce-poor-guys-swiss-knife/) — настройка checkout-форм
