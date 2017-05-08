@@ -40,6 +40,7 @@
   * [Flamingo](https://wordpress.org/plugins/flamingo/) — сохранение всех сообщений, отправленных через Contact Form 7, в удобном виде в админке
   * [Contact Form 7 Polylang Module] (https://wordpress.org/plugins/cf7-polylang/) — переводим формы Contact Form 7 при помощи Polylang
   * [Contact form 7 Custom validation](https://wordpress.org/plugins/cf7-field-validation/) — кастомные ошибки валидации для обязательных полей
+  * [Conditional Fields for Contact Form 7](https://wordpress.org/plugins/cf7-conditional-fields/) — условные поля для Contact Form 7
   * [Form to Post](https://wordpress.org/plugins/form-to-post/) — создание постов/страниц при отправке формы
   * [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — расширение для Contact Form 7, позволяет отправлять данные формы в виде аттача в формате PDF
 
