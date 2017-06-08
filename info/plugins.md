@@ -8,7 +8,7 @@
 * [SEO](#seo)
 * [Импорт данных](#Импорт-данных)
 * [Мультиязычность](#Мультиязычность)
-* [WooCommerce](#woocommerce)
+* [eCommerce](#ecommerce)
 * [Внешний вид](#Внешний-вид)
 * [Модификации админки и WP](#Модификации-админки-и-wp)
 * [Производительность](#Производительность)
@@ -67,8 +67,8 @@
   * [Contact Form 7 Polylang Module](https://wordpress.org/plugins/cf7-polylang/) — переводим формы Contact Form 7 при помощи Polylang
 * [MultilingualPress](https://wordpress.org/plugins/multilingual-press/) — плагин для мультиязычности, основанный на мультисайтовости
 
-## WooCommerce
-* [WooCommerce Poor Guys Swiss Knife](https://wordpress.org/plugins/woocommerce-poor-guys-swiss-knife/) — настройка checkout-форм
+## eCommerce
+* [WooCommerce](https://wordpress.org/plugins/woocommerce/) — бесплатный и мощный плагин для eCommerce
 
 ## Внешний вид
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
