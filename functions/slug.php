@@ -2,7 +2,7 @@
 /**
  * Get the page or post slug
  */
-if ( !function_exists('get_the_slug') ) {
+if ( ! function_exists( 'get_the_slug' ) ) {
   function get_the_slug( $post = 0 ) {
     $post = get_post( $post );
 
@@ -18,11 +18,10 @@ if ( !function_exists('get_the_slug') ) {
  *
  * Uses get_the_slug()
  */
-if ( !function_exists('the_slug') ) {
+if ( ! function_exists( 'the_slug' ) ) {
   function the_slug() {
     $slug = get_the_slug();
 
     echo $slug;
   }
 }
-?>

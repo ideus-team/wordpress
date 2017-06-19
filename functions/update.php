@@ -30,7 +30,6 @@ add_filter( 'automatic_updates_send_debug_email', '__return_true' );
 add_filter( 'auto_core_update_email', 'nc_override_update_email', 1 );
 add_filter( 'automatic_updates_debug_email', 'nc_override_update_email', 1 );
 function nc_override_update_email( $email ) {
-  $email['to'] = 'wordpress@net-craft.com';
+  $email['to'] = 'wordpress@ideus.biz';
   return $email;
 }
-?>
