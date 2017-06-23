@@ -54,7 +54,7 @@
 
 ## SEO
 
-* [	All In One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/) — Заголовки/meta-теги и прочее
+* [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) — Заголовки/meta-теги и прочее
 
 ## Импорт данных
 
