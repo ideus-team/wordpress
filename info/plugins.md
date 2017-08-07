@@ -23,6 +23,7 @@
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — простое и удобное управление метабоксами
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
+* [Page Template Dashboard](https://wordpress.org/plugins/page-template-dashboard/) — отображает название файла шаблона в дополнительной колонке напротив каждой страницы в списке
 * [Debug Bar](https://ru.wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
   * [Debug Bar Constants](https://ru.wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
   * [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) — Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
