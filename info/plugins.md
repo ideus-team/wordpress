@@ -70,6 +70,7 @@
 
 ## eCommerce
 * [WooCommerce](https://wordpress.org/plugins/woocommerce/) — бесплатный и мощный плагин для eCommerce
+  * [WooCommerce Advanced Free Shipping](https://wordpress.org/plugins/woocommerce-advanced-free-shipping/) — you can setup your own advanced rules to determine when a free shipping rate should be available for the customer
 
 ## Внешний вид
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
