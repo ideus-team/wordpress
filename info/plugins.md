@@ -23,6 +23,7 @@
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — простое и удобное управление метабоксами
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
+* [Page Template Dashboard](https://wordpress.org/plugins/page-template-dashboard/) — отображает название файла шаблона в дополнительной колонке напротив каждой страницы в списке
 * [Debug Bar](https://ru.wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
   * [Debug Bar Constants](https://ru.wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
   * [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) — Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
@@ -54,7 +55,7 @@
 
 ## SEO
 
-* [	All In One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/) — Заголовки/meta-теги и прочее
+* [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) — Заголовки/meta-теги и прочее
 
 ## Импорт данных
 
@@ -69,9 +70,11 @@
 
 ## eCommerce
 * [WooCommerce](https://wordpress.org/plugins/woocommerce/) — бесплатный и мощный плагин для eCommerce
+  * [WooCommerce Advanced Free Shipping](https://wordpress.org/plugins/woocommerce-advanced-free-shipping/) — you can setup your own advanced rules to determine when a free shipping rate should be available for the customer
 
 ## Внешний вид
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
+* [Fluid Video Embeds](https://wordpress.org/plugins/fluid-video-embeds/) - This plugin modifies the built-in Vimeo and YouTube oEmbed auto-embeds so they are full-width, and flexible while maintaining their original aspect ratio.
 
 ## Модификации админки и WP
 * [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) — для переключения сайта на SSL нужен только сертификат и этот плагин
