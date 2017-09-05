@@ -11,8 +11,8 @@
 * В случае переноса сайта на другой сервер следует **сперва перенести файлы**
 * Добавить в `wp-config.php` следующие строки:
 ```php
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
+define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );
+define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 ```
 * Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД
 
@@ -51,5 +51,5 @@ UPDATE `{%TABLE_PREFIX%}options` SET `option_name` = replace(`option_name`, '{%O
 
 Для решения проблемы нужно создать папку `temp` в корне сайта и добавить в `wp-config.php` следующую строку:
 ```php
-define('WP_TEMP_DIR', dirname(__FILE__) . '/temp/');
+define( 'WP_TEMP_DIR', dirname(__FILE__) . '/temp/' );
 ```
