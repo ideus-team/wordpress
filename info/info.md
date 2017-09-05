@@ -37,17 +37,22 @@ define( 'WPCF7_AUTOP', false );
 ## Включение SSL
 
 После покупки SSL-сертификата следует сделать следующее:
-
+16070400
 1. Установить плагин [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) и активировать в его настройках SSL
-2. Добавить следующий код в `.htaccess`:
+2. Желательно добавить следующий код в `.htaccess`:
 
 ```
 # HTTP Strict Transport Security (HSTS)
 <IfModule mod_headers.c>
-  Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+  Header always set Strict-Transport-Security "max-age=expireTime; includeSubDomains"
 </IfModule>
 # HTTP Strict Transport Security (HSTS)
 ```
+где:
+
+`expireTime` — (например 2592000) время в секундах, на которое браузер должен запомнить, что данный сайт должен посещаться исключительно по HTTPS
+
+`includeSubdomains` - (опционально) если указать этот необязательный параметр, правила так же применятся ко всем поддоменам. 
 
 ## Работа с AJAX
 
