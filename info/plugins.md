@@ -56,6 +56,7 @@
 ## SEO
 
 * [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) — Заголовки/meta-теги и прочее
+* [All in One SEO](https://wordpress.org/plugins/all-in-one-seo-pack/) — аналог Yoast SEO, позволяющий указывать keywords в бесплатной версии
 
 ## Импорт данных
 
