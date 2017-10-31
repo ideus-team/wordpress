@@ -1,4 +1,7 @@
 <?php
+/*
+ * Modify search result for category search
+ */
 add_action( 'pre_get_posts', 'nc_search_filter' );
 function nc_search_filter( $query ) {
   $cat = sanitize_text_field( $_GET['cat'] );

@@ -1,5 +1,7 @@
 <?php
-// Lang Switch for Polylang
+/*
+ * Lang switcher for Polylang
+ */
 ?>
 <?php if ( function_exists( 'pll_the_languages' ) ): ?>
   <?php

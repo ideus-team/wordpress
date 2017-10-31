@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Get the page or post slug
  */
 if ( ! function_exists( 'get_the_slug' ) ) {
@@ -13,7 +13,7 @@ if ( ! function_exists( 'get_the_slug' ) ) {
   }
 }
 
-/**
+/*
  * Display the page or post slug
  *
  * Uses get_the_slug()

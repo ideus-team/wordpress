@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Modify except
  */
 function nc_excerpt( $num_words = 25, $more = '… →' ) {

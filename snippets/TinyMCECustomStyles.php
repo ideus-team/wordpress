@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * TinyMCE Custom Styles
  */
 add_filter( 'mce_buttons_2', 'nc_mce_buttons' );
@@ -11,7 +11,7 @@ function nc_mce_buttons( $buttons ) {
 
 add_filter( 'tiny_mce_before_init', 'nc_mce_insert_formats' );
 function nc_mce_insert_formats( $init_array ) {
-  $style_formats               = array(
+  $style_formats = array(
     array(
       'title'   => 'Quote',
       'inline'  => 'span',

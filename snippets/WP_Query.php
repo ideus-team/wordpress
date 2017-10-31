@@ -1,4 +1,7 @@
 <?php
+/*
+ * WP_Query example
+ */
 $query = new WP_Query( array(
   'post_type'      => 'post',
   'orderby'        => 'date',

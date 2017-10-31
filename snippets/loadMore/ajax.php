@@ -1,5 +1,7 @@
 <?php
-// Обрабатываем AJAX-запрос типа loadMore
+/*
+ * Обрабатываем AJAX-запрос типа loadMore
+ */
 add_action( 'wp_ajax_loadMore', 'loadMore_callback' );
 add_action( 'wp_ajax_nopriv_loadMore', 'loadMore_callback' );
 function loadMore_callback() {
