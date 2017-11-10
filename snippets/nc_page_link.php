@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Get page URL by slug with Polylang support
  */
 function nc_page_link( $slug ) {

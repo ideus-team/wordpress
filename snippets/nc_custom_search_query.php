@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Custom search query
  */
 add_filter( 'posts_where' , 'nc_custom_search_query', 1 , 2 );

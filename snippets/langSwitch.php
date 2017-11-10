@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Lang switcher for Polylang
  */
 ?>

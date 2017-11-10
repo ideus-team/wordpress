@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * TinyMCE Custom Styles
  */
 add_filter( 'mce_buttons_2', 'nc_mce_buttons' );

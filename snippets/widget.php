@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Create blank widget
  */
 add_action( 'widgets_init', 'nc_register_widgets' );

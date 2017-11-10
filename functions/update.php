@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Filters for WP update
  */
 

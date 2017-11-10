@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Get YouTube Video ID
  * Source: http://code.runnable.com/VUpjz28i-V4jETgo/get-youtube-video-id-from-url-for-php
  */

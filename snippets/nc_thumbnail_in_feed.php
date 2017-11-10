@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Add thumbnail to RSS
  */
 add_filter( 'the_excerpt_rss', 'nc_thumbnail_in_feed' );

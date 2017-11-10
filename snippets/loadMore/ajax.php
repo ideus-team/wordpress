@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Обрабатываем AJAX-запрос типа loadMore
  */
 add_action( 'wp_ajax_loadMore', 'loadMore_callback' );

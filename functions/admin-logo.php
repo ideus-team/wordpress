@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Add own logo to login page
  */
 add_action( 'login_enqueue_scripts', 'nc_admin_logo' );

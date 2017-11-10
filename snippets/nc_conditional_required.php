@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Conditional Required Contact Form 7 Fields
  * Source: http://second-cup-of-coffee.com/conditional-required-contact-form-7-fields/
  */

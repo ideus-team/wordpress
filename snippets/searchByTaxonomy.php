@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Modify search result for category search
  */
 add_action( 'pre_get_posts', 'nc_search_filter' );

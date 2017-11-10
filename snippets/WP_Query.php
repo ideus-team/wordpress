@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * WP_Query example
  */
 $query = new WP_Query( array(

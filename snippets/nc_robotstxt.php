@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Add rules to robots.txt
  */
 add_filter( 'robots_txt', 'nc_robotstxt' );
