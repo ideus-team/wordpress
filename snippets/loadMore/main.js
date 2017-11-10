@@ -1,4 +1,4 @@
-function loadMore(){
+function loadMore() {
   var button = $('.js-posts__more');
   var content = button.closest('.js-posts').find('.js-posts__content');
 

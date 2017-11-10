@@ -1,7 +1,7 @@
 <?php
-/**
+/*
  * Get YouTube Video ID
- * Link: http://code.runnable.com/VUpjz28i-V4jETgo/get-youtube-video-id-from-url-for-php
+ * Source: http://code.runnable.com/VUpjz28i-V4jETgo/get-youtube-video-id-from-url-for-php
  */
 function nc_get_youtube_id( $url ) {
   $video_id = false;
