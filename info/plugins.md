@@ -85,6 +85,9 @@
 * [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
 * [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) — шаблоны для TinyMCE
 
+## REST API
+* [REST API Log](https://wordpress.org/plugins/wp-rest-api-log/) — WordPress plugin to log REST API requests and responses (for v2 of the API).
+
 ## Производительность
 * [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/) — минификация и склейка CSS, JS, минификация HTML
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
