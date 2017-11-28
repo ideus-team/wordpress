@@ -1,30 +1,35 @@
 function loadMore() {
-  var button = $('.js-posts__more');
-  var content = button.closest('.js-posts').find('.js-posts__content');
+  var button = $('.js-loadMore');
 
   button.on('click', function(e){
     e.preventDefault();
 
-    button = $(this);
-    var offset = button.data('offset');
-    var count  = button.data('count');
+    var button = $(this);
+    var container = $( button.data('container') );
+
+    var postdata = {
+      'post_type' : button.data('post_type'),
+      'offset'    : button.data('offset'),
+      'count'     : button.data('count'),
+    };
 
     $.ajax({
       type: 'POST',
       url: ncVar.ajaxurl,
       data: {
-        'count'  : count,
-        'offset' : offset,
-        'action' : 'loadMore',
+        'postdata' : postdata,
+        'action'   : 'ncLoadMore',
       },
       dataType: 'json',
       success: function(result){
-        content.append(result.content);
+        if ( result.success == true ) {
+          container.append( result.data.content );
 
-        if (result.offset < result.total) {
-          button.data('offset', result.offset);
-        } else {
-          button.remove();
+          if ( result.data.offset < result.data.total ) {
+            button.data( 'offset', result.data.offset );
+          } else {
+            button.remove();
+          }
         }
       }
     });
