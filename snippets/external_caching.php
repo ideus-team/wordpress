@@ -20,7 +20,7 @@ function nc_download_external_all() {
   nc_download_external( array(
     array (
       'url'      => 'https://ssl.google-analytics.com/ga.js',
-      'filename' => 'analytics.js',
+      'filename' => 'ga.js',
     ),
   ) );
 }
