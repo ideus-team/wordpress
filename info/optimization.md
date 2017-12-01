@@ -13,7 +13,7 @@
 * **JPG** — Progressive
 * **GIF** — Default
 
-После этого требуется установка [Smush Image Compression and Optimization](https://wordpress.org/plugins/wp-smushit/), он оптимизирует изображения прямо при загрузке, но делает это не так хорошо как вышеуказынный пакет утилит.
+После этого требуется установка [EWWW Image Optimizer](https://ru.wordpress.org/plugins/ewww-image-optimizer/), он оптимизирует изображения прямо при загрузке.
 
 ## Включение gzip-компрессии
 ```
