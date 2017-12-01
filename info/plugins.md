@@ -93,7 +93,7 @@
 * [Minify HTML](https://wordpress.org/plugins/minify-html-markup/) — минификация HTML
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
   * [WP Super Cache — Clear all cache](https://ru.wordpress.org/plugins/wp-super-cache-clear-cache-menu/) — выводит ссылку на очистку кеша в верхнюю панель
-* [Smush Image Compression and Optimization](https://wordpress.org/plugins/wp-smushit/) — оптимизация изображений
+* [EWWW Image Optimizer](https://ru.wordpress.org/plugins/ewww-image-optimizer/) — оптимизация изображений
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) — чистка БД от мусора
 
 ## Разное
