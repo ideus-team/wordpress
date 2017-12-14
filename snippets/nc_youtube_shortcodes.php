@@ -1,4 +1,7 @@
 <?php
+/**
+ * Get Youtube playlist
+ */
 add_shortcode( 'nc_playlist', 'nc_playlist_shortcode' );
 function nc_playlist_shortcode( $atts ){
   $atts = shortcode_atts( array(
@@ -40,6 +43,9 @@ function nc_playlist_shortcode( $atts ){
 }
 
 
+/**
+ * Get Youtube video
+ */
 add_shortcode( 'nc_video', 'nc_video_shortcode' );
 function nc_video_shortcode( $atts ){
   $atts = shortcode_atts( array(
