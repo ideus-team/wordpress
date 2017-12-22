@@ -55,7 +55,7 @@ define( 'WPCF7_AUTOP', false );
 ## Работа с AJAX
 
 ```js
-/*
+/**
  * Отправляем AJAX-запрос типа ncAction
  */
 $.ajax({
@@ -74,7 +74,7 @@ $.ajax({
 ```
 
 ```php
-/*
+/**
  * Обрабатываем AJAX-запрос типа ncAction
  */
 add_action( 'wp_ajax_ncAction', 'ncAction_callback' );
