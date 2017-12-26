@@ -15,4 +15,6 @@ function nc_hide_editor() {
   if ( in_array( $template_file, $templates ) ) {
     remove_post_type_support( 'page', 'editor' );
   }
+
+  return true;
 }
