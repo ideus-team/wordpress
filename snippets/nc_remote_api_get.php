@@ -3,7 +3,7 @@
  * Get remote JSON & cache with Transients API
  */
 function nc_remote_api_get( $api_url ) {
-  $api_url_hash = md5( $api_url ) . '_cache';
+  $api_url_hash = 'nc_cache_' . md5( $api_url );
   $cache = get_transient( $api_url_hash );
 
   if ( $cache ) {
