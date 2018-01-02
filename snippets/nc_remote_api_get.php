@@ -1,12 +1,24 @@
 <?php
 /**
- * Get remote JSON
+ * Get remote JSON & cache with Transients API
  */
 function nc_remote_api_get( $api_url ) {
-  $request = wp_remote_get( $api_url );
-  if ( is_wp_error( $request ) ) {
-    return false;
+  $api_url_hash = md5( $api_url ) . '_cache';
+  $cache = get_transient( $api_url_hash );
+
+  if ( $cache ) {
+    $body = $cache;
+  } else {
+    $request = wp_remote_get( $api_url );
+
+    if ( is_wp_error( $request ) ) {
+      return false;
+    }
+
+    $body = wp_remote_retrieve_body( $request );
+
+    set_transient( $api_url_hash, $body, HOUR_IN_SECONDS );
   }
-  $body = wp_remote_retrieve_body( $request );
+
   return json_decode( $body );
 }
