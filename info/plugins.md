@@ -20,6 +20,7 @@
 
 ## Разработка
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
+* [Coming Soon Page & Maintenance Mode by SeedProd](https://ru.wordpress.org/plugins/coming-soon/) — включение страницы Coming Soon для посетителей на время разработки или обслуживания
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — простое и удобное управление метабоксами
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
