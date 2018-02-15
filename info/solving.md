@@ -14,7 +14,7 @@
 define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 ```
-3. Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД
+3. Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД (Tools > Domain Change), после чего сам плагин можно удалить
 4. Удалить строки, добавленные в пункте #2
 
 ## Обновление WP и плагинов из админки
