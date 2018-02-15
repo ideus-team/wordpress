@@ -8,14 +8,14 @@
 
 ## Смена домена на сайте
 
-* В случае переноса сайта на другой сервер следует **сперва перенести файлы**
-* Добавить в `wp-config.php` следующие строки:
+1. В случае переноса сайта на другой сервер следует **сперва перенести файлы**
+2. Добавить в `wp-config.php` следующие строки:
 ```php
 define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 ```
-* Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД
-* Удалить строки, добавленные в пункте #1
+3. Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД
+4. Удалить строки, добавленные в пункте #1
 
 ## Обновление WP и плагинов из админки
 
