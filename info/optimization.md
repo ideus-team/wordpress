@@ -67,4 +67,5 @@
 ## Серверное кеширование
 При помощи плагина [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/)
 
-Обязательно включить опцию **Clear all cache files when a post or page is published or updated** на вкладке **Advanced**
+* Если содержимое сайта часто изменяется, то желательно включить опцию **Clear all cache files when a post or page is published or updated** на вкладке **Advanced**
+* Возможно потребуется переключение **Cache Delivery Method** в режим **Expert**, это также можно сделать на вкладке **Advanced**
