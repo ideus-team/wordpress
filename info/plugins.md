@@ -20,13 +20,13 @@
 
 ## Разработка
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
-* [Coming Soon Page & Maintenance Mode by SeedProd](https://ru.wordpress.org/plugins/coming-soon/) — включение страницы Coming Soon для посетителей на время разработки или обслуживания
+* [Coming Soon Page & Maintenance Mode by SeedProd](https://wordpress.org/plugins/coming-soon/) — включение страницы Coming Soon для посетителей на время разработки или обслуживания
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — простое и удобное управление метабоксами
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
 * [Page Template Dashboard](https://wordpress.org/plugins/page-template-dashboard/) — отображает название файла шаблона в дополнительной колонке напротив каждой страницы в списке
-* [Debug Bar](https://ru.wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
-  * [Debug Bar Constants](https://ru.wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
+* [Debug Bar](https://wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
+  * [Debug Bar Constants](https://wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
   * [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) — Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
   * [… и другие дополнения к Debug Bar](https://wordpress.org/plugins/search.php?q=Debug+Bar)
 * [PHP Compatibility Checker](https://wordpress.org/plugins/php-compatibility-checker/) — проверка совместимости с различными версиями PHP
@@ -95,11 +95,11 @@
 * [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/) — минификация и склейка CSS, JS, минификация HTML
 * [Minify HTML](https://wordpress.org/plugins/minify-html-markup/) — минификация HTML
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
-  * [WP Super Cache — Clear all cache](https://ru.wordpress.org/plugins/wp-super-cache-clear-cache-menu/) — выводит ссылку на очистку кеша в верхнюю панель
-* [EWWW Image Optimizer](https://ru.wordpress.org/plugins/ewww-image-optimizer/) — оптимизация изображений
+  * [WP Super Cache — Clear all cache](https://wordpress.org/plugins/wp-super-cache-clear-cache-menu/) — выводит ссылку на очистку кеша в верхнюю панель
+* [EWWW Image Optimizer](https://wordpress.org/plugins/ewww-image-optimizer/) — оптимизация изображений
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) — чистка БД от мусора
 
 ## Разное
-* [AdRotate](https://wordpress.org/plugins/adrotate/) — баннерная система
+* [AdRotate Banner Manager](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
 * [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
