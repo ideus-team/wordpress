@@ -86,6 +86,7 @@
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
 * [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагин, разрешающий загрузку SVG и заодно вычищающий из файлов возможные уязвимости
 * [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) — шаблоны для TinyMCE
+* [Enhanced Media Library](https://wordpress.org/plugins/enhanced-media-library/) — расширяет возможности медиагалереи: таксономии для медиафайлов, расширенные шорткоды, настройки MIME Types и другое
 
 ## REST API
 * [REST API Log](https://wordpress.org/plugins/wp-rest-api-log/) — WordPress plugin to log REST API requests and responses (for v2 of the API).
