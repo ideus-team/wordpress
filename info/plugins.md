@@ -34,6 +34,7 @@
 * [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
 * [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) — просмотр и управление крон задачами WordPress
 * [Duplicate Post](https://wordpress.org/plugins/duplicate-post/) — копирование постов любых типов
+* [English WordPress Admin](https://wordpress.org/plugins/english-wp-admin/) — возможность сменить язык админки на английский без смены языка самого сайта
 
 ## Безопасность
 * [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Anti-virus, Firewall and Malware Scan
