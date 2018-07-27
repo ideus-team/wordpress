@@ -35,6 +35,8 @@
 * [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) — просмотр и управление крон задачами WordPress
 * [Duplicate Post](https://wordpress.org/plugins/duplicate-post/) — копирование постов любых типов
 * [English WordPress Admin](https://wordpress.org/plugins/english-wp-admin/) — возможность сменить язык админки на английский без смены языка самого сайта
+* [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомные поля и метабоксы
+  * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — просмотр данных ACF во фронте при разработке темы
 
 ## Безопасность
 * [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Anti-virus, Firewall and Malware Scan
