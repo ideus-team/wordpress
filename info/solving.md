@@ -31,7 +31,7 @@ define( 'FTP_PASS', 'password' );
 define( 'FTP_HOST', 'ftp.example.org' );
 define( 'FTP_SSL', false );
 ```
-Если доступ к файлам сайта происходит по SFTP-протоколу, то следует также установить плагин [SSH SFTP Updater Support](https://wordpress.org/plugins/ssh-sftp-updater-support/) и заменить значение константы `FS_METHOD` на `ssh`.
+Если доступ к файлам сайта происходит по SFTP-протоколу, то следует также установить плагин [SSH SFTP Updater Support](https://wordpress.org/plugins/ssh-sftp-updater-support/) и заменить значение константы `FS_METHOD` на `ssh2`.
 
 ## Смена префикса у таблиц
 
