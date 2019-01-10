@@ -28,7 +28,6 @@
 * [Page Template Dashboard](https://wordpress.org/plugins/page-template-dashboard/) — отображает название файла шаблона в дополнительной колонке напротив каждой страницы в списке
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
 * [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
-* [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) — просмотр и управление крон задачами WordPress
 * [Duplicate Post](https://wordpress.org/plugins/duplicate-post/) — копирование постов любых типов
 * [English WordPress Admin](https://wordpress.org/plugins/english-wp-admin/) — возможность сменить язык админки на английский без смены языка самого сайта
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомные поля и метабоксы
@@ -41,6 +40,7 @@
   * [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) — Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
   * [… и другие дополнения к Debug Bar](https://wordpress.org/plugins/search.php?q=Debug+Bar)
 * [Query Monitor](https://wordpress.org/plugins/query-monitor/) — Панель инструментов разработчика для WordPress. Позволяет отлаживать запросы к базе данных, ошибки PHP, перехваты и действия, блоки редактора блоков, поставленные в очередь скрипты и таблицы стилей, вызовы HTTP API и многое другое.
+* [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) — просмотр и управление крон задачами WordPress
 * [User Switching](https://wordpress.org/plugins/user-switching/) — Позволяет быстро переключаться между учетными записями пользователей в WordPress одним нажатием кнопки
 
 ## Безопасность
