@@ -2,6 +2,7 @@
 
 * [Обязательно к установке](#Обязательно-к-установке)
 * [Разработка](#Разработка)
+  * [Дебаг](#Дебаг)
 * [Безопасность](#Безопасность)
 * [Формы](#Формы)
 * [Соцсети](#Соцсети)
@@ -25,11 +26,6 @@
 * [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
 * [Page Template Dashboard](https://wordpress.org/plugins/page-template-dashboard/) — отображает название файла шаблона в дополнительной колонке напротив каждой страницы в списке
-* [Debug Bar](https://wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
-  * [Debug Bar Constants](https://wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
-  * [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) — Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
-  * [… и другие дополнения к Debug Bar](https://wordpress.org/plugins/search.php?q=Debug+Bar)
-* [PHP Compatibility Checker](https://wordpress.org/plugins/php-compatibility-checker/) — проверка совместимости с различными версиями PHP
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
 * [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
 * [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) — просмотр и управление крон задачами WordPress
@@ -37,6 +33,14 @@
 * [English WordPress Admin](https://wordpress.org/plugins/english-wp-admin/) — возможность сменить язык админки на английский без смены языка самого сайта
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомные поля и метабоксы
   * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — просмотр данных ACF во фронте при разработке темы
+  
+### Дебаг
+* [PHP Compatibility Checker](https://wordpress.org/plugins/php-compatibility-checker/) — проверка совместимости с различными версиями PHP
+* [Debug Bar](https://wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
+  * [Debug Bar Constants](https://wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
+  * [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) — Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
+  * [… и другие дополнения к Debug Bar](https://wordpress.org/plugins/search.php?q=Debug+Bar)
+* [Query Monitor](https://wordpress.org/plugins/query-monitor/) — панель инструментов разработчика для WordPress. Позволяет отлаживать запросы к базе данных, ошибки PHP, перехваты и действия, блоки редактора блоков, поставленные в очередь скрипты и таблицы стилей, вызовы HTTP API и многое другое.
 
 ## Безопасность
 * [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Anti-virus, Firewall and Malware Scan
