@@ -8,9 +8,9 @@
     'posts_per_page' => 10,
   ) );
   ?>
-  <?php if ( $posts->have_posts() ): ?>
+  <?php if ( $posts->have_posts() ) : ?>
 
-    <?php while ( $posts->have_posts() ): $posts->the_post(); ?>
+    <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
       <?php get_template_part( 'template-parts/post' ); ?>
 
