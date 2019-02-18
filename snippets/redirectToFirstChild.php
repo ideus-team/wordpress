@@ -15,5 +15,6 @@ while ( have_posts() ) {
   if ( $pages ) {
     $first = $pages[0];
     wp_redirect( get_permalink( $first->ID ) );
+    exit;
   }
 }
