@@ -1,7 +1,8 @@
 <?php
-/*
-Template Name: Redirect To First Child
-*/
+/**
+ * Template Name: Redirect To First Child
+ * Template Post Type: page
+ */
 while ( have_posts() ) {
   the_post();
 
