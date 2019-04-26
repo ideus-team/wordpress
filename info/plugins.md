@@ -18,8 +18,11 @@
 ## Обязательно к установке
 
 * [Cyr to Lat enhanced](https://wordpress.org/plugins/cyr3lat/) — конвертация кирилицы, европейских и грузинских символов в латиницу при загрузке файлов и создании slug'ов. **При использовании wp-framework устанавливать не нужно.**
+* [Classic Editor](https://wordpress.org/plugins/classic-editor/) — обязательно к установке, если не планируем поддерживать Gutenberg
+* [Disable Comments](https://wordpress.org/plugins/disable-comments/) — если не нужны комментарии, ставим этот плагин и выключаем их в его настройках
 
 ## Разработка
+
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
 * [Coming Soon Page & Maintenance Mode by SeedProd](https://wordpress.org/plugins/coming-soon/) — включение страницы Coming Soon для посетителей на время разработки или обслуживания
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — простое и удобное управление метабоксами
@@ -34,6 +37,7 @@
   * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — просмотр данных ACF во фронте при разработке темы
   
 ### Дебаг
+
 * [PHP Compatibility Checker](https://wordpress.org/plugins/php-compatibility-checker/) — проверка совместимости с различными версиями PHP
 * [Debug Bar](https://wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
   * [Debug Bar Constants](https://wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
@@ -44,6 +48,7 @@
 * [User Switching](https://wordpress.org/plugins/user-switching/) — Позволяет быстро переключаться между учетными записями пользователей в WordPress одним нажатием кнопки
 
 ## Безопасность
+
 * [Wordfence Security](https://wordpress.org/plugins/wordfence/) — Anti-virus, Firewall and Malware Scan
 
 ## Формы
@@ -57,6 +62,7 @@
   * [Form to Post](https://wordpress.org/plugins/form-to-post/) — создание постов/страниц при отправке формы
   * [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — расширение для Contact Form 7, позволяет отправлять данные формы в виде аттача в формате PDF
   * [Contact Form 7 Multi-Step Forms](https://wordpress.org/plugins/contact-form-7-multi-step-module/) — позволяет разбить форму на несколько страниц/шагов
+  
 ## Соцсети
 
 * [AddToAny Share Buttons](https://wordpress.org/plugins/add-to-any/) — кнопки шаринга
@@ -81,14 +87,17 @@
 * [MultilingualPress](https://wordpress.org/plugins/multilingual-press/) — плагин для мультиязычности, основанный на мультисайтовости
 
 ## eCommerce
+
 * [WooCommerce](https://wordpress.org/plugins/woocommerce/) — бесплатный и мощный плагин для eCommerce
   * [WooCommerce Advanced Free Shipping](https://wordpress.org/plugins/woocommerce-advanced-free-shipping/) — you can setup your own advanced rules to determine when a free shipping rate should be available for the customer
 
 ## Внешний вид
+
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
 * [Fluid Video Embeds](https://wordpress.org/plugins/fluid-video-embeds/) - This plugin modifies the built-in Vimeo and YouTube oEmbed auto-embeds so they are full-width, and flexible while maintaining their original aspect ratio.
 
 ## Модификации админки и WP
+
 * [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) — для переключения сайта на SSL нужен только сертификат и этот плагин
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функция wp_mail() будет использоватть SMTP вместо mail()
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — Customise columns on the administration screens for post(types), pages, media, comments, links and users with an easy to use drag-and-drop interface.
@@ -97,9 +106,11 @@
 * [Enhanced Media Library](https://wordpress.org/plugins/enhanced-media-library/) — расширяет возможности медиагалереи: таксономии для медиафайлов, расширенные шорткоды, настройки MIME Types и другое
 
 ## REST API
+
 * [REST API Log](https://wordpress.org/plugins/wp-rest-api-log/) — WordPress plugin to log REST API requests and responses (for v2 of the API).
 
 ## Производительность
+
 * [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/) — минификация и склейка CSS, JS, минификация HTML
 * [Minify HTML](https://wordpress.org/plugins/minify-html-markup/) — минификация HTML
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
@@ -108,6 +119,7 @@
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) — чистка БД от мусора
 
 ## Разное
+
 * [AdRotate Banner Manager](https://wordpress.org/plugins/adrotate/) — баннерная система
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
 * [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
