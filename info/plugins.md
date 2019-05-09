@@ -25,16 +25,14 @@
 
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
 * [Coming Soon Page & Maintenance Mode by SeedProd](https://wordpress.org/plugins/coming-soon/) — включение страницы Coming Soon для посетителей на время разработки или обслуживания
-* [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — простое и удобное управление метабоксами
-* [Show Hidden Post Meta](https://wordpress.org/plugins/show-hidden-post-meta/) — просмотр скрытых кастомных полей
+* [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомные поля и метабоксы
+  * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — просмотр данных ACF во фронте при разработке темы
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
 * [Page Template Dashboard](https://wordpress.org/plugins/page-template-dashboard/) — отображает название файла шаблона в дополнительной колонке напротив каждой страницы в списке
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
 * [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
 * [Duplicate Post](https://wordpress.org/plugins/duplicate-post/) — копирование постов любых типов
 * [English WordPress Admin](https://wordpress.org/plugins/english-wp-admin/) — возможность сменить язык админки на английский без смены языка самого сайта
-* [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомные поля и метабоксы
-  * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — просмотр данных ACF во фронте при разработке темы
   
 ### Дебаг
 
