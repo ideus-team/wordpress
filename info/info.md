@@ -53,6 +53,14 @@ define( 'WPCF7_AUTOP', false );
 * `expireTime` — (например 2592000) время в секундах, на которое браузер должен запомнить, что данный сайт должен посещаться исключительно по HTTPS
 * `includeSubdomains` — (опционально) если указать этот необязательный параметр, правила так же применятся ко всем поддоменам. 
 
+3. Желательно добавить следующий код в `wp-config.php`:
+
+```
+@ini_set( 'session.cookie_httponly', true );
+@ini_set( 'session.cookie_secure', true );
+@ini_set( 'session.use_only_cookies', true );
+```
+
 ## Работа с AJAX
 
 ```js
