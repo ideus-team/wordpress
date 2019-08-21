@@ -62,7 +62,7 @@
 ```
 
 ## Минификация и склейка CSS, JS, минификация HTML
-… и прочие оптимизации при помощи плагина [Fast Velocity Minify](https://wordpress.org/plugins/fast-velocity-minify/)
+… и прочие оптимизации при помощи плагина [Autoptimize](https://wordpress.org/plugins/autoptimize/)
 
 ## Серверное кеширование
 При помощи плагина [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/)
