@@ -110,7 +110,7 @@
 ## Производительность
 
 * [Autoptimize](https://wordpress.org/plugins/autoptimize/) — минификация и склейка CSS, JS, минификация HTML, image lazy load и другие потимизации скорости загрузки страницы
-* [Minify HTML](https://wordpress.org/plugins/minify-html-markup/) — минификация HTML
+* [Native Lazyload](https://wordpress.org/plugins/native-lazyload/) — нативный Lazyload от Google
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
   * [WP Super Cache — Clear all cache](https://wordpress.org/plugins/wp-super-cache-clear-cache-menu/) — выводит ссылку на очистку кеша в верхнюю панель
 * [EWWW Image Optimizer](https://wordpress.org/plugins/ewww-image-optimizer/) — оптимизация изображений
