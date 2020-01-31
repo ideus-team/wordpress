@@ -114,6 +114,7 @@
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
   * [WP Super Cache — Clear all cache](https://wordpress.org/plugins/wp-super-cache-clear-cache-menu/) — выводит ссылку на очистку кеша в верхнюю панель
 * [EWWW Image Optimizer](https://wordpress.org/plugins/ewww-image-optimizer/) — оптимизация изображений
+* [Simple Lazy Load Videos](https://wordpress.org/plugins/simple-lazy-load-videos/) — простой Lazy Load для встроенного видео с Youtube и Vimeo
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) — чистка БД от мусора
 
 ## Разное
