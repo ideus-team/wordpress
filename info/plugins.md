@@ -92,7 +92,6 @@
 ## Внешний вид
 
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
-* [Fluid Video Embeds](https://wordpress.org/plugins/fluid-video-embeds/) - This plugin modifies the built-in Vimeo and YouTube oEmbed auto-embeds so they are full-width, and flexible while maintaining their original aspect ratio.
 
 ## Модификации админки и WP
 
