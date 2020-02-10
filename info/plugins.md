@@ -92,7 +92,6 @@
 ## Внешний вид
 
 * [Justified Gallery](https://wordpress.org/plugins/justified-gallery/) — This simple plugin brings the native WordPress gallery to a higher level by adding a nice justified image grid and a pretty lightbox
-* [Fluid Video Embeds](https://wordpress.org/plugins/fluid-video-embeds/) - This plugin modifies the built-in Vimeo and YouTube oEmbed auto-embeds so they are full-width, and flexible while maintaining their original aspect ratio.
 
 ## Модификации админки и WP
 
@@ -114,6 +113,7 @@
 * [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) — кеширование
   * [WP Super Cache — Clear all cache](https://wordpress.org/plugins/wp-super-cache-clear-cache-menu/) — выводит ссылку на очистку кеша в верхнюю панель
 * [EWWW Image Optimizer](https://wordpress.org/plugins/ewww-image-optimizer/) — оптимизация изображений
+* [Simple Lazy Load Videos](https://wordpress.org/plugins/simple-lazy-load-videos/) — простой Lazy Load для встроенного видео с Youtube и Vimeo
 * [WP-Optimize](https://wordpress.org/plugins/wp-optimize/) — чистка БД от мусора
 
 ## Разное
