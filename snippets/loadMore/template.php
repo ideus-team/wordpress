@@ -12,7 +12,7 @@
 
     <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-      <?php get_template_part( 'template-parts/post' ); ?>
+      <?php get_template_part( 'template-parts/content/post' ); ?>
 
     <?php endwhile; ?>
 
