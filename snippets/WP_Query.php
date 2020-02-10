@@ -6,6 +6,7 @@ $query = new WP_Query( array(
   'post_type'      => 'post',
   'orderby'        => 'date',
   'order'          => 'DESC',
+  'paged'          => get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1,
   'posts_per_page' => 5,
 ) );
 if ( $query->have_posts() ) :
