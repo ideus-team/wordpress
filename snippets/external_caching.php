@@ -3,7 +3,7 @@
  * Download external files
  */
 function nc_download_external( $items = array() ) {
-  $path = get_theme_file_path( 'js-temp' );
+  $path = get_theme_file_path( 'assets/js/temp' );
 
   foreach ( $items as $item ) {
     $content = file_get_contents( $item['url'] );
