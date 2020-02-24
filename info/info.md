@@ -38,7 +38,7 @@ define( 'WPCF7_AUTOP', false );
 ## Включение SSL
 
 После покупки SSL-сертификата следует сделать следующее:
-16070400
+
 1. Установить плагин [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) и активировать в его настройках SSL
 2. Желательно добавить следующий код в `.htaccess`:
 
