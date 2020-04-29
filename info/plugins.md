@@ -66,7 +66,6 @@
 * [AddToAny Share Buttons](https://wordpress.org/plugins/add-to-any/) — кнопки шаринга
 * [WP Open Graph](https://wordpress.org/plugins/wp-open-graph/) — автогенерация тегов Open Graph
 * [Instagram Slider Widget](https://wordpress.org/plugins/instagram-slider-widget/) — Instagram виджет
-* [Kebo Twitter Feed](https://wordpress.org/plugins/kebo-twitter-feed/) — вывод последних постов из Twitter 
 
 ## SEO
 
