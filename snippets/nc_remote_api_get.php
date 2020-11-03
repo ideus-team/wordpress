@@ -17,7 +17,9 @@ function nc_remote_api_get( $api_url, $expiration = HOUR_IN_SECONDS ) {
 
     $body = wp_remote_retrieve_body( $request );
 
-    set_transient( $api_url_hash, $body, $expiration );
+    if ( $expiration ) {
+      set_transient( $api_url_hash, $body, $expiration );
+    }
   }
 
   return json_decode( $body );
