@@ -2,7 +2,7 @@
 /**
  * Get remote JSON & cache with Transients API
  */
-function nc_remote_api_get( $api_url ) {
+function nc_remote_api_get( $api_url, $expiration = HOUR_IN_SECONDS ) {
   $api_url_hash = 'nc_cache_' . md5( $api_url );
   $cache = get_transient( $api_url_hash );
 
@@ -17,7 +17,7 @@ function nc_remote_api_get( $api_url ) {
 
     $body = wp_remote_retrieve_body( $request );
 
-    set_transient( $api_url_hash, $body, HOUR_IN_SECONDS );
+    set_transient( $api_url_hash, $body, $expiration );
   }
 
   return json_decode( $body );
