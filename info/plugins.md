@@ -37,10 +37,7 @@
 ### Дебаг
 
 * [PHP Compatibility Checker](https://wordpress.org/plugins/php-compatibility-checker/) — проверка совместимости с различными версиями PHP
-* [Debug Bar](https://wordpress.org/plugins/debug-bar/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки (желательно установить `define( 'WP_DEBUG', true );` и `define( 'SAVEQUERIES', true );`)
-  * [Debug Bar Constants](https://wordpress.org/plugins/debug-bar-constants/) — Debug Bar Constants adds three new panels to the Debug Bar that display the defined WP and PHP constants for the current request
-  * [Debug Bar List Script & Style Dependencies](https://wordpress.org/plugins/debug-bar-list-dependencies/) — Debug Bar List Script & Style Dependencies is an add-on to WordPress Debug Bar
-  * [… и другие дополнения к Debug Bar](https://wordpress.org/plugins/search.php?q=Debug+Bar)
+* [Query Monitor](https://wordpress.org/plugins/query-monitor/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки
 * [Query Monitor](https://wordpress.org/plugins/query-monitor/) — Панель инструментов разработчика для WordPress. Позволяет отлаживать запросы к базе данных, ошибки PHP, перехваты и действия, блоки редактора блоков, поставленные в очередь скрипты и таблицы стилей, вызовы HTTP API и многое другое.
 * [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) — просмотр и управление крон задачами WordPress
 * [User Switching](https://wordpress.org/plugins/user-switching/) — Позволяет быстро переключаться между учетными записями пользователей в WordPress одним нажатием кнопки
