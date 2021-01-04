@@ -37,7 +37,6 @@
 ### Дебаг
 
 * [PHP Compatibility Checker](https://wordpress.org/plugins/php-compatibility-checker/) — проверка совместимости с различными версиями PHP
-* [Query Monitor](https://wordpress.org/plugins/query-monitor/) — Добавляет в верхнюю панель отладочное меню, в котором отображаются запросы, статистика кеша и другая полезная информация для отладки
 * [Query Monitor](https://wordpress.org/plugins/query-monitor/) — Панель инструментов разработчика для WordPress. Позволяет отлаживать запросы к базе данных, ошибки PHP, перехваты и действия, блоки редактора блоков, поставленные в очередь скрипты и таблицы стилей, вызовы HTTP API и многое другое.
 * [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) — просмотр и управление крон задачами WordPress
 * [User Switching](https://wordpress.org/plugins/user-switching/) — Позволяет быстро переключаться между учетными записями пользователей в WordPress одним нажатием кнопки
