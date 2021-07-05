@@ -7,6 +7,12 @@ function loadMore() {
     var button = $(this);
     var container = $( button.data('container') );
 
+    if ( button.hasClass('-disabled_true') ) {
+      return false;
+    }
+
+    button.addClass('-disabled_true');
+
     var postdata = {
       'post_type' : button.data('post_type'),
       'offset'    : button.data('offset'),
@@ -22,6 +28,8 @@ function loadMore() {
       },
       dataType: 'json',
       success: function(result){
+        button.removeClass('-disabled_true');
+
         if ( result.success == true ) {
           container.append( result.data.content );
 
