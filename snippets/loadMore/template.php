@@ -1,14 +1,16 @@
-<div class="b-posts js-posts">
+<?php
+$per_page = 10;
+$posts = new WP_Query( array(
+  'post_type'      => 'post',
+  'orderby'        => 'date',
+  'order'          => 'DESC',
+  'posts_per_page' => $per_page,
+) );
 
-  <?php
-  $posts = new WP_Query( array(
-    'post_type'      => 'post',
-    'orderby'        => 'date',
-    'order'          => 'DESC',
-    'posts_per_page' => 10,
-  ) );
-  ?>
-  <?php if ( $posts->have_posts() ) : ?>
+if ( $posts->have_posts() ) :
+?>
+
+  <div class="b-posts">
 
     <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
@@ -16,11 +18,13 @@
 
     <?php endwhile; ?>
 
+  </div>
+
+  <?php if ( $posts->found_posts > $per_page ) : ?>
+
+    <button class="b-loadMore js-loadMore" type="button" data-container=".b-posts" data-post_type="post" data-offset="<?php echo $per_page; ?>" data-count="<?php echo $per_page; ?>">Load More</button>
+
   <?php endif; ?>
-  <?php wp_reset_postdata(); ?>
 
-</div>
-
-<button class="b-loadMore js-loadMore" data-container=".js-posts" data-post_type="post" data-offset="10" data-count="10">
-  Load More
-</button>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>
