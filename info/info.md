@@ -69,7 +69,7 @@ define( 'WPCF7_AUTOP', false );
  */
 $.ajax({
   type: 'POST',
-  url: ncVar.ajaxurl,
+  url: nc_params.ajaxurl,
   data: {
     'test'   : 'Hello, world!',
     'action' : 'ncAction',

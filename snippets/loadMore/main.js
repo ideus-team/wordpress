@@ -21,7 +21,7 @@ function loadMore() {
 
     $.ajax({
       type: 'POST',
-      url: ncVar.ajax_url,
+      url: nc_params.ajax_url,
       data: {
         'postdata' : postdata,
         'action'   : 'ncLoadMore',
