@@ -27,6 +27,7 @@ function ncLoadMore_callback() {
       'order'          => 'DESC',
       'posts_per_page' => $args['count'],
       'offset'         => $args['offset'],
+      'post_status'    => 'publish',
     ) );
 
     $result['total'] = $query->found_posts;
