@@ -16,7 +16,8 @@ define( 'WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
 ```
 3. Установить плагин [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) и при помощи него изменить домен в БД (Tools > Domain Change), после чего сам плагин можно удалить
-4. Удалить строки, добавленные в пункте #2
+4. В случае установленного плагина Contact Form 7 вручную в админкев настройках каждой формы сменить e-mail отправителя, т.к. вероятно там будет прописано мыло на старом домене
+5. Удалить строки, добавленные в пункте #2
 
 ## Смена домена в мультисайтовом WP
 
