@@ -115,5 +115,6 @@
 ## Разное
 
 * [WP AdCenter](https://wordpress.org/plugins/wpadcenter/) — простая баннерная система с подсчётом кликов и просмотров
+* [Filter Everything](https://wordpress.org/plugins/filter-everything/) - создание фильтров для WooCommerce и не только
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
 * [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
