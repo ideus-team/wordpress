@@ -118,3 +118,5 @@
 * [Filter Everything](https://wordpress.org/plugins/filter-everything/) - создание фильтров для WooCommerce и не только
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
 * [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
+* [Catch Infinite Scroll](https://wordpress.org/plugins/catch-infinite-scroll/) - "бесконечный" скролл
+* [Filter Everything](https://wordpress.org/plugins/filter-everything/) - фильтры для WooCommerce и обычных постов любого типа
