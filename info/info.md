@@ -5,6 +5,7 @@
 * [Contact Form 7](#contact-form-7)
 * [Включение SSL](#Включение-ssl)
 * [Работа с AJAX](#Работа-с-ajax)
+* [Необхідні Google Maps API для використання у ACF Pro](#Необхідні-google-maps-api-для-використання-у-acf-pro)
 
 ## Константы
 
@@ -104,3 +105,11 @@ function ncAction_callback() {
   }
 }
 ```
+
+## Необхідні Google Maps API для використання у ACF Pro
+
+* Maps Javascript API
+* Geocoding API
+* Geolocation API
+* Maps Embed API
+* Places API
