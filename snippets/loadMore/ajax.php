@@ -34,7 +34,7 @@ function nc_load_more_callback() {
     while ( $query->have_posts() ) {
       $query->the_post();
       ob_start();
-      get_template_part( 'template-parts/content/interior' );
+      get_template_part( 'template-parts/content/post' );
       $result['content'] .= ob_get_clean();
       $result['offset'] ++;
     }
