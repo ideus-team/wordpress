@@ -2,8 +2,7 @@
 $per_page = 10;
 $posts = new WP_Query( array(
   'post_type'      => 'post',
-  'orderby'        => 'date',
-  'order'          => 'DESC',
+  'orderby'        => array( 'date' => 'DESC' ),
   'posts_per_page' => $per_page,
 ) );
 

@@ -2,9 +2,9 @@
 /**
  * Обрабатываем AJAX-запрос типа ncLoadMore
  */
-add_action( 'wp_ajax_ncLoadMore', 'ncLoadMore_callback' );
-add_action( 'wp_ajax_nopriv_ncLoadMore', 'ncLoadMore_callback' );
-function ncLoadMore_callback() {
+add_action( 'wp_ajax_nc_load_more', 'nc_load_more_callback' );
+add_action( 'wp_ajax_nopriv_nc_load_more', 'nc_load_more_callback' );
+function nc_load_more_callback() {
   $result = array();
 
   if ( ! $_POST['postdata'] ) {
@@ -23,8 +23,7 @@ function ncLoadMore_callback() {
 
     $query = new WP_Query( array(
       'post_type'      => $args['post_type'],
-      'orderby'        => 'date',
-      'order'          => 'DESC',
+      'orderby'        => array( 'date' => 'DESC' ),
       'posts_per_page' => $args['count'],
       'offset'         => $args['offset'],
       'post_status'    => 'publish',
@@ -35,7 +34,7 @@ function ncLoadMore_callback() {
     while ( $query->have_posts() ) {
       $query->the_post();
       ob_start();
-      get_template_part( 'template-parts/content/post' );
+      get_template_part( 'template-parts/content/interior' );
       $result['content'] .= ob_get_clean();
       $result['offset'] ++;
     }

@@ -24,7 +24,7 @@ function loadMore() {
       url: nc_params.ajax_url,
       data: {
         'postdata' : postdata,
-        'action'   : 'ncLoadMore',
+        'action'   : 'nc_load_more',
       },
       dataType: 'json',
       success: function(result){
