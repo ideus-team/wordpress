@@ -15,8 +15,11 @@ function loadMore() {
 
     var postdata = {
       'post_type' : button.data('post_type'),
+      'orderby'   : button.data('orderby'),
+      'order'     : button.data('order'),
       'offset'    : button.data('offset'),
       'count'     : button.data('count'),
+      'template'  : button.data('template'),
     };
 
     $.ajax({

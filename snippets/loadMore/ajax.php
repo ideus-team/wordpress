@@ -12,8 +12,11 @@ function nc_load_more_callback() {
   } else {
     $args = wp_parse_args( $_POST['postdata'], array(
       'post_type' => 'post',
+      'orderby'   => 'date',
+      'order'     => 'DESC',
       'offset'    => get_option( 'posts_per_page', 10 ),
       'count'     => get_option( 'posts_per_page', 10 ),
+      'template'  => 'post',
     ) );
 
     $result = array(
@@ -23,10 +26,9 @@ function nc_load_more_callback() {
 
     $query = new WP_Query( array(
       'post_type'      => $args['post_type'],
-      'orderby'        => array( 'date' => 'DESC' ),
+      'orderby'        => array( $args['orderby'] => $args['order'] ),
       'posts_per_page' => $args['count'],
       'offset'         => $args['offset'],
-      'post_status'    => 'publish',
     ) );
 
     $result['total'] = $query->found_posts;
@@ -34,7 +36,7 @@ function nc_load_more_callback() {
     while ( $query->have_posts() ) {
       $query->the_post();
       ob_start();
-      get_template_part( 'template-parts/content/post' );
+      get_template_part( 'template-parts/content/' . $args['template'] );
       $result['content'] .= ob_get_clean();
       $result['offset'] ++;
     }
