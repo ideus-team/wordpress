@@ -28,6 +28,7 @@
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомные поля и метабоксы
   * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — просмотр данных ACF во фронте при разработке темы
   * [Advanced Custom Fields: Table Field](https://wordpress.org/plugins/advanced-custom-fields-table-field/) — поле, добавляющее редактор таблиц
+  * [ACF Quick Edit Fields](https://wordpress.org/plugins/acf-quickedit-fields/) - безкоштовний аналог Admin Columns, працюючий тільки з полями ACF, з реалізацією сортування та швидкого редагування
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
 * [Page Template Dashboard](https://wordpress.org/plugins/page-template-dashboard/) — отображает название файла шаблона в дополнительной колонке напротив каждой страницы в списке
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
