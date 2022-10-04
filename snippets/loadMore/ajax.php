@@ -1,6 +1,6 @@
 <?php
 /**
- * Обрабатываем AJAX-запрос типа ncLoadMore
+ * Handling AJAX request nc_load_more
  */
 add_action( 'wp_ajax_nc_load_more', 'nc_load_more_callback' );
 add_action( 'wp_ajax_nopriv_nc_load_more', 'nc_load_more_callback' );
