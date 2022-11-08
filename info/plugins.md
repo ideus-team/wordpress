@@ -24,7 +24,7 @@
 ## Разработка
 
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрыть сайт паролем на время разработки
-* [Coming Soon Page & Maintenance Mode by SeedProd](https://wordpress.org/plugins/coming-soon/) — включение страницы Coming Soon для посетителей на время разработки или обслуживания
+* [Maintenance](https://wordpress.org/plugins/maintenance/) — включение страницы Coming Soon для посетителей на время разработки или обслуживания
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомные поля и метабоксы
   * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — просмотр данных ACF во фронте при разработке темы
   * [Advanced Custom Fields: Table Field](https://wordpress.org/plugins/advanced-custom-fields-table-field/) — поле, добавляющее редактор таблиц
