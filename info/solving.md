@@ -44,7 +44,7 @@ define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
 define( 'FS_METHOD', 'ftpext' );
 define( 'FTP_BASE', '/path/to/wordpress/' );
 define( 'FTP_CONTENT_DIR', '/path/to/wordpress/wp-content/' );
-define( 'FTP_PLUGIN_DIR ', '/path/to/wordpress/wp-content/plugins/' );
+define( 'FTP_PLUGIN_DIR', '/path/to/wordpress/wp-content/plugins/' );
 define( 'FTP_USER', 'username' );
 define( 'FTP_PASS', 'password' );
 define( 'FTP_HOST', 'ftp.example.org' );
