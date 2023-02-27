@@ -45,9 +45,10 @@ define( 'FS_METHOD', 'ftpext' );
 define( 'FTP_BASE', '/path/to/wordpress/' );
 define( 'FTP_CONTENT_DIR', '/path/to/wordpress/wp-content/' );
 define( 'FTP_PLUGIN_DIR', '/path/to/wordpress/wp-content/plugins/' );
+define( 'FTP_HOST', 'ftp.example.org' );
 define( 'FTP_USER', 'username' );
 define( 'FTP_PASS', 'password' );
-define( 'FTP_HOST', 'ftp.example.org' );
+// define( 'FTP_PRIKEY', '/path/to/private_key.pem' );
 define( 'FTP_SSL', false );
 ```
 Если доступ к файлам сайта происходит по SFTP-протоколу, то следует также установить плагин [SSH SFTP Updater Support](https://wordpress.org/plugins/ssh-sftp-updater-support/) и заменить значение константы `FS_METHOD` на `ssh2`.
