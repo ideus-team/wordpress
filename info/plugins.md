@@ -34,7 +34,7 @@
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
 * [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — пересоздание всех уменьшенных копий изображений с удалением старых файлов
 * [Duplicate Post](https://wordpress.org/plugins/duplicate-post/) — копирование постов любых типов
-* [English WordPress Admin](https://wordpress.org/plugins/english-wp-admin/) — возможность сменить язык админки на английский без смены языка самого сайта
+* [Simple Admin Language Change](https://wordpress.org/plugins/simple-admin-language-change/) — можливість зміни мови адмінки на англійську (чи будь яку іншу із встановлених) без зміни мови самого сайту
   
 ### Дебаг
 
