@@ -28,7 +28,7 @@
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомные поля и метабоксы
   * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — просмотр данных ACF во фронте при разработке темы
   * [Advanced Custom Fields: Table Field](https://wordpress.org/plugins/advanced-custom-fields-table-field/) — поле, добавляющее редактор таблиц
-  * [ACF Quick Edit Fields](https://wordpress.org/plugins/acf-quickedit-fields/) - безкоштовний аналог Admin Columns, що працює тільки з полями ACF, з реалізацією сортування та швидкого редагування
+  * [ACF Quick Edit Fields](https://wordpress.org/plugins/acf-quickedit-fields/) — безкоштовний аналог Admin Columns, що працює тільки з полями ACF, з реалізацією сортування та швидкого редагування
 * [What The File](https://wordpress.org/plugins/what-the-file/) — отображение в админбаре имени файла шаблона текущей страницы
 * [Page Template Dashboard](https://wordpress.org/plugins/page-template-dashboard/) — отображает название файла шаблона в дополнительной колонке напротив каждой страницы в списке
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — обновление таблиц в БД при смене домена
@@ -76,7 +76,7 @@
 
 ## Мультиязычность
 
-* [Polylang](https://wordpress.org/plugins/polylang/) - бесплатный аналог WPML
+* [Polylang](https://wordpress.org/plugins/polylang/) — бесплатный аналог WPML
   * [Polylang Theme Strings](https://wordpress.org/plugins/polylang-theme-strings/) — расширение для Polylang для перевода строк в файлах темы
   * [Contact Form 7 Polylang Module](https://wordpress.org/plugins/cf7-polylang/) — переводим формы Contact Form 7 при помощи Polylang
 * [MultilingualPress](https://wordpress.org/plugins/multilingual-press/) — плагин для мультиязычности, основанный на мультисайтовости
@@ -116,9 +116,8 @@
 ## Разное
 
 * [WP AdCenter](https://wordpress.org/plugins/wpadcenter/) — простая баннерная система с подсчётом кликов и просмотров
-* [Filter Everything](https://wordpress.org/plugins/filter-everything/) - создание фильтров для WooCommerce и не только
+* [Filter Everything](https://wordpress.org/plugins/filter-everything/) — фільтри для WooCommerce та звичайних постів будь-якого типу
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оценивания постов
 * [Nav Menu Roles](https://wordpress.org/plugins/nav-menu-roles/) — сокрытие пунктов меню в зависимости от типа пользователя
 * [Catch Infinite Scroll](https://wordpress.org/plugins/catch-infinite-scroll/) - "бесконечный" скролл
-* [Filter Everything](https://wordpress.org/plugins/filter-everything/) - фильтры для WooCommerce и обычных постов любого типа
-* [Redirection](https://wordpress.org/plugins/redirection/) - керування 301 редиректами
+* [Redirection](https://wordpress.org/plugins/redirection/) — керування 301 редиректами
