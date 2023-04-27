@@ -12,6 +12,7 @@ function nc_load_more_callback() {
   } else {
     $args = wp_parse_args( $_POST['postdata'], array(
       'post_type' => 'post',
+      'category'  => 0,
       'orderby'   => 'date',
       'order'     => 'DESC',
       'offset'    => get_option( 'posts_per_page', 10 ),
@@ -26,6 +27,7 @@ function nc_load_more_callback() {
 
     $query = new WP_Query( array(
       'post_type'      => $args['post_type'],
+      'cat'            => $args['category'],
       'orderby'        => array( $args['orderby'] => $args['order'] ),
       'posts_per_page' => $args['count'],
       'offset'         => $args['offset'],

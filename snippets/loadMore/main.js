@@ -15,6 +15,7 @@ function loadMore() {
 
     var postdata = {
       'post_type' : button.data('post_type'),
+      'category'  : button.data('category'),
       'orderby'   : button.data('orderby'),
       'order'     : button.data('order'),
       'offset'    : button.data('offset'),
