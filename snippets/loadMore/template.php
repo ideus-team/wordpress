@@ -26,7 +26,7 @@ if ( $query->have_posts() ) :
 
   </div>
 
-  <?php if ( $query->found_posts > $per_page ) : ?>
+  <?php if ( $query->found_posts > $per_page && '-1' !== $per_page ) : ?>
 
     <button class="b-loadMore js-loadMore" type="button" data-container=".b-posts" data-orderby="<?php echo $orderby; ?>" data-order="<?php echo $order; ?>" data-post_type="<?php echo $post_type; ?>" data-category="<?php echo $category; ?>" data-offset="<?php echo $per_page; ?>" data-count="<?php echo $per_page; ?>" data-template="<?php echo $template; ?>">Load More</button>
 
