@@ -1,11 +1,14 @@
-function loadMore() {
-  var button = $('.js-loadMore');
+/**
+ * Load More
+ */
+function initLoadMore() {
+  const button = $('.js-loadMore');
 
   button.on('click', function(e){
     e.preventDefault();
 
-    var button = $(this);
-    var container = $( button.data('container') );
+    const button    = $(this);
+    const container = $( button.data('container') );
 
     if ( button.hasClass('-disabled_true') ) {
       return false;
@@ -13,7 +16,7 @@ function loadMore() {
 
     button.addClass('-disabled_true');
 
-    var postdata = {
+    let postdata = {
       'post_type' : button.data('post_type'),
       'category'  : button.data('category'),
       'orderby'   : button.data('orderby'),
@@ -46,4 +49,25 @@ function loadMore() {
       }
     });
   });
+}
+
+
+/**
+ * Infinite Scroll
+ */
+function initInfiniteScroll() {
+  const button = $('.js-loadMore.-infinite_true');
+  let offset, wheight, scrolled;
+
+  if ( button.length ) {
+    $(window).on('scroll', function() {
+      offset   = button.offset().top;
+      wheight  = window.innerHeight;
+      scrolled = window.scrollY;
+
+      if ( wheight + scrolled >= offset ) {
+        button.trigger('click');
+      }
+    });
+  }
 }
