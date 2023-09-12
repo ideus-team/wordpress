@@ -12,7 +12,7 @@
 * [eCommerce](#ecommerce)
 * [Зовнішній вигляд](#зовнішній-вигляд)
 * [Модифікації адмінки та WP](#модифікації-адмінки-та-wp)
-* [Продуктивність](#продуктивність)
+* [Оптимізація](#оптимізація)
 * [Різне](#різне)
 
 ## Обов'язково до встановлення
@@ -99,7 +99,7 @@
 
 * [REST API Log](https://wordpress.org/plugins/wp-rest-api-log/) — Плагін WordPress для реєстрації запитів і відповідей REST API (для v2 API).
 
-## Продуктивність
+## Оптимізація
 
 * [Simple Lazy Load Videos](https://wordpress.org/plugins/simple-lazy-load-videos/) — простий Lazy Load для вбудованого відео на Youtube і Vimeo
 * [Autoptimize](https://wordpress.org/plugins/autoptimize/) — мініфікація та склейка CSS, JS, мініфікація HTML, відкладене завантаження зображень та інші оптимізації швидкості завантаження сторінок
