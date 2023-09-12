@@ -1,21 +1,32 @@
-# Оптимизация производительности
+# Оптимізація продуктивності
 
-* [Оптимизация изображений](#Оптимизация-изображений)
-* [Включение gzip-компрессии](#Включение-gzip-компрессии)
-* [Включение браузерного кеширования](#Включение-браузерного-кеширования)
-* [Минификация и склейка CSS, JS, минификация HTML](#Минификация-и-склейка-css-js-минификация-html)
-* [Серверное кеширование](#Серверное-кеширование)
+* [Оптимізація зображень](#оптимізація-зображень)
+* [WebP](#webp)
+* [Увімкнення gzip-компресії](#увімкнення-gzip-компресії)
+* [Увімкнення браузерного кешування](#увімкнення-браузерного-кешування)
+* [Мініфікація та склеювання CSS, JS, мініфікація HTML](#мініфікація-та-склеювання-css-js-мініфікація-html)
+* [Серверне кешування](#серверне-кешування)
 
-## Оптимизация изображений
-Разовая ручная оптимизация всех изображений в uploads и теме при помощи [Image Catalyst](https://github.com/lorents17/iCatalyst) со следующими настройками:
+## Оптимізація зображень
+Разова ручна оптимізація всіх зображень у uploads та темі за допомогою [Image Catalyst](https://github.com/lorents17/iCatalyst) з наступними налаштуваннями:
 
 * **PNG** — Xtreme
 * **JPG** — Progressive
 * **GIF** — Default
 
-После этого требуется установка [EWWW Image Optimizer](https://ru.wordpress.org/plugins/ewww-image-optimizer/), он оптимизирует изображения прямо при загрузке.
+Після цього потрібно встановити [EWWW Image Optimizer](https://wordpress.org/plugins/ewww-image-optimizer/), він оптимізує зображення прямо під час завантаження.
 
-## Включение gzip-компрессии
+## WebP
+Потрібно встановити плагін [WebP Express]https://wordpress.org/plugins/webp-express/
+Я використовую наступні налаштування:
+* Operation mode: CDN friendly
+* Scope: Uploads & themes
+* Destination folder: In separate folder
+* Alter HTML: enabled
+* What to replace: Replace image URLs
+* How to replace: The complete page
+
+## Увімкнення gzip-компресії
 ```
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE application/javascript
@@ -42,7 +53,7 @@
 </IfModule>
 ```
 
-## Включение браузерного кеширования
+## Увімкнення браузерного кешування
 ```
 ## Add Expires headers ##
 <IfModule mod_expires.c>
@@ -70,17 +81,14 @@
 ## Configure entity tags (ETags) ##
 
 ## Configure Cache-Control ##
-<filesMatch ".(jpg|jpeg|png|gif|svg|eot|ttf|woff|woff2)$">
+<filesMatch ".(jpg|jpeg|png|gif|svg|webp|eot|ttf|woff|woff2|js|css)$">
   Header set Cache-Control "max-age=31536000"
 </filesMatch>
 ## Configure Cache-Control ##
 ```
 
-## Минификация и склейка CSS, JS, минификация HTML
-… и прочие оптимизации при помощи плагина [Autoptimize](https://wordpress.org/plugins/autoptimize/)
+## Мініфікація та склеювання CSS, JS, мініфікація HTML
+… та інші оптимізації за допомогою плагіна [Autoptimize](https://wordpress.org/plugins/autoptimize/)
 
-## Серверное кеширование
-При помощи плагина [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/)
-
-* Если содержимое сайта часто изменяется, то желательно включить опцию **Clear all cache files when a post or page is published or updated** на вкладке **Advanced**
-* Возможно потребуется переключение **Cache Delivery Method** в режим **Expert**, это также можно сделать на вкладке **Advanced**
+## Серверне кешування
+За допомогою плагіна [Cache Enabler](https://wordpress.org/plugins/cache-enabler/)

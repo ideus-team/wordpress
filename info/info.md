@@ -1,15 +1,14 @@
-# Полезная информация
+# Корисна інформація
 
-* [Константы](#Константы)
-* [Удаление ревизий](#Удаление-ревизий)
-* [Contact Form 7](#contact-form-7)
-* [Включение SSL](#Включение-ssl)
-* [Работа с AJAX](#Работа-с-ajax)
-* [Необхідні Google Maps API для використання у ACF Pro](#Необхідні-google-maps-api-для-використання-у-acf-pro)
+* [Константи](#константи)
+* [Видалення ревізій](#видалення-ревізій)
+* [Увімкнення SSL](#увімкнення-ssl)
+* [Робота з AJAX](#робота-з-ajax)
+* [Необхідні Google Maps API для використання у ACF Pro](#необхідні-google-maps-api-для-використання-у-acf-pro)
 
-## Константы
+## Константи
 
-В WordPress существуют специальные константы времени, созданные для удобства, чтобы не умножать постоянно секунды:
+У WordPress існують спеціальні константи часу, створені для зручності, щоб не множити постійно секунди:
 ```
 MINUTE_IN_SECONDS = 60
 HOUR_IN_SECONDS   = 60  * MINUTE_IN_SECONDS
@@ -19,29 +18,19 @@ MONTH_IN_SECONDS  = 30  * DAY_IN_SECONDS
 YEAR_IN_SECONDS   = 365 * DAY_IN_SECONDS
 ```
 
-## Удаление ревизий
+## Видалення ревізій
 
-Удалить все ревизии из БД можно при помощи следующего запроса:
+Видалити всі ревізії з БД можна за допомогою наступного запиту:
 ```sql
 DELETE p,m,r FROM wp_posts p LEFT JOIN wp_postmeta m ON (p.ID = m.post_id) LEFT JOIN wp_term_relationships r ON (p.ID = r.object_id) WHERE p.post_type = 'revision';
 ```
 
-## Contact Form 7
+## Увімкнення SSL
 
-При установке этого плагина желательно добавить эту константу в `wp-config.php`
-```php
-/**
- * Когда значение константы false (по умолчанию true), Contact Form 7 не будет пропускать контент формы через фильтр autop.
- * Данный фильтр заменяет двойной перенос строки на HTML конструкцию <p>...</p>, а одинарный на <br>.
- */
-define( 'WPCF7_AUTOP', false );
-```
-## Включение SSL
+Після покупки SSL-сертифіката слід зробити наступне:
 
-После покупки SSL-сертификата следует сделать следующее:
-
-1. Установить плагин [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) и активировать в его настройках SSL
-2. Желательно добавить следующий код в `.htaccess`:
+1. Встановити плагін [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) та активувати в його налаштуваннях SSL
+2. Бажано додати наступний код у `.htaccess`:
 
 ```
 # HTTP Strict Transport Security (HSTS)
@@ -51,10 +40,10 @@ define( 'WPCF7_AUTOP', false );
 # HTTP Strict Transport Security (HSTS)
 ```
 где:
-* `expireTime` — (например 2592000) время в секундах, на которое браузер должен запомнить, что данный сайт должен посещаться исключительно по HTTPS
-* `includeSubdomains` — (опционально) если указать этот необязательный параметр, правила так же применятся ко всем поддоменам. 
+* `expireTime` — (наприклад 2592000) час у секундах, на який браузер повинен запам'ятати, що цей сайт повинен відвідуватись виключно за HTTPS
+* `includeSubdomains` — (опціонально) якщо вказати цей необов'язковий параметр, правила також застосовується до всіх піддоменів
 
-3. Добавить следующий код в `wp-config.php` (если его там нет, последние версии **Really Simple SSL** сами его добавляют):
+3. Додати наступний код у `wp-config.php` (якщо його там немає, останні версії **Really Simple SSL** самі його додають):
 
 ```
 @ini_set( 'session.cookie_httponly', true );
@@ -62,18 +51,18 @@ define( 'WPCF7_AUTOP', false );
 @ini_set( 'session.use_only_cookies', true );
 ```
 
-## Работа с AJAX
+## Робота з AJAX
 
 ```js
 /**
- * Отправляем AJAX-запрос типа ncAction
+ * Надсилаємо AJAX-запит типу nc_action
  */
 $.ajax({
   type: 'POST',
   url: nc_params.ajaxurl,
   data: {
     'test'   : 'Hello, world!',
-    'action' : 'ncAction',
+    'action' : 'nc_action',
   },
   dataType: 'json',
   success: function(result){
@@ -85,11 +74,11 @@ $.ajax({
 
 ```php
 /**
- * Обрабатываем AJAX-запрос типа ncAction
+ * Обробляємо AJAX-запит типу nc_action
  */
-add_action( 'wp_ajax_ncAction', 'ncAction_callback' );
-add_action( 'wp_ajax_nopriv_ncAction', 'ncAction_callback' );
-function ncAction_callback() {
+add_action( 'wp_ajax_nc_action', 'nc_action_callback' );
+add_action( 'wp_ajax_nopriv_nc_action', 'nc_action_callback' );
+function nc_action_callback() {
   $args = wp_parse_args( $_POST, array(
     'test' => false,
   ) );
