@@ -32,7 +32,7 @@
   * [Advanced Custom Fields: Table Field](https://wordpress.org/plugins/advanced-custom-fields-table-field/) — поле, що додає редактор таблиць
 * [What The File](https://wordpress.org/plugins/what-the-file/) — відображення в адмінбарі імені файлу шаблону поточної сторінки
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — оновлення таблиць у БД при зміні домену
-* [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — перестворення всіх зменшених копій зображень з видаленням старих файлів
+* [Regenerate Thumbnails](https://wordpress.org/plugins/regenerate-thumbnails/) — перестворення всіх зменшених копій зображень
 * [Duplicate Post](https://wordpress.org/plugins/duplicate-post/) — копіювання постів будь-яких типів
 * [Simple Admin Language Change](https://wordpress.org/plugins/simple-admin-language-change/) — можливість зміни мови адмінки на англійську (чи будь яку іншу із встановлених) без зміни мови самого сайту
 
