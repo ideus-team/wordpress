@@ -32,7 +32,7 @@
   * [Advanced Custom Fields: Table Field](https://wordpress.org/plugins/advanced-custom-fields-table-field/) — поле, що додає редактор таблиць
 * [What The File](https://wordpress.org/plugins/what-the-file/) — відображення в адмінбарі імені файлу шаблону поточної сторінки
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — оновлення таблиць у БД при зміні домену
-* [Force Regenerate Thumbnails](https://wordpress.org/plugins/force-regenerate-thumbnails/) — перестворення всіх зменшених копій зображень з видаленням старих файлів
+* [Regenerate Thumbnails](https://wordpress.org/plugins/regenerate-thumbnails/) — перестворення всіх зменшених копій зображень
 * [Duplicate Post](https://wordpress.org/plugins/duplicate-post/) — копіювання постів будь-яких типів
 * [Simple Admin Language Change](https://wordpress.org/plugins/simple-admin-language-change/) — можливість зміни мови адмінки на англійську (чи будь яку іншу із встановлених) без зміни мови самого сайту
 
@@ -92,6 +92,7 @@
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функція wp_mail() використовуватиме SMTP чи інший сторонній сервіс замість mail()
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — налаштування стовпців на екранах адміністрування для постів, сторінок, медіа, коментарів, посилань і користувачів за допомогою простого у використанні інтерфейсу перетягування
 * [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагін, що дозволяє завантажити SVG і одночасно вичищає з файлів можливі вразливості
+* [Radio Buttons for Taxonomies](https://wordpress.org/plugins/radio-buttons-for-taxonomies/) — Заміна вікна таксономії за замовчуванням на спеціальний метабокс, який використовує `radio` замість `checkbox`, обмежуючи кожну публікацію одним терміном у цій таксономії
 * [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) — шаблони для TinyMCE
 * [Enhanced Media Library](https://wordpress.org/plugins/enhanced-media-library/) — розширює можливості медіагалереї: таксономії для медіафайлів, розширені шорткоди, налаштування типів MIME та інше
 
