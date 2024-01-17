@@ -5,6 +5,7 @@
 
 ## Допоміжна інформація
 
+* [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/)
 * [Необхідні плагіни](https://github.com/ideus-team/wordpress/blob/master/info/plugins.md)
 * [Корисна інформація](https://github.com/ideus-team/wordpress/blob/master/info/info.md)
 * [Сніпети](https://github.com/ideus-team/wordpress/tree/master/snippets)
