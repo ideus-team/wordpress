@@ -5,6 +5,6 @@
  */
 
 if ( get_field( '_nc_redirect' ) ) {
-  wp_redirect( get_permalink( get_field( '_nc_redirect' ) ) );
-  exit;
+	wp_redirect( get_permalink( get_field( '_nc_redirect' ) ) );
+	exit;
 }

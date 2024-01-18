@@ -29,11 +29,11 @@ define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
 ```
 3. У файлі `wp-config.php` поправити константу `DOMAIN_CURRENT_SITE`, прописавши там новий домен
 4. Змінити домен у наступних таблицях у БД:
-    * wp_options (`siteurl` и `home`)
-    * wp_site
-    * wp_sitemeta (`siteurl`)
-    * wp_blogs (все записи в колонке `domains`)
-    * wp_#options (`siteurl` и `home` для каждого сайта)
+	* wp_options (`siteurl` и `home`)
+	* wp_site
+	* wp_sitemeta (`siteurl`)
+	* wp_blogs (все записи в колонке `domains`)
+	* wp_#options (`siteurl` и `home` для каждого сайта)
 5. Видалити рядки, додані у пункті #2
 
 ## Оновлення WP та плагінів з адмінки

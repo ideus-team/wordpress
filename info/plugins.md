@@ -2,7 +2,7 @@
 
 * [Обов'язково до встановлення](#обов'язково-до-встановлення)
 * [Розробка](#розробка)
-  * [Дебаг](#дебаг)
+	* [Дебаг](#дебаг)
 * [Безпека](#безпека)
 * [Форми](#форми)
 * [Соціальні мережі](#соціальні-мережі)
@@ -27,9 +27,9 @@
 * [Password Protected](https://wordpress.org/plugins/password-protected/) — закрити сайт паролем на час розробки
 * [underConstruction](https://wordpress.org/plugins/underconstruction/) — включення сторінки Coming Soon для відвідувачів на час розробки чи обслуговування
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) — кастомні поля та метабокси
-  * [ACF Quick Edit Fields](https://wordpress.org/plugins/acf-quickedit-fields/) — безкоштовний аналог Admin Columns, що працює тільки з полями ACF, з реалізацією сортування та швидкого редагування
-  * [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — перегляд даних ACF у фронті при розробці теми
-  * [Advanced Custom Fields: Table Field](https://wordpress.org/plugins/advanced-custom-fields-table-field/) — поле, що додає редактор таблиць
+	* [ACF Quick Edit Fields](https://wordpress.org/plugins/acf-quickedit-fields/) — безкоштовний аналог Admin Columns, що працює тільки з полями ACF, з реалізацією сортування та швидкого редагування
+	* [Advanced Custom Fields Viewer](https://wordpress.org/plugins/advanced-custom-fields-viewer/) — перегляд даних ACF у фронті при розробці теми
+	* [Advanced Custom Fields: Table Field](https://wordpress.org/plugins/advanced-custom-fields-table-field/) — поле, що додає редактор таблиць
 * [What The File](https://wordpress.org/plugins/what-the-file/) — відображення в адмінбарі імені файлу шаблону поточної сторінки
 * [Automatic Domain Changer](https://wordpress.org/plugins/automatic-domain-changer/) — оновлення таблиць у БД при зміні домену
 * [Regenerate Thumbnails](https://wordpress.org/plugins/regenerate-thumbnails/) — перестворення всіх зменшених копій зображень
@@ -50,12 +50,12 @@
 ## Форми
 
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/) — багатофункціональний плагін для створення та управління формами зворотного зв'язку
-  * [Contact Form 7 Modules](https://wordpress.org/plugins/contact-form-7-modules/) — додайте такі корисні модулі, як "hidden fields" та "send all fields"
-  * [Flamingo](https://wordpress.org/plugins/flamingo/) — збереження всіх повідомлень, надісланих через Contact Form 7, у зручному вигляді в адмінці
-  * [Conditional Fields for Contact Form 7](https://wordpress.org/plugins/cf7-conditional-fields/) — умовні поля для Contact Form 7
-  * [Form to Post](https://wordpress.org/plugins/form-to-post/) — створення постів/сторінок при надсиланні форми
-  * [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — дозволяє відправляти дані форми у вигляді атачача у форматі PDF
-  * [Contact Form 7 Multi-Step Forms](https://wordpress.org/plugins/contact-form-7-multi-step-module/) — дозволяє розбити форму на кілька сторінок/кроків
+	* [Contact Form 7 Modules](https://wordpress.org/plugins/contact-form-7-modules/) — додайте такі корисні модулі, як "hidden fields" та "send all fields"
+	* [Flamingo](https://wordpress.org/plugins/flamingo/) — збереження всіх повідомлень, надісланих через Contact Form 7, у зручному вигляді в адмінці
+	* [Conditional Fields for Contact Form 7](https://wordpress.org/plugins/cf7-conditional-fields/) — умовні поля для Contact Form 7
+	* [Form to Post](https://wordpress.org/plugins/form-to-post/) — створення постів/сторінок при надсиланні форми
+	* [Send PDF for Contact Form 7](https://wordpress.org/plugins/send-pdf-for-contact-form-7/) — дозволяє відправляти дані форми у вигляді атачача у форматі PDF
+	* [Contact Form 7 Multi-Step Forms](https://wordpress.org/plugins/contact-form-7-multi-step-module/) — дозволяє розбити форму на кілька сторінок/кроків
 
 ## Соціальні мережі
 
@@ -73,14 +73,14 @@
 ## Мультимовність
 
 * [Polylang](https://wordpress.org/plugins/polylang/) — безкоштовний аналог WPML
-  * [Polylang Theme Strings](https://wordpress.org/plugins/polylang-theme-strings/) — переклад рядків у файлах теми
-  * [Contact Form 7 Polylang Module](https://wordpress.org/plugins/cf7-polylang/) — перекладаємо форми Contact Form 7 за допомогою Polylang
+	* [Polylang Theme Strings](https://wordpress.org/plugins/polylang-theme-strings/) — переклад рядків у файлах теми
+	* [Contact Form 7 Polylang Module](https://wordpress.org/plugins/cf7-polylang/) — перекладаємо форми Contact Form 7 за допомогою Polylang
 * [MultilingualPress](https://wordpress.org/plugins/multilingual-press/) — плагін для мультимовності, заснований на мультисайтовості
 
 ## eCommerce
 
 * [WooCommerce](https://wordpress.org/plugins/woocommerce/) — безкоштовний та потужний плагін для eCommerce
-  * [WooCommerce Advanced Free Shipping](https://wordpress.org/plugins/woocommerce-advanced-free-shipping/) — ви можете налаштувати власні розширені правила, щоб визначити, коли для клієнта має бути доступна безкоштовна доставка
+	* [WooCommerce Advanced Free Shipping](https://wordpress.org/plugins/woocommerce-advanced-free-shipping/) — ви можете налаштувати власні розширені правила, щоб визначити, коли для клієнта має бути доступна безкоштовна доставка
 
 ## Зовнішній вигляд
 

@@ -35,7 +35,7 @@ DELETE p,m,r FROM wp_posts p LEFT JOIN wp_postmeta m ON (p.ID = m.post_id) LEFT 
 ```
 # HTTP Strict Transport Security (HSTS)
 <IfModule mod_headers.c>
-  Header always set Strict-Transport-Security "max-age=expireTime; includeSubDomains"
+	Header always set Strict-Transport-Security "max-age=expireTime; includeSubDomains"
 </IfModule>
 # HTTP Strict Transport Security (HSTS)
 ```
@@ -58,17 +58,17 @@ DELETE p,m,r FROM wp_posts p LEFT JOIN wp_postmeta m ON (p.ID = m.post_id) LEFT 
  * Надсилаємо AJAX-запит типу nc_action
  */
 $.ajax({
-  type: 'POST',
-  url: nc_params.ajaxurl,
-  data: {
-    'test'   : 'Hello, world!',
-    'action' : 'nc_action',
-  },
-  dataType: 'json',
-  success: function(result){
-    console.log('success: ' + result.success);
-    console.log(result.data);
-  }
+	type: 'POST',
+	url: nc_params.ajaxurl,
+	data: {
+		'test'   : 'Hello, world!',
+		'action' : 'nc_action',
+	},
+	dataType: 'json',
+	success: function(result){
+		console.log('success: ' + result.success);
+		console.log(result.data);
+	}
 });
 ```
 
@@ -79,19 +79,19 @@ $.ajax({
 add_action( 'wp_ajax_nc_action', 'nc_action_callback' );
 add_action( 'wp_ajax_nopriv_nc_action', 'nc_action_callback' );
 function nc_action_callback() {
-  $args = wp_parse_args( $_POST, array(
-    'test' => false,
-  ) );
+	$args = wp_parse_args( $_POST, array(
+		'test' => false,
+	) );
 
-  $result = array(
-    'test' => $args['test'],
-  );
+	$result = array(
+		'test' => $args['test'],
+	);
 
-  if ( $result['test'] ) {
-    wp_send_json_success( $result );
-  } else {
-    wp_send_json_error( $result );
-  }
+	if ( $result['test'] ) {
+		wp_send_json_success( $result );
+	} else {
+		wp_send_json_error( $result );
+	}
 }
 ```
 

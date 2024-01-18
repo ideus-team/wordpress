@@ -4,5 +4,5 @@
  */
 add_action( 'get_the_archive_title', 'nc_get_the_archive_title' );
 function nc_get_the_archive_title( $title ) {
-  return preg_replace( '~^[^:]+: ~', '', $title );
+	return preg_replace( '~^[^:]+: ~', '', $title );
 }

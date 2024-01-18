@@ -5,18 +5,18 @@
  */
 
 while ( have_posts() ) {
-  the_post();
+	the_post();
 
-  $pages = get_pages( array(
-    'sort_order'  => 'ASC',
-    'sort_column' => 'menu_order',
-    'parent'      => get_the_ID(),
-    'number'      => 1,
-  ) );
+	$pages = get_pages( array(
+		'sort_order'  => 'ASC',
+		'sort_column' => 'menu_order',
+		'parent'      => get_the_ID(),
+		'number'      => 1,
+	) );
 
-  if ( $pages ) {
-    $first = $pages[0];
-    wp_redirect( get_permalink( $first->ID ) );
-    exit;
-  }
+	if ( $pages ) {
+		$first = $pages[0];
+		wp_redirect( get_permalink( $first->ID ) );
+		exit;
+	}
 }
