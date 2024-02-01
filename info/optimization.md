@@ -17,7 +17,7 @@
 Після цього потрібно встановити [EWWW Image Optimizer](https://wordpress.org/plugins/ewww-image-optimizer/), він оптимізує зображення прямо під час завантаження.
 
 ## WebP
-Потрібно встановити плагін [WebP Express]https://wordpress.org/plugins/webp-express/
+Потрібно встановити плагін [WebP Express](https://wordpress.org/plugins/webp-express/)
 Я використовую наступні налаштування:
 * Operation mode: CDN friendly
 * Scope: Uploads & themes
