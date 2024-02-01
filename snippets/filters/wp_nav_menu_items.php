@@ -16,7 +16,7 @@ function add_loginout_link( $items, $args ) {
 		} elseif ( is_user_logged_in() ) {
 			$items .= '
 				<li class="' . $args->menu_class . '__item">
-					<a class="' . $args->menu_class . '__link" href="<?php echo wp_logout_url(); ?>">' . __( 'Logout' ) . '</a>
+					<a class="' . $args->menu_class . '__link" href="'. wp_logout_url() . '">' . __( 'Logout' ) . '</a>
 				</li>';
 		}
 	}
