@@ -10,7 +10,7 @@
 ## Зміна домену сайта
 
 1. У разі перенесення сайту на інший сервер слід **спочатку перенести файли**
-2. Добавити в `wp-config.php` (у випадку використання [WP-framework](https://github.com/ideus-team/wp-framework) - у відповідний файл, наприклад `wp-config.production.php` для прода) наступні рядки:
+2. Додати в `wp-config.php` (у випадку використання [WP-framework](https://github.com/ideus-team/wp-framework) - у відповідний файл, наприклад `wp-config.production.php` для прода) наступні рядки:
 ```php
 define( 'WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
@@ -22,7 +22,7 @@ define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
 ## Зміна домену в мультисайтовому WP
 
 1. У разі перенесення сайту на інший сервер слід **спочатку перенести файли**
-2. Добавити в `wp-config.php` (у випадку використання [WP-framework](https://github.com/ideus-team/wp-framework) - у відповідний файл, наприклад `wp-config.production.php` для прода) наступні рядки:
+2. Додати в `wp-config.php` (у випадку використання [WP-framework](https://github.com/ideus-team/wp-framework) - у відповідний файл, наприклад `wp-config.production.php` для прода) наступні рядки:
 ```php
 define( 'WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
