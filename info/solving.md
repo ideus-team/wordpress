@@ -10,7 +10,7 @@
 ## Зміна домену сайта
 
 1. У разі перенесення сайту на інший сервер слід **спочатку перенести файли**
-2. Добавити в `wp-config.php` наступні рядки:
+2. Добавити в `wp-config.php` (у випадку використання [WP-framework](https://github.com/ideus-team/wp-framework) - у відповідний файл, наприклад `wp-config.production.php` для прода) наступні рядки:
 ```php
 define( 'WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
@@ -22,12 +22,12 @@ define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
 ## Зміна домену в мультисайтовому WP
 
 1. У разі перенесення сайту на інший сервер слід **спочатку перенести файли**
-2. Добавити в `wp-config.php` наступні рядки:
+2. Добавити в `wp-config.php` (у випадку використання [WP-framework](https://github.com/ideus-team/wp-framework) - у відповідний файл, наприклад `wp-config.production.php` для прода) наступні рядки:
 ```php
 define( 'WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
 ```
-3. У файлі `wp-config.php` поправити константу `DOMAIN_CURRENT_SITE`, прописавши там новий домен
+3. У файлі `wp-config.php` (у випадку використання [WP-framework](https://github.com/ideus-team/wp-framework) - у відповідний файл, наприклад `wp-config.production.php` для прода) поправити константу `DOMAIN_CURRENT_SITE`, прописавши там новий домен
 4. Змінити домен у наступних таблицях у БД:
 	* wp_options (`siteurl` и `home`)
 	* wp_site
