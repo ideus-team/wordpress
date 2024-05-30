@@ -112,6 +112,8 @@
 
 ## Різне
 
+* [Post Types Order](https://wordpress.org/plugins/post-types-order/) — зміна порядку вивода постів
+* [Category Order and Taxonomy Terms Order](https://wordpress.org/plugins/taxonomy-terms-order/) — зміна порядку вивода таксономій
 * [WP AdCenter](https://wordpress.org/plugins/wpadcenter/) — проста банерна система з підрахунком кліків і переглядів
 * [Filter Everything](https://wordpress.org/plugins/filter-everything/) — фільтри для WooCommerce та звичайних постів будь-якого типу
 * [WP-PostRatings](https://wordpress.org/plugins/wp-postratings/) — система оцінювання постів
