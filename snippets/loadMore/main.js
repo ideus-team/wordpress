@@ -15,10 +15,12 @@ function initLoadMore() {
 		}
 
 		button.addClass('-disabled_true');
+		container.addClass('g-loading');
 
 		let postdata = {
 			'post_type' : button.data('post_type'),
-			'category'  : button.data('category'),
+			'taxonomy'  : button.data('taxonomy'),
+			'term'      : button.data('term'),
 			'orderby'   : button.data('orderby'),
 			'order'     : button.data('order'),
 			'offset'    : button.data('offset'),
@@ -36,6 +38,8 @@ function initLoadMore() {
 			dataType: 'json',
 			success: function(result){
 				button.removeClass('-disabled_true');
+				container.removeClass('g-loading');
+
 
 				if ( result.success == true ) {
 					container.append( result.data.content );

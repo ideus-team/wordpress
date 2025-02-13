@@ -30,25 +30,42 @@ if ( ! class_exists( 'iDeus\Theme\AJAX_Load_More' ) ) {
 			if ( ! $_POST['postdata'] ) {
 				$result['error'] = 'Empty postdata';
 			} else {
-				$args = wp_parse_args( $_POST['postdata'], array(
-					'post_type' => 'post',
-					'category'  => 0,
-					'orderby'   => 'date',
-					'order'     => 'DESC',
-					'offset'    => get_option( 'posts_per_page', 10 ),
-					'count'     => get_option( 'posts_per_page', 10 ),
-					'template'  => 'post',
-				) );
+				$args = wp_parse_args(
+					$_POST['postdata'],
+					array(
+						'post_type' => 'post',
+						'taxonomy'  => 'category',
+						'term'      => 0,
+						'orderby'   => 'date',
+						'order'     => 'DESC',
+						'offset'    => get_option( 'posts_per_page', 10 ),
+						'count'     => get_option( 'posts_per_page', 10 ),
+						'template'  => 'post',
+					)
+				);
 
 				$result = array(
 					'offset'  => $args['offset'],
 					'content' => '',
 				);
 
+				if ( $args['taxonomy'] && $args['term'] ) {
+					$tax_query = array(
+						array(
+							'taxonomy' => $args['taxonomy'],
+							'terms'    => $args['term'],
+						),
+					);
+				} else {
+					$tax_query = array();
+				}
+
 				$query = new WP_Query( array(
 					'post_type'      => $args['post_type'],
-					'cat'            => $args['category'],
-					'orderby'        => array( $args['orderby'] => $args['order'] ),
+					'tax_query'      => $tax_query,
+					'orderby'        => array(
+						$args['orderby'] => $args['order'],
+					),
 					'posts_per_page' => $args['count'],
 					'offset'         => $args['offset'],
 				) );
