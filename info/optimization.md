@@ -65,6 +65,7 @@
 	ExpiresByType image/jpg "access plus 1 year"
 	ExpiresByType image/jpeg "access plus 1 year"
 	ExpiresByType image/webp "access plus 1 year"
+	ExpiresByType video/mp4 "access plus 1 year"
 	ExpiresByType text/css "access plus 1 year"
 	ExpiresByType application/javascript "access plus 1 year"
 	ExpiresByType application/pdf "access plus 1 year"
