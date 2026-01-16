@@ -91,7 +91,7 @@
 * [Really Simple SSL](https://wordpress.org/plugins/really-simple-ssl/) — для переключення сайту на SSL потрібен тільки сертифікат і цей плагін
 * [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) — функція wp_mail() використовуватиме SMTP чи інший сторонній сервіс замість mail()
 * [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) — налаштування стовпців на екранах адміністрування для постів, сторінок, медіа, коментарів, посилань і користувачів за допомогою простого у використанні інтерфейсу перетягування
-* [Safe SVG](https://wordpress.org/plugins/safe-svg/) — плагін, що дозволяє завантажити SVG і одночасно вичищає з файлів можливі вразливості
+* [Easy SVG Support](https://wordpress.org/plugins/easy-svg/) — плагін, що дозволяє завантажити SVG
 * [Radio Buttons for Taxonomies](https://wordpress.org/plugins/radio-buttons-for-taxonomies/) — Заміна вікна таксономії за замовчуванням на спеціальний метабокс, який використовує `radio` замість `checkbox`, обмежуючи кожну публікацію одним терміном у цій таксономії
 * [Bulk remove posts from category](https://wordpress.org/plugins/bulk-remove-posts-from-category/) — Додає можливість видалення категорії у постов будь якого типу при масовому редагуванні
 * [TinyMCE Templates](https://wordpress.org/plugins/tinymce-templates/screenshots/) — шаблони для TinyMCE
